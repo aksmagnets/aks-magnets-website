@@ -19,3 +19,18 @@ body{font-family:Arial,Helvetica,sans-serif}
 .hero h1.hero-slogan{margin:.2em 0 .35em;line-height:1}
 .hero h1.hero-slogan::after{content:none}
 .hero-slogan img{display:block;width:100%;height:auto;max-width:497px}
+
+/* More compact hero proportions; preserve the existing two-column layout. */
+.hero-grid{min-height:430px}
+.hero-placeholder{min-height:430px}
+.hero-copy{padding-top:38px;padding-bottom:38px}
+.hero h1.hero-slogan{margin:0 0 .22em}
+.hero-copy>p:not(.eyebrow){margin:10px 0 0}
+.hero .button-row{margin-top:18px}
+@media(max-width:980px){
+  .hero-placeholder{min-height:330px}
+}
+@media(max-width:720px){
+  .hero-copy{padding:34px 0 30px}
+  .hero-placeholder{min-height:280px}
+}
