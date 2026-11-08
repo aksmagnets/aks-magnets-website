@@ -12,3 +12,6 @@
   .brand-fallback{font-size:1.4rem}
   .nav-links{top:80px}
 }
+
+/* Keep the two-part hero slogan on distinct lines, with the original red swoosh. */
+.hero h1 em{display:block}
