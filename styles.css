@@ -38,3 +38,8 @@ body{font-family:Arial,Helvetica,sans-serif}
 /* Hero CTA icons: inherit text colour and stay aligned at all widths. */
 .hero .button{gap:10px}
 .hero .button-icon{width:21px;height:21px;flex-shrink:0;display:block}
+
+/* Mockup-style hero buttons: yellow cart CTA and green guides CTA. */
+.hero .button-primary{background:#FEF200;color:#111111}
+.hero .button-guides{background:#07AE58;color:#ffffff;box-shadow:0 5px 0 #058a46}
+.hero .button-guides .button-icon{color:#FEF200}
