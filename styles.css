@@ -59,3 +59,24 @@ body{font-family:Arial,Helvetica,sans-serif}
   .hero .button{transition:none}
   .hero .button:hover,.hero .button:active{transform:none}
 }
+
+/* Guides library and early article page layouts. */
+.guide-more{text-align:center;margin-top:30px}
+.button-guides{background:#07AE58;color:#fff;box-shadow:0 5px 0 #058a46}
+.guide-image-link{text-decoration:none;display:flex;color:#315c42;font-weight:700}
+.guide-title-link{text-decoration:none;color:inherit}
+.guide-title-link:hover,.guide-read-link:hover{text-decoration:underline}
+.guide-card h2{font-size:1.2rem;line-height:1.2;margin:0 0 10px}
+.guide-card p{color:#414641}
+.guide-read-link{font-weight:900;color:var(--green-dark);text-decoration:none}
+.library-heading{font-size:clamp(2.3rem,4vw,3.5rem);text-align:center;margin:0 0 14px}
+.guide-article{max-width:850px}
+.guide-article h1{font-size:clamp(2.25rem,4vw,3.6rem);line-height:1.08;margin:20px 0}
+.article-lead{font-size:1.2rem;color:#414641}
+.guide-draft{padding:24px;background:var(--cream);border:1px solid var(--line);border-radius:16px;margin:30px 0}
+.guide-draft h2{margin-top:0}
+@media(hover:hover){
+  .guide-more .button:hover,.guide-article .button:hover{background:#058e49;transform:translateY(-3px)}
+}
+.guide-more .button,.guide-article .button{transition:background-color .18s ease,transform .18s ease}
+@media(prefers-reduced-motion:reduce){.guide-more .button,.guide-article .button{transition:none}}
