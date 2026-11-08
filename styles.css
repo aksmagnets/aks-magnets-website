@@ -13,5 +13,17 @@
   .nav-links{top:80px}
 }
 
-/* Keep the two-part hero slogan on distinct lines, with the original red swoosh. */
-.hero h1 em{display:block}
+/* Responsive single-colour slogan and a free-standing brushstroke accent. */
+.hero .eyebrow{color:var(--black)}
+.hero h1{color:var(--black)}
+.hero h1::after{
+  content:"";
+  display:block;
+  width:min(245px,58%);
+  height:13px;
+  margin-top:18px;
+  background:var(--red);
+  clip-path:polygon(0 52%,7% 32%,18% 26%,34% 13%,53% 24%,70% 7%,86% 19%,100% 0,95% 33%,82% 44%,66% 46%,49% 59%,29% 72%,12% 84%,0 100%);
+  transform:rotate(-2deg);
+  transform-origin:left center;
+}
