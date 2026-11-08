@@ -13,17 +13,10 @@
   .nav-links{top:80px}
 }
 
-/* Responsive single-colour slogan and a free-standing brushstroke accent. */
-.hero .eyebrow{color:var(--black)}
+/* System-font headline with independently scalable decorative SVG. */
+body{font-family:Arial,Helvetica,sans-serif}
 .hero h1{color:var(--black)}
-.hero h1::after{
-  content:"";
-  display:block;
-  width:min(245px,58%);
-  height:13px;
-  margin-top:18px;
-  background:var(--red);
-  clip-path:polygon(0 52%,7% 32%,18% 26%,34% 13%,53% 24%,70% 7%,86% 19%,100% 0,95% 33%,82% 44%,66% 46%,49% 59%,29% 72%,12% 84%,0 100%);
-  transform:rotate(-2deg);
-  transform-origin:left center;
-}
+.hero h1::after{content:none}
+.hero .eyebrow{display:none}
+.hero-highlight{display:inline-block;position:relative;white-space:nowrap;padding-bottom:.17em}
+.hero-underline{position:absolute;display:block;left:0;bottom:0;width:100%;height:.17em;object-fit:fill;pointer-events:none}
