@@ -43,3 +43,19 @@ body{font-family:Arial,Helvetica,sans-serif}
 .hero .button-primary{background:#FEF200;color:#111111}
 .hero .button-guides{background:#07AE58;color:#ffffff;box-shadow:0 5px 0 #058a46}
 .hero .button-guides .button-icon{color:#FEF200}
+
+/* Interactive feedback for the two hero calls to action. */
+.hero .button{
+  transition:transform .18s ease,background-color .18s ease,box-shadow .18s ease;
+}
+@media(hover:hover){
+  .hero .button:hover{transform:translateY(-3px)}
+  .hero .button-primary:hover{background:#fff45c;box-shadow:0 8px 0 #cdbd00}
+  .hero .button-guides:hover{background:#058e49;box-shadow:0 8px 0 #04753b}
+}
+.hero .button:active{transform:translateY(2px);box-shadow:0 2px 0 rgba(0,0,0,.25)}
+.hero .button:focus-visible{outline:3px solid #111;outline-offset:4px}
+@media(prefers-reduced-motion:reduce){
+  .hero .button{transition:none}
+  .hero .button:hover,.hero .button:active{transform:none}
+}
