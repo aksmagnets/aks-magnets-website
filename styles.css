@@ -151,3 +151,14 @@ body{font-family:Arial,Helvetica,sans-serif}
    ViewBox: CustomersChoose 842.9 × 45.6, BestSelling 564.7 × 46. */
 .customer-section-title img{display:block;width:min(843px,80vw);max-width:100%;height:auto}
 .customer-section-title strong{font:inherit}
+
+/* Visually align the artwork inside the six square A+ badges.
+   The source PNGs have slightly different amounts of black space around
+   their illustrations; adjust presentation only, leaving files untouched. */
+.benefits .badge-tile img{transform-origin:center center}
+.benefits .badge-tile:nth-child(1) img{transform:translateY(-.4%) scale(.955)}
+.benefits .badge-tile:nth-child(2) img{transform:translateY(.4%) scale(.98)}
+.benefits .badge-tile:nth-child(3) img{transform:translate(-1.2%,1.8%) scale(1.045)}
+.benefits .badge-tile:nth-child(4) img{transform:translateY(-.4%) scale(.985)}
+.benefits .badge-tile:nth-child(5) img{transform:translateY(.3%) scale(1.025)}
+.benefits .badge-tile:nth-child(6) img{transform:translateY(-.2%) scale(1.008)}
