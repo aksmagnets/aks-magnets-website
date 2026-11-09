@@ -108,3 +108,27 @@ body{font-family:Arial,Helvetica,sans-serif}
 
 /* Subtle physical depth for each magnet artwork, independent of its card. */
 .product-image{box-shadow:0 10px 22px rgba(24,40,30,.32),0 3px 7px rgba(24,40,30,.18)}
+
+/* Product title art and direct Amazon calls to action. */
+#products .product-grid{margin-top:32px}
+.product-section-title img{display:block;width:min(565px,65vw);height:auto;max-width:100%}
+.product-section-title strong{font:inherit}
+.product-title{display:flex;align-items:center;min-height:41px;margin:0 0 10px!important}
+.product-title img{display:block;width:100%;height:35px;object-fit:contain;object-position:left center}
+.product-title span{font:inherit}
+.product-copy p{margin:0 0 18px}
+.product-amazon-button{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  width:100%;min-height:48px;padding:10px 12px;border:2px solid transparent;
+  background:#FEF200;color:#111;box-shadow:0 5px 0 #cdbd00;
+  font-weight:900;text-decoration:none;white-space:nowrap;
+  transition:transform .18s ease,background-color .18s ease,box-shadow .18s ease;
+}
+.product-amazon-button .amazon-mark{display:block;width:27px;height:24px;flex-shrink:0}
+@media(hover:hover){
+  .product-amazon-button:hover{background:#fff45c;transform:translateY(-3px);box-shadow:0 8px 0 #cdbd00}
+}
+.product-amazon-button:active{transform:translateY(2px);box-shadow:0 2px 0 rgba(0,0,0,.25)}
+.product-amazon-button:focus-visible{outline:3px solid #111;outline-offset:4px}
+@media(prefers-reduced-motion:reduce){.product-amazon-button{transition:none}.product-amazon-button:hover,.product-amazon-button:active{transform:none}}
+@media(max-width:720px){.product-section-title img{width:85vw}}
