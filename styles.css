@@ -167,9 +167,10 @@ body{font-family:Arial,Helvetica,sans-serif}
 .about-photo{width:100%;aspect-ratio:1 / 1;border-radius:22px;overflow:hidden;box-shadow:var(--shadow)}
 .about-photo img{display:block;width:100%;height:100%;object-fit:cover}
 
-/* Two-line outlined Inter About heading at the same native lettering size
-   as the approved product and customer headings. */
+/* Single-line outlined Inter About heading. Preserve the SVG's native
+   lettering scale where the right-hand column allows it. */
 .about-section-title{margin:0 0 22px!important;line-height:1}
-.about-section-title img{display:block;width:min(403.4px,100%);height:auto}
+.about-section-title img{display:block;width:100%;max-width:713.6px;height:auto}
 .about-section-title span{font:inherit}
 .about-copy>p{margin-top:0}
+.about-copy{align-self:center}
