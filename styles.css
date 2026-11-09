@@ -132,3 +132,13 @@ body{font-family:Arial,Helvetica,sans-serif}
 .product-amazon-button:focus-visible{outline:3px solid #111;outline-offset:4px}
 @media(prefers-reduced-motion:reduce){.product-amazon-button{transition:none}.product-amazon-button:hover,.product-amazon-button:active{transform:none}}
 @media(max-width:720px){.product-section-title img{width:85vw}}
+
+/* Normalise outlined SVG lettering to one shared scale instead of enlarging
+   each tight artboard independently. Ratios use their source viewBox widths. */
+.product-title img{height:auto;max-height:none;object-fit:initial;flex-shrink:0}
+.product-title img[src="KCM_KCMG_ProductTitle.svg"]{width:98.53%}
+.product-title img[src="AFRY_GAFRY_ProductTitle.svg"]{width:91.84%}
+.product-title img[src="LS_ProductTitle.svg"]{width:90.45%}
+.product-title img[src="VEGP_ProductTitle.svg"]{width:77.44%}
+.product-title img[src="KETO_ProductTitle.svg"]{width:58.49%}
+.product-title img[src="IPOT_ProductTitle.svg"]{width:100%}
