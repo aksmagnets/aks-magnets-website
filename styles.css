@@ -179,3 +179,8 @@ body{font-family:Arial,Helvetica,sans-serif}
 .footer-logo-link{display:inline-block;max-width:100%;line-height:0;text-decoration:none}
 .footer-logo{display:block;width:315px;max-width:100%;height:auto}
 .footer-logo-link:focus-visible{outline:3px solid #FEF200;outline-offset:5px;border-radius:5px}
+
+/* More compact footer now that the promotional and legal rows are gone. */
+.site-footer{padding-top:34px;padding-bottom:14px}
+.footer-bottom{margin-top:18px;padding-top:12px}
+@media(max-width:720px){.site-footer{padding-top:30px}}
