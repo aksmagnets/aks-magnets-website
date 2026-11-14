@@ -338,3 +338,26 @@ body{font-family:Arial,Helvetica,sans-serif}
 .cm-page .cm-table{font-variant-numeric:tabular-nums}
 .cm-page .cm-more-guide{margin:24px 0;padding:16px 18px;background:#f4faf5;border:1px solid #d6e5d9;border-radius:12px;line-height:1.6}
 @media(max-width:580px){.cm-page .cm-methods li{padding:12px 12px 12px 52px}.cm-page .cm-example{padding:12px}}
+
+
+/* Guides index: editorial photo gallery with consistent outline-SVG labels. */
+.guides-library .guide-library-art-heading{margin:0 auto 38px;text-align:center;line-height:1}
+.guides-library .guide-library-art-heading img{display:block;margin:auto;width:min(100%,435px);height:auto}
+.guides-library .guide-library-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+.guides-library .guide-library-card{display:flex;flex-direction:column;overflow:hidden;border-radius:17px;border:1px solid #dce6dc;box-shadow:0 9px 24px rgba(9,45,21,.09);background:#fff}
+.guides-library .guide-photo-link{position:relative;display:block;overflow:hidden;aspect-ratio:16/10;background:#e9f5eb;line-height:0}
+.guides-library .guide-photo{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s ease,filter .35s ease}
+.guides-library .guide-photo-hover{position:absolute;inset:0;background:rgba(7,174,88,0);pointer-events:none;transition:background .25s ease}
+@media(hover:hover){.guides-library .guide-photo-link:hover .guide-photo{transform:scale(1.055);filter:saturate(1.06)}.guides-library .guide-photo-link:hover .guide-photo-hover{background:rgba(7,174,88,.18)}}
+.guides-library .guide-photo-link:focus-visible{outline:4px solid #07ae58;outline-offset:-4px}
+.guides-library .guide-photo-link:focus-visible .guide-photo-hover{background:rgba(7,174,88,.18)}
+.guides-library .guide-library-card>.guide-card-content{padding:21px 24px 24px;display:flex;flex:1;flex-direction:column;align-items:flex-start}
+.guides-library .guide-card-art-title{width:100%;min-height:88px;margin:0 0 10px!important;display:flex;align-items:center;justify-content:flex-start}
+.guides-library .guide-card-art-title a{display:flex;align-items:center;width:100%;height:88px}
+.guides-library .guide-card-art-title img{display:block;width:auto;max-width:100%;max-height:84px;object-fit:contain;object-position:left center}
+.guides-library .guide-card-description{font-size:1rem;line-height:1.55;margin:0 0 20px;color:#48554b;min-height:4.65em;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.guides-library .guide-library-card .guide-read-link{display:inline-flex;align-items:center;justify-content:center;margin-top:auto;padding:11px 19px;background:#07ae58;color:#fff;border-radius:9px;font-weight:800;text-decoration:none;transition:background .2s ease,transform .2s ease}
+@media(hover:hover){.guides-library .guide-library-card .guide-read-link:hover{background:#058e49;transform:translateY(-2px)}}
+.guides-library .guide-library-card .guide-read-link:focus-visible{outline:3px solid #fef200;outline-offset:3px}
+@media(max-width:730px){.guides-library .guide-library-grid{grid-template-columns:1fr;gap:22px}.guides-library .guide-library-art-heading{margin-bottom:26px}.guides-library .guide-library-card>.guide-card-content{padding:18px 19px 22px}.guides-library .guide-card-art-title{min-height:78px}.guides-library .guide-card-art-title a{height:78px}.guides-library .guide-card-art-title img{max-height:74px}}
+@media(prefers-reduced-motion:reduce){.guides-library .guide-photo,.guides-library .guide-photo-hover,.guides-library .guide-library-card .guide-read-link{transition:none}}
