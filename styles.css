@@ -380,3 +380,20 @@ body{font-family:Arial,Helvetica,sans-serif}
  .guides-library .guide-library-grid{grid-template-columns:1fr}
  .guides-library .guide-card-description{min-height:4.65em}
 }
+
+
+/* Guides index: consistent system-font card titles, independent of SVG artboards. */
+.guides-library .guide-library-card .guide-card-text-title{
+  margin:0 0 10px!important; min-height:3.65em; width:100%;
+  font-family:Arial,Helvetica,sans-serif; font-size:1.04rem; font-weight:800;
+  line-height:1.22; letter-spacing:-.015em; display:flex; align-items:center;
+}
+.guides-library .guide-card-text-title a{display:block;color:#202b23;text-decoration:none}
+.guides-library .guide-card-text-title a:hover{color:#058e49}
+.guides-library .guide-card-text-title a:focus-visible{outline:3px solid #07ae58;outline-offset:3px}
+@media(min-width:1101px){
+ .guides-library .guide-library-card .guide-card-text-title{font-size:1rem;min-height:3.66em}
+}
+@media(max-width:730px){
+ .guides-library .guide-library-card .guide-card-text-title{font-size:1.13rem;min-height:3.66em}
+}
