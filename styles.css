@@ -486,3 +486,32 @@ body{font-family:Arial,Helvetica,sans-serif}
   align-items:flex-start;
 }
 .guides-library .guide-library-card .guide-read-link{margin-top:auto}
+
+
+/* Homepage featured guides: match approved library cards, four selected guides. */
+.home-guides-section .home-guides-svg-title{margin:0;line-height:1}
+.home-guides-section .home-guides-svg-title img{display:block;width:min(603px,70vw);max-width:100%;height:auto;margin:auto}
+.home-guides-section .section-heading{margin-bottom:30px}
+.home-guides-section .home-guides-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.home-guides-section .home-guide-card{display:flex;flex-direction:column;overflow:hidden;border:1px solid #dce6dc;border-radius:17px;background:#fff;box-shadow:0 9px 24px rgba(9,45,21,.09)}
+.home-guides-section .home-guide-card .guide-photo-link{position:relative;display:block;overflow:hidden;aspect-ratio:16/10;background:#e9f5eb;line-height:0;text-decoration:none}
+.home-guides-section .home-guide-card .guide-photo{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s ease,filter .35s ease}
+.home-guides-section .home-guide-card .guide-photo-hover{position:absolute;inset:0;pointer-events:none;background:rgba(7,174,88,0);transition:background .25s ease}
+@media(hover:hover){.home-guides-section .home-guide-card .guide-photo-link:hover .guide-photo{transform:scale(1.055);filter:saturate(1.06)}.home-guides-section .home-guide-card .guide-photo-link:hover .guide-photo-hover{background:rgba(7,174,88,.18)}}
+.home-guides-section .home-guide-card .guide-photo-link:focus-visible{outline:4px solid #07ae58;outline-offset:-4px}
+.home-guides-section .home-guide-card>.guide-card-content{padding:12px 15px 17px;display:flex;flex:1;flex-direction:column;align-items:flex-start}
+.home-guides-section .home-guide-card .guide-card-text-title{font:800 1.2rem/1.18 Arial,Helvetica,sans-serif;letter-spacing:-.02em;margin:0 0 6px;min-height:0}
+.home-guides-section .home-guide-card .guide-card-text-title a{text-decoration:none;color:#202b23}
+.home-guides-section .home-guide-card .guide-card-text-title a:hover{color:#058e49}
+.home-guides-section .home-guide-card .guide-card-description{font-size:.87rem;line-height:1.48;color:#48554b;margin:0 0 14px;min-height:0}
+.home-guides-section .home-guide-card .guide-read-link{display:inline-flex;align-items:center;justify-content:center;margin-top:auto;padding:14px 22px;border:2px solid transparent;border-radius:10px;background:#07ae58;color:#fff;box-shadow:0 5px 0 #058a46;font-size:1rem;line-height:1.5;font-weight:900;text-decoration:none;transition:background-color .18s ease,transform .18s ease}
+@media(hover:hover){.home-guides-section .home-guide-card .guide-read-link:hover{background:#058e49;transform:translateY(-3px)}}
+.home-guides-section .home-guide-card:nth-child(1) .guide-photo,
+.home-guides-section .home-guide-card:nth-child(4) .guide-photo{transform:scale(1.065)}
+@media(hover:hover){
+.home-guides-section .home-guide-card:nth-child(1) .guide-photo-link:hover .guide-photo,
+.home-guides-section .home-guide-card:nth-child(4) .guide-photo-link:hover .guide-photo{transform:scale(1.11)}
+}
+@media(max-width:1100px){.home-guides-section .home-guides-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}}
+@media(max-width:720px){.home-guides-section .home-guides-grid{grid-template-columns:1fr}.home-guides-section .home-guides-svg-title img{width:min(603px,74vw)}.home-guides-section .section-heading{gap:12px}.home-guides-section .home-guide-card>.guide-card-content{padding:13px 19px 20px}}
+@media(prefers-reduced-motion:reduce){.home-guides-section .guide-photo,.home-guides-section .guide-photo-hover,.home-guides-section .guide-read-link{transition:none}}
