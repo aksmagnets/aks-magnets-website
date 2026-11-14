@@ -227,9 +227,10 @@ body{font-family:Arial,Helvetica,sans-serif}
 /* Custom outlined Inter title for Kitchen Measurement Conversions guide. */
 .km-art-heading img{display:block;width:100%;max-width:491.1px;height:auto}
 
-/* Guide heading calibration: use Kitchen Measurement's larger visual scale as reference.
-   The wider Air Fryer SVG needs a larger display width to match visually. */
-.afry-art-heading img{max-width:655px}
+/* Guide title scale: display outlined Inter SVGs at their native artboard scale.
+   Each source uses ~35px letterforms; width varies with title length.
+   Apply the same letter-height standard to future guide SVGs. */
+.afry-art-heading img{max-width:570.4px}
 
 
 /* Laundry symbols guide — consistent with established AKS guide layout. */
