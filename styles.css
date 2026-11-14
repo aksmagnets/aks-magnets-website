@@ -279,3 +279,7 @@ body{font-family:Arial,Helvetica,sans-serif}
 .vp-table thead th:nth-child(n+3){text-align:center}
 .vp-table tbody td:nth-child(2){white-space:nowrap;font-weight:500}
 @media(max-width:700px){.vp-table th,.vp-table td{padding:10px 9px;font-size:.85rem}}
+
+/* Vegan protein guide SVG title at the shared Inter lettering scale. */
+.vp-page .vp-art-heading{margin:0 0 18px;line-height:1}
+.vp-page .vp-art-heading img{display:block;width:100%;max-width:501.3px;height:auto}
