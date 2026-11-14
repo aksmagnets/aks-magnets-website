@@ -249,3 +249,10 @@ body{font-family:Arial,Helvetica,sans-serif}
 /* Laundry guide title: match the visual heading scale used in Guides 1 and 2. */
 .ls-page .ls-art-heading{margin:0 0 18px;line-height:1}
 .ls-page .ls-art-heading img{display:block;width:100%;max-width:609px;height:auto}
+
+/* Instant Pot guide: preserve guide template and make 5-column charts usable on small screens. */
+.ip-page .ip-heading{font-size:clamp(2.15rem,4.4vw,3.6rem);line-height:1.08;margin:0 0 18px}
+.ip-page .ip-table th,.ip-page .ip-table td{font-variant-numeric:tabular-nums}
+.ip-page .ip-table td:nth-child(3),.ip-page .ip-table td:nth-child(4){white-space:nowrap}
+.ip-page .ip-table td:nth-child(5){white-space:nowrap;font-weight:700}
+@media(max-width:720px){.ip-page .af-table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}.ip-page .ip-table{min-width:600px;font-size:.84rem}}
