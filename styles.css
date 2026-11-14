@@ -326,3 +326,15 @@ body{font-family:Arial,Helvetica,sans-serif}
 .ab-visual-intro{max-width:860px;margin:24px 0 25px}
 .ab-visual-inline{margin:22px 0 34px}
 @media(max-width:580px){.ab-visual{border-radius:11px;margin:17px 0 25px}.ab-visual figcaption{font-size:.82rem;padding:10px 12px}}
+
+/* Guide 8: common cooking measurements - instructional companion to the KCM chart. */
+.cm-page .cm-art-heading{margin:0 0 18px;line-height:1}
+.cm-page .cm-art-heading img{display:block;width:100%;max-width:558.8px;height:auto}
+.cm-page .cm-visual img{aspect-ratio:3/2;object-fit:cover}
+.cm-page .cm-methods{margin:0 0 22px;padding:0;list-style:none;counter-reset:cmstep;display:grid;gap:10px}
+.cm-page .cm-methods li{counter-increment:cmstep;position:relative;padding:12px 14px 12px 57px;background:#f8fbf8;border:1px solid #e0e8e0;border-radius:11px;line-height:1.55}
+.cm-page .cm-methods li:before{content:counter(cmstep);position:absolute;top:13px;left:14px;width:29px;height:29px;display:grid;place-items:center;background:#087b3e;color:#fff;font-weight:800;border-radius:8px}
+.cm-page .cm-example{margin:19px 0 12px;padding:13px 17px;border-left:4px solid #07ae58;background:#f3faf4;color:#415649;line-height:1.6;border-radius:0 9px 9px 0}
+.cm-page .cm-table{font-variant-numeric:tabular-nums}
+.cm-page .cm-more-guide{margin:24px 0;padding:16px 18px;background:#f4faf5;border:1px solid #d6e5d9;border-radius:12px;line-height:1.6}
+@media(max-width:580px){.cm-page .cm-methods li{padding:12px 12px 12px 52px}.cm-page .cm-example{padding:12px}}
