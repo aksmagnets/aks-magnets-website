@@ -444,3 +444,24 @@ body{font-family:Arial,Helvetica,sans-serif}
    transform:scale(1.11);
  }
 }
+
+
+/* Guides gallery: homepage-matched title rules and compact text spacing. */
+.guides-library .guide-library-heading-row{margin:0 0 29px;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:23px}
+.guides-library .guide-library-heading-row>span{height:3px;background:#07ae58}
+.guides-library .guide-library-heading-row .guide-library-art-heading{margin:0;line-height:1}
+.guides-library .guide-library-heading-row .guide-library-art-heading img{width:min(435px,57vw);max-width:100%;height:auto}
+.guides-library .guide-library-card>.guide-card-content{padding-top:12px}
+.guides-library .guide-library-card .guide-card-text-title{min-height:3.95em;margin:0 0 5px!important;align-items:flex-start;line-height:1.18}
+.guides-library .guide-library-card .guide-card-description{margin:0 0 12px}
+@media(min-width:1101px){
+ .guides-library .guide-library-card>.guide-card-content{padding:12px 15px 17px}
+ .guides-library .guide-library-card .guide-card-text-title{min-height:3.95em;margin-bottom:5px!important;line-height:1.18}
+ .guides-library .guide-library-card .guide-card-description{margin-bottom:12px}
+}
+@media(max-width:730px){
+ .guides-library .guide-library-heading-row{gap:12px;margin-bottom:24px}
+ .guides-library .guide-library-heading-row .guide-library-art-heading img{width:min(435px,70vw)}
+ .guides-library .guide-library-card>.guide-card-content{padding:13px 19px 20px}
+ .guides-library .guide-library-card .guide-card-text-title{min-height:3.25em}
+}
