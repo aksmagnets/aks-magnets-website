@@ -318,3 +318,11 @@ body{font-family:Arial,Helvetica,sans-serif}
 .ab-magnet-variant img{display:block;width:100%;height:auto;max-width:none;object-fit:contain;margin:0 0 17px;box-shadow:0 8px 18px rgba(0,0,0,.18)}
 .ab-magnet-variant .product-amazon-button{font-size:.92rem;white-space:normal;line-height:1.25}
 @media(max-width:580px){.ab-step{gap:12px;padding:14px}.ab-step-num{flex-basis:36px;width:36px;height:36px}.ab-safety-table{font-size:.82rem}}
+
+/* Air fryer beginner guide: restrained original editorial illustrations */
+.ab-visual{margin:24px 0 32px;overflow:hidden;border:1px solid #e0e9df;background:#f5faf5;border-radius:16px}
+.ab-visual img{display:block;width:100%;height:auto;object-fit:contain}
+.ab-visual figcaption{padding:11px 18px 14px;color:#536055;font-size:.88rem;line-height:1.45;text-align:center;background:#fff}
+.ab-visual-intro{max-width:860px;margin:24px 0 25px}
+.ab-visual-inline{margin:22px 0 34px}
+@media(max-width:580px){.ab-visual{border-radius:11px;margin:17px 0 25px}.ab-visual figcaption{font-size:.82rem;padding:10px 12px}}
