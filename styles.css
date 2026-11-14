@@ -223,3 +223,6 @@ body{font-family:Arial,Helvetica,sans-serif}
 .km-source{font-size:.86rem;color:#536055;line-height:1.55;margin:32px 0}
 .km-source a{color:#087b3e}
 @media(max-width:580px){.km-table th:nth-child(2),.km-table td:nth-child(2){width:auto}.km-table{font-size:.78rem}}
+
+/* Custom outlined Inter title for Kitchen Measurement Conversions guide. */
+.km-art-heading img{display:block;width:100%;max-width:491.1px;height:auto}
