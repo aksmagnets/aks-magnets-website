@@ -216,3 +216,10 @@ body{font-family:Arial,Helvetica,sans-serif}
 /* Outlined Inter guide heading, sized responsively while retaining accessible H1 text. */
 .af-intro .af-art-heading{margin:0 0 18px;line-height:1}
 .af-art-heading img{display:block;width:100%;max-width:570.4px;height:auto}
+
+/* Kitchen measurement guide: three-column reference tables. */
+.km-table td:nth-child(3){white-space:normal;font-weight:600}
+.km-table th:nth-child(2),.km-table td:nth-child(2){width:38%}
+.km-source{font-size:.86rem;color:#536055;line-height:1.55;margin:32px 0}
+.km-source a{color:#087b3e}
+@media(max-width:580px){.km-table th:nth-child(2),.km-table td:nth-child(2){width:auto}.km-table{font-size:.78rem}}
