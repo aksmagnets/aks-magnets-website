@@ -607,3 +607,7 @@ body{font-family:Arial,Helvetica,sans-serif}
   #products .product-copy .product-details-button:hover,
   #products .product-copy .product-details-button:active{transform:none}
 }
+
+/* Guide-card span rule should not recolor CTA labels. */
+.home-guides-section .home-guide-card .guide-read-link > span,
+.guides-library .guide-library-card .guide-read-link > span{color:#fff}
