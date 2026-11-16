@@ -535,7 +535,7 @@ body{font-family:Arial,Helvetica,sans-serif}
 /* Product detail navigation and eight future-ready product page shells. */
 #products{scroll-margin-top:112px}
 .product-details-button{gap:12px}
-.product-details-button .details-magnet-icon{display:block;width:25px;height:25px;flex-shrink:0}
+.product-details-button .details-search-icon{display:block;width:23px;height:23px;flex-shrink:0}
 .product-detail-main{padding:28px 0 78px;background:linear-gradient(180deg,#f7fbf6 0,#fff 330px)}
 .product-breadcrumbs{display:flex;flex-wrap:wrap;align-items:center;gap:10px;font-size:.88rem;color:#536158;margin:6px 0 29px}
 .product-breadcrumbs a{color:#087b3e;text-underline-offset:3px}
