@@ -582,3 +582,28 @@ body{font-family:Arial,Helvetica,sans-serif}
 @media(prefers-reduced-motion:reduce){
   #products .product-image-link .product-image,#products .product-image-hover,#products .product-title-link img,#products .product-title-link span{transition:none}
 }
+
+/* AKS card actions: green for in-site exploration, yellow icons for destination type. */
+#products .product-copy .product-details-button{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  background:#07AE58;color:#fff;border:2px solid transparent;
+  box-shadow:0 5px 0 #058a46;
+  font-weight:900;text-decoration:none;
+  transition:background-color .18s ease,transform .18s ease,box-shadow .18s ease;
+}
+#products .product-details-button .details-search-icon{color:#FEF200;width:23px;height:23px;flex-shrink:0}
+.home-guides-section .home-guide-card .guide-read-link,
+.guides-library .guide-library-card .guide-read-link{gap:10px}
+.guide-read-link .guide-button-icon{display:block;width:22px;height:22px;flex-shrink:0;color:#FEF200}
+@media(hover:hover){
+  #products .product-copy .product-details-button:hover{
+    background:#058e49;box-shadow:0 5px 0 #047a3d;transform:translateY(-3px)
+  }
+}
+#products .product-copy .product-details-button:active{transform:translateY(2px);box-shadow:0 2px 0 #047a3d}
+#products .product-copy .product-details-button:focus-visible{outline:3px solid #FEF200;outline-offset:4px}
+@media(prefers-reduced-motion:reduce){
+  #products .product-copy .product-details-button{transition:none}
+  #products .product-copy .product-details-button:hover,
+  #products .product-copy .product-details-button:active{transform:none}
+}
