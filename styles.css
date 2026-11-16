@@ -560,3 +560,25 @@ body{font-family:Arial,Helvetica,sans-serif}
 
 /* Homepage product CTAs: compact and left-aligned, matching the guide cards. */
 #products .product-copy .product-details-button{width:auto;min-width:0;align-self:flex-start;padding:11px 18px;min-height:46px}
+
+/* Homepage product cards: guide-style clickable image and title hover states. */
+#products .product-image-link{position:relative;overflow:hidden;cursor:pointer;text-decoration:none}
+#products .product-image-link .product-image{transition:transform .35s ease,filter .35s ease;transform-origin:center}
+#products .product-image-hover{position:absolute;inset:0;pointer-events:none;background:rgba(7,174,88,0);transition:background-color .25s ease}
+#products .product-title-link{display:block;width:100%;color:#111;text-decoration:none}
+#products .product-title-link img{transition:filter .18s ease}
+#products .product-title-link span{transition:color .18s ease}
+@media(hover:hover){
+  #products .product-image-link:hover .product-image{transform:scale(1.055)}
+  #products .product-image-link:hover .product-image-hover{background:rgba(7,174,88,.18)}
+  #products .product-title-link:hover span{color:#058e49}
+  #products .product-title-link:hover img{filter:brightness(0) saturate(100%) invert(38%) sepia(71%) saturate(745%) hue-rotate(98deg) brightness(94%)}
+}
+#products .product-image-link:focus-visible{outline:4px solid #07ae58;outline-offset:-4px}
+#products .product-image-link:focus-visible .product-image-hover{background:rgba(7,174,88,.18)}
+#products .product-title-link:focus-visible{outline:3px solid #07ae58;outline-offset:3px}
+#products .product-title-link:focus-visible span{color:#058e49}
+#products .product-title-link:focus-visible img{filter:brightness(0) saturate(100%) invert(38%) sepia(71%) saturate(745%) hue-rotate(98deg) brightness(94%)}
+@media(prefers-reduced-motion:reduce){
+  #products .product-image-link .product-image,#products .product-image-hover,#products .product-title-link img,#products .product-title-link span{transition:none}
+}
