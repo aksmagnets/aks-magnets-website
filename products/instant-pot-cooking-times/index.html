@@ -37,7 +37,9 @@
 .kcm-page .kcm-buy:focus-visible{outline:3px solid #111;outline-offset:4px}
 .kcm-amazon-logo{width:18px;height:19px;flex-shrink:0;display:block;transform:translateY(3px)}
 .kcm-buy>span{display:inline-block;line-height:1.15}
-.kcm-title-art img{display:block;width:min(100%,550px);height:auto}
+.kcm-title-art img{display:block;width:100%;max-width:100%;height:auto}
+/* Optical alignment for portrait-format magnets. */
+@media(min-width:821px){.kcm-copy{transform:translateY(-32px)}}
 .kcm-page .kcm-hero{padding-bottom:65px}
 @media(prefers-reduced-motion:reduce){.kcm-page .kcm-buy{transition:none}}
 .kcm-page .kcm-buy-wide{width:100%}
