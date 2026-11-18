@@ -55,8 +55,13 @@
     article.append(make("h3", "aft-result-name", headingFor(food)));
     const stats = make("div", "aft-result-stats");
     const temp = make("div", "aft-stat");
-    temp.append(make("span", "aft-stat-label", "Temperature"), make("strong", "aft-stat-value",
-      units.value === "C" ? fToC(food.fahrenheit) + "°C" : food.fahrenheit + "°F"));
+    if (food.cookingMode === "Max Crisp") {
+      temp.append(make("span", "aft-stat-label", "Ninja cooking program"),
+        make("strong", "aft-stat-value aft-max-crisp", "Max Crisp"));
+    } else {
+      temp.append(make("span", "aft-stat-label", "Temperature"), make("strong", "aft-stat-value",
+        units.value === "C" ? fToC(food.fahrenheit) + "°C" : food.fahrenheit + "°F"));
+    }
     const time = make("div", "aft-stat");
     time.append(make("span", "aft-stat-label", "Estimated cook time"), make("strong", "aft-stat-value", food.minutes + " min"));
     stats.append(temp, time);
