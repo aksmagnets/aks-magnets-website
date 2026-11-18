@@ -10,19 +10,28 @@
   if (![search, category, units, clear, results, count, heading, emptyState, safety].every(Boolean)) return;
   const normalize = input => String(input || "").toLowerCase().normalize("NFKD")
     .replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, " ").trim();
-  const synonyms = {
-    "bell pepper": "capsicum", "capsicum": "bell pepper",
-    "aubergine": "eggplant", "eggplant": "aubergine",
-    "courgette": "zucchini", "zucchini": "courgette",
-    "garbanzo": "chickpea", "chickpea": "garbanzo",
-    "chips": "fries", "fries": "chips",
-    "prawn": "shrimp", "shrimp": "prawn",
-    "scallion": "green onion", "green onion": "scallion",
-    "tater tots": "potato tots", "potato tots": "tater tots",
-    "fillet": "filet", "filet": "fillet",
-    "ribeye": "rib eye", "rib eye": "ribeye",
-    "brussel sprout": "brussels sprouts"
-  };
+  // Search aliases are index-only: these never create unsupported cooking records.
+  const aliasGroups = [
+    ["brussels sprouts", "brussel sprouts", "brussel sprout", "brussels sprout"],
+    ["pot stickers", "potstickers", "potsticker", "dumplings"],
+    ["hash browns", "hashbrowns", "hash brown"],
+    ["bell pepper", "bell peppers", "capsicum", "sweet pepper", "peppers"],
+    ["eggplant", "aubergine"],
+    ["zucchini", "courgette"],
+    ["chickpeas", "chickpea", "garbanzo", "garbanzo beans"],
+    ["scallions", "scallion", "green onions", "green onion"],
+    ["shrimp", "prawns", "prawn"],
+    ["rib eye", "ribeye"],
+    ["fillet", "filet"],
+    ["tater tots", "potato tots"],
+    ["french fries", "fries", "chips"],
+    ["hot dogs", "hotdog", "hotdogs"],
+    ["cilantro", "coriander"]
+  ];
+  const aliases = aliasGroups.map(group => group.map(normalize));
+  const stem = word => word.endsWith("ies") && word.length > 4 ? word.slice(0,-3) + "y" :
+    word.endsWith("es") && /(?:oes|ches|shes|sses)$/.test(word) ? word.slice(0,-2) :
+    word.endsWith("s") && !word.endsWith("ss") && word.length > 4 ? word.slice(0,-1) : word;
   const categories = [...new Set(data.map(food => food.category))].sort((a,b) => a.localeCompare(b));
   categories.forEach(name => {
     const option = document.createElement("option");
@@ -36,8 +45,8 @@
   };
   function searchText(food) {
     let str = normalize([food.name, food.category, food.portion, food.keywords || "", food.category === "Poultry" && !/turkey|duck|game hen/i.test(food.name) ? "chicken" : ""].join(" "));
-    for (const pair of Object.entries(synonyms)) {
-      if (str.includes(pair[0])) str += " " + pair[1];
+    for (const group of aliases) {
+      if (group.some(term => str.includes(term))) str += " " + group.join(" ");
     }
     return str;
   }
@@ -90,8 +99,9 @@
   results.insertAdjacentElement("afterend", moreWrapper);
   
   function matches(food, query) {
-    const words = normalize(query).split(" ").filter(Boolean);
-    return words.every(word => food.searchText.includes(word));
+    const words = normalize(query).split(" ").filter(Boolean).map(stem);
+    const terms = food.searchText.split(" ").filter(Boolean).map(stem);
+    return words.every(word => terms.some(term => term.includes(word)));
   }
   function render() {
     const query = search.value.trim();
