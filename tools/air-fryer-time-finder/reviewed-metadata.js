@@ -10,8 +10,8 @@
   const chef = "https://bluejeanchef.com/cooking-school/air-fryer-cooking-charts/";
   // These specific chart rows match an identifiable published reference.
   // A cross-reference is not proof of independent food testing.
-  const universityExact = new Set([1,2,8,11,12,22,23,24,27,28,31,32,35,36,38,39,40,42,43,44,49,51,55,57,59,65,66,67,70,71,73,78,79,85,89]);
-  const chefExact = new Set([2,8,11,12,19,22,23,24,25,26,27,28,29,31,32,34,35,36,38,39,40,41,42,43,44,48,49,53,55,56,57,58,59,61,63,65,66,67,68,70,71,73,77,78,79,85,89]);
+  const universityExact = new Set([1,2,8,11,12,23,24,27,28,31,32,35,36,38,39,40,42,43,44,49,51,55,57,59,65,66,67,70,71,73,78,79,85,89]);
+  const chefExact = new Set([2,8,11,12,19,22,23,24,25,26,27,28,29,31,32,34,35,36,38,39,40,41,42,43,44,48,49,53,55,56,57,58,59,61,63,65,66,67,68,70,71,73,78,79,85,89]);
 
   const cosori = "https://cosori.com/blogs/blog/air-fryer-cooking-times";
   const ninja = "https://manuals.plus/m/02c0cdfee95e84667808070f706ac607208180f1d5f48151c1d9ebebafb54afc";
