@@ -35,7 +35,7 @@
     return el;
   };
   function searchText(food) {
-    let str = normalize([food.name, food.category, food.portion, food.keywords || "", food.category === "Poultry" ? "chicken turkey duck" : ""].join(" "));
+    let str = normalize([food.name, food.category, food.portion, food.keywords || "", food.category === "Poultry" && !/turkey|duck|game hen/i.test(food.name) ? "chicken" : ""].join(" "));
     for (const pair of Object.entries(synonyms)) {
       if (str.includes(pair[0])) str += " " + pair[1];
     }
