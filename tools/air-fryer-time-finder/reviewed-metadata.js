@@ -16,6 +16,32 @@
       food.cookingMode = "Air Fry";
       if (food.fahrenheit > 400) food.note = "Cosori Iconic setting. Check that your air fryer supports this temperature; do not exceed its maximum.";
     }
+    if (food.source === "https://airfryerkitchen.com/air-fryer-cooking-times-chart/") {
+      food.sourceChecked = "2026-11-18";
+      food.sourceContext = "Preheated 5–6 qt basket; single layer.";
+    }
+    if (food.source === "https://cooktiming.com/air-fryer-timer") {
+      food.sourceChecked = "2026-11-18";
+      food.sourceContext = "Baseline lookup; check preparation and doneness.";
+    }
+    if (food.source === cosori) food.sourceChecked = "2026-11-18";
+    if (food.source === ninja) food.sourceChecked = "2026-11-18";
+    if (name === "cherry tomatoes (roasted)" && food.source === ninja) {
+      food.name = "Balsamic roasted cherry tomatoes";
+      food.portion = "500 g cherry tomatoes; balsamic vinegar and oil";
+    }
+    if (name === "pork steaks (boneless)" && food.source === ninja) {
+      food.name = "Honey-sage pork steaks (boneless)";
+      food.portion = "2–3 steaks, 120 g each; honey, oil and sage";
+    }
+    if (name === "honey-glazed brussels sprouts" && food.source === ninja) {
+      food.name = "Honey-hazelnut Brussels sprouts";
+      food.portion = "500 g Brussels sprouts, halved; honey and hazelnuts";
+    }
+    if (name === "plant-based burger (ninja)" && food.source === ninja) {
+      food.name = "Plant-based BBQ burgers (Ninja)";
+      food.portion = "4 patties, 125 g each; BBQ sauce";
+    }
     if (food.source === ninja) {
       food.appliance = "Ninja Foodi FlexDrawer";
       food.cookingMode = "Air Fry";
@@ -56,10 +82,13 @@
       } else {
         food.safeTemp = "145°F (63°C) internal for fish, or opaque and flakes easily";
       }
-    } else if (food.category === "Reheating" && !/toast|bread|fries/i.test(food.name)) {
+    } else if (food.category === "Reheating") {
       food.safeTemp = "Reheat leftovers to 165°F (74°C) internal";
     } else if (/scrambled eggs|fried eggs/i.test(food.name)) {
       food.safeTemp = "Cook egg dishes to 160°F (71°C); whole eggs until firm";
+    }
+    if (food.category === "Breakfast" && /sausage patties/i.test(food.name) && !/precooked/i.test(food.portion)) {
+      food.safeTemp = "160°F (71°C) internal for pork/beef sausage; 165°F (74°C) for poultry sausage";
     }
     if (food.category === "Frozen Foods") {
       food.note = [food.note, "Follow the package directions and verify any required internal temperature."].filter(Boolean).join(" ");
