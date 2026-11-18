@@ -23,6 +23,7 @@ class Element {
   replaceChildren(...args) { this.children = args; }
   insertAdjacentElement(_position, x) { this.after = x; }
   addEventListener(event, fn) { this.events[event] = fn; }
+  focus() { this.focused = true; }
   setAttribute(key, value) { this.attrs[key] = value; }
 }
 const ids = ["aft-search", "aft-category", "aft-units", "aft-clear", "aft-results", "aft-count", "aft-results-heading", "aft-empty-state", "aft-safety"];
