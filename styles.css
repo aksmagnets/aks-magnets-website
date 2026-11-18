@@ -866,3 +866,6 @@ body{font-family:Arial,Helvetica,sans-serif}
 .aft-result-safe strong{color:#18452a}
 .aft-result-model{font-size:.79rem;line-height:1.5;color:#52715c;font-weight:750;margin:10px 0 0}
 .aft-result-note{font-size:.82rem;line-height:1.5;color:#57534a;margin:8px 0 0}
+
+/* Ninja Max Crisp is a fixed cooking preset, not an adjustable temperature. */
+.aft-result-card .aft-max-crisp{font-size:1.12rem;line-height:1.25}
