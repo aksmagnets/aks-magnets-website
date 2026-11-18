@@ -41,6 +41,21 @@
       food.name = "Plant-based BBQ burgers (Ninja)";
       food.portion = "4 patties, 125 g each; BBQ sauce";
     }
+    if (food.source === cosori && name === "chicken thigh (boneless 4–6 oz)") {
+      food.name = "Chicken thigh (boneless, Cosori)";
+      food.portion = "Boneless thigh; source does not specify a portion weight";
+    }
+    if (food.source === cosori && name === "lobster tail (large)") {
+      food.name = "Lobster tail (Cosori)";
+      food.portion = "Lobster tail; source does not specify size";
+    }
+    if (food.source === cosori && name === "frozen fish fillets (cosori)") {
+      food.portion = "Frozen fish fillets; breading not specified";
+    }
+    if (food.source === "https://cooktiming.com/air-fryer-timer" && name === "acorn squash (halved)") {
+      food.name = "Acorn squash (CookTiming)";
+      food.portion = "Fresh squash; cut/size not specified by source";
+    }
     if (food.source === ninja) {
       food.appliance = "Ninja Foodi FlexDrawer";
       food.cookingMode = "Air Fry";
