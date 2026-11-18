@@ -699,3 +699,22 @@ body{font-family:Arial,Helvetica,sans-serif}
   .aks-tools-home .aks-tool-card .aks-tool-title img,
   .aks-tools-library .aks-tool-card .aks-tool-title img{height:18px}
 }
+
+/* Live Tools links: match the Guides call-to-action behavior. */
+.aks-tools-home .aks-tool-card a.aks-tool-button,
+.aks-tools-library .aks-tool-card a.aks-tool-button{opacity:1;cursor:pointer;text-decoration:none;transition:background-color .18s ease,transform .18s ease,box-shadow .18s ease}
+@media(hover:hover){
+ .aks-tools-home .aks-tool-card a.aks-tool-button:hover,
+ .aks-tools-library .aks-tool-card a.aks-tool-button:hover{background:#058e49;transform:translateY(-3px);box-shadow:0 5px 0 #047a3d}
+}
+.aks-tools-home .aks-tool-card a.aks-tool-button:focus-visible,
+.aks-tools-library .aks-tool-card a.aks-tool-button:focus-visible{outline:3px solid #fef200;outline-offset:4px}
+.aks-tool-pending{max-width:760px;margin:40px auto;padding:35px;background:#f7faf6;border:1px solid #dce6dc;border-radius:17px;text-align:center}
+.aks-tool-pending h2{font-size:clamp(1.5rem,3vw,2rem);margin:0 0 15px}
+.aks-tool-pending p{color:#48554b;font-size:1.08rem;line-height:1.6}
+.aks-tool-pending a{color:#047638;font-weight:800;text-underline-offset:3px}
+@media(max-width:720px){.aks-tool-pending{margin:20px auto;padding:24px}}
+@media(prefers-reduced-motion:reduce){
+ .aks-tools-home .aks-tool-card a.aks-tool-button,
+ .aks-tools-library .aks-tool-card a.aks-tool-button{transition:none}
+}
