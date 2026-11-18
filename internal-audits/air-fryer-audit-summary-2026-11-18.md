@@ -103,3 +103,25 @@ See the CSV file for **all 217 rows**, immutable review ID, current values, sour
 5. The finder does not accept an air-fryer model or upper-temperature limit; temperature warnings help, but do not substitute for model-specific compatibility checks.
 
 **Next verification milestone:** Review the **remaining external rows one-by-one**, comparing name, state, portion, time, temperature, and cooking mode, then confirm or withhold uncertain values. After that, move to canonical structured-data preparation and further expansion.
+
+---
+
+## Full external-source table review — completed 2026-11-18
+
+The **117 externally sourced entries** (36 Air Fryer Kitchen, 34 CookTiming, 24 Cosori Iconic, 23 Ninja Foodi FlexDrawer) have now been compared against the referenced public charts for the source food/preparation, published temperature and published time/range. **All 117 recorded time/temperature pairs match those public chart entries.** This is verification against what the websites publish, **not** independent cooking tests or proof that their recommendations are universally safe for all appliances.
+
+The new [row-by-row verification ledger](air-fryer-source-verification-2026-11-18.csv) records all 217 original IDs with source, reference comparison status, and selected warnings. The original audit CSV remains the unmodified archival snapshot.
+
+### Important contextual corrections made in production
+
+- **Ninja Max Crisp (8 records):** The quick-start guide says the Max Crisp program does not require temperature adjustment. Result cards now show **Max Crisp preset** in place of a user-settable Fahrenheit/Celsius temperature. Its temperature information remains in the internal source record.
+- **Ninja Roast (2 records):** “Cherry tomatoes (roasted)” is now **Balsamic roasted cherry tomatoes**, and “Pork steaks (boneless)” is now **Honey-sage pork steaks (boneless)**. Both retain Roast mode; the earlier short names omitted recipe-specific ingredients. **Honey-hazelnut Brussels sprouts** and **Plant-based BBQ burgers** have also regained preparation details.
+- **Cosori Iconic:** The 24 rows match the manufacturer's settings; model information is shown. The data page does not specify an explicit Air Fry/Bake program for every chart item, so the previous blanket **Air Fry mode** label has been removed.
+- **Unsupported specifics removed:** Cosori's boneless thigh chart does not prescribe a 4–6 oz weight; its lobster tail does not specify “large”; frozen fish fillets are not explicitly said to be breaded. CookTiming's acorn squash record does not specify a halved cut. Their corresponding names/preparation fields now reflect these unknowns rather than guesses.
+- **Source conditions:** The Air Fryer Kitchen table assumes a **preheated 5–6 qt basket and single-layer food**; those details are retained as source metadata for later data-model work.
+- **All 100 original AKS guide entries** still lack individually documented upstream provenance. One ambiguous original row (AF018 pork loin) remains withheld, leaving **216 live results**.
+
+### What “verified” does and does not mean
+- **Confirmed:** Names/preparations can be traced to the named references; published cooking-temperature and time values agree with the stored figures; sources have been compared for relevant equipment/cooking-mode caveats.
+- **Not confirmed:** The source authors' own test procedures, real-world performance in other appliances, exact safety of cooking time without a thermometer, and original upstream sources for the 100 AKS entries.
+- **Next step:** Establish authoritative upstream sourcing for original AKS rows where possible, identify variations that are unsafe or misleading out of context, and convert the archived row audit into a normalized versioned schema before scaling toward 400–500+ entries.
