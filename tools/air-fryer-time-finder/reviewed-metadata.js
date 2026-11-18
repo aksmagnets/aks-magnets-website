@@ -13,7 +13,6 @@
     if (food.category === "Chicken") food.category = "Poultry";
     if (food.source === cosori) {
       food.appliance = "Cosori Iconic";
-      food.cookingMode = "Air Fry";
       if (food.fahrenheit > 400) food.note = "Cosori Iconic setting. Check that your air fryer supports this temperature; do not exceed its maximum.";
     }
     if (food.source === "https://airfryerkitchen.com/air-fryer-cooking-times-chart/") {
@@ -45,7 +44,7 @@
     if (food.source === ninja) {
       food.appliance = "Ninja Foodi FlexDrawer";
       food.cookingMode = "Air Fry";
-      if (/^(cherry tomatoes \(roasted\)|pork steaks \(boneless\))$/i.test(food.name)) {
+      if (/^(cherry tomatoes \(roasted\)|pork steaks \(boneless\))$/i.test(name)) {
         food.cookingMode = "Roast";
         food.note = "Ninja FlexDrawer Roast program; time/temperature from the manufacturer's recipe chart.";
       }
