@@ -19,6 +19,10 @@
     if (food.source === ninja) {
       food.appliance = "Ninja Foodi FlexDrawer";
       food.cookingMode = "Air Fry";
+      if (/^(cherry tomatoes \(roasted\)|pork steaks \(boneless\))$/i.test(food.name)) {
+        food.cookingMode = "Roast";
+        food.note = "Ninja FlexDrawer Roast program; time/temperature from the manufacturer's recipe chart.";
+      }
       if (/^(frozen waffle fries|frozen popcorn chicken|frozen potato pops|frozen battered onion rings|frozen crinkle-cut fries|frozen potato wedges|frozen chicken dippers|frozen fish goujons)$/i.test(food.name)) {
         food.cookingMode = "Max Crisp";
         food.note = "Ninja FlexDrawer Max Crisp program; follow the manufacturer's setting for this mode.";
@@ -40,7 +44,7 @@
       food.safeTemp = "165°F (74°C) internal";
     } else if (food.category === "Beef" || food.category === "Pork & Lamb") {
       if (/meatballs|burger|ground|sausage|bratwurst/i.test(food.name)) {
-        food.safeTemp = "160°F (71°C) internal for ground meat; ground poultry 165°F (74°C)";
+        food.safeTemp = "160°F (71°C) internal for ground meat";
       } else if (/bacon|hot dogs|precooked|ham steak|smoked kielbasa/i.test(food.name)) {
         food.safeTemp = "Check package directions and whether the product is precooked";
       } else {
