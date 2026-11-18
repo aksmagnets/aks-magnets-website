@@ -744,3 +744,78 @@ body{font-family:Arial,Helvetica,sans-serif}
   display:block;width:var(--tool-heading-width,462px);max-width:min(100%,86vw);
   height:auto;margin:0 auto;object-fit:contain
 }
+
+/* Air Fryer Time Finder: interactive utility */
+.aft-page{background:linear-gradient(180deg,#f8fbf7 0,#fff 380px)}
+.aft-page .guide-library-heading-row{margin-bottom:20px}
+.aft-lead{max-width:810px;margin:0 auto 34px;text-align:center;color:#46564a;font-size:1.1rem;line-height:1.65}
+.aft-layout{display:grid;grid-template-columns:minmax(0,1fr) 285px;gap:30px;align-items:start}
+.aft-main{min-width:0}
+.aft-search-panel{padding:26px 28px 20px;border-radius:19px;border:1px solid #dbe8de;background:#f1f9f2;box-shadow:0 8px 22px rgba(13,62,30,.06)}
+.aft-search-panel h2{font-size:1.55rem;line-height:1.2;margin:0 0 19px}
+.aft-controls{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr) minmax(0,.95fr);gap:14px}
+.aft-field{min-width:0}
+.aft-field label{display:block;margin:0 0 7px;font-weight:800;font-size:.9rem;color:#274e33}
+.aft-field input,.aft-field select{display:block;width:100%;height:49px;border-radius:9px;border:1px solid #b9cdbf;background:#fff;color:#1d3024;font:500 .96rem/1.3 Arial,Helvetica,sans-serif;padding:0 12px}
+.aft-field input:focus-visible,.aft-field select:focus-visible{outline:3px solid #07ae58;outline-offset:2px}
+.aft-field input::placeholder{color:#6f7b72}
+.aft-quick{margin-top:17px;display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.aft-quick-label{font-weight:800;font-size:.87rem;color:#425949}
+.aft-quick-picks{display:flex;flex-wrap:wrap;gap:7px}
+.aft-chip{background:#fff;color:#087b3e;border:1px solid #b4d1bd;border-radius:99px;padding:7px 12px;font:700 .85rem/1.2 Arial,Helvetica,sans-serif;cursor:pointer}
+.aft-chip:hover,.aft-chip[aria-pressed="true"]{background:#087b3e;color:#fff}
+.aft-chip:focus-visible,.aft-clear:focus-visible,.aft-show-all:focus-visible{outline:3px solid #07ae58;outline-offset:3px}
+.aft-filter-actions{min-height:22px;text-align:right;margin-top:5px}
+.aft-clear{background:none;border:0;color:#087b3e;font-weight:800;text-decoration:underline;cursor:pointer}
+.aft-results-heading{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:baseline;justify-content:space-between;margin:37px 0 17px}
+.aft-results-heading h2{font-size:1.5rem;line-height:1.2;margin:0}
+.aft-count{color:#506254;font-size:.9rem;margin:0}
+.aft-results-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.aft-result-card{border:1px solid #dce7dc;border-radius:15px;background:#fff;padding:18px 19px 17px;box-shadow:0 5px 17px rgba(12,55,25,.07);min-width:0}
+.aft-result-category{display:inline-flex;align-items:center;color:#08783e;background:#eaf7ee;border-radius:99px;padding:4px 9px;font-size:.74rem;font-weight:800}
+.aft-result-name{font-size:1.15rem;line-height:1.22;margin:11px 0 17px;color:#172c1e}
+.aft-result-stats{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:13px 0;border-block:1px solid #e7eee7}
+.aft-stat{display:flex;flex-direction:column;gap:5px}
+.aft-stat-label{font-size:.72rem;font-weight:700;color:#607265;text-transform:uppercase;letter-spacing:.025em}
+.aft-stat-value{font:900 clamp(1.25rem,2.4vw,1.65rem)/1.2 Arial,Helvetica,sans-serif;color:#086f39}
+.aft-result-portion{font-size:.89rem;color:#435449;line-height:1.5;margin:14px 0 0}
+.aft-result-footnote{font-size:.76rem;color:#6c796e;line-height:1.45;margin:9px 0 0}
+.aft-empty{grid-column:1/-1;border:1px dashed #aacdb5;border-radius:15px;padding:30px;background:#f7fbf7;text-align:center}
+.aft-empty h3{margin:0 0 8px}.aft-empty p{margin:0;color:#526357}
+.aft-more{text-align:center;margin:25px 0 33px}
+.aft-show-all{display:inline-flex;justify-content:center;align-items:center;background:#fff;border:2px solid #07ae58;color:#047638;padding:11px 20px;border-radius:10px;font-weight:900;cursor:pointer}
+.aft-show-all:hover{background:#eaf8ed}
+.aft-notice{background:#fff9e6;border:1px solid #eadba1;border-left:5px solid #d4a929;border-radius:13px;padding:20px 23px;margin:35px 0}
+.aft-notice h2{font-size:1.22rem;margin:0 0 9px}
+.aft-notice p{font-size:.94rem;line-height:1.65;color:#464631;margin:9px 0}
+.aft-notice a,.aft-info a{color:#047638;font-weight:800;text-underline-offset:3px}
+.aft-info{margin:38px 0}
+.aft-info>h2{font-size:1.45rem;margin:0 0 17px}
+.aft-info-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.aft-info-grid>div{padding:15px;border:1px solid #e0e9e0;border-radius:12px;background:#f9fbf9}
+.aft-info-grid h3{font-size:.95rem;line-height:1.35;margin:0 0 7px}
+.aft-info-grid p{color:#506156;font-size:.85rem;line-height:1.6;margin:0}
+.aft-source{margin:20px 0 0;color:#607065;line-height:1.65;font-size:.87rem}
+.aft-sidebar{position:sticky;top:100px;min-width:0}
+.aft-sidebar .af-product{margin:0}
+.aft-sidebar .af-product img{max-width:100%;height:auto}
+.aft-noscript{color:#725000}
+@media(max-width:1020px){
+ .aft-layout{grid-template-columns:1fr}
+ .aft-sidebar{position:static;max-width:400px;margin:6px auto 0}
+ .aft-controls{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .aft-search-field{grid-column:1/-1}
+}
+@media(max-width:650px){
+ .aft-page{padding-top:32px}
+ .aft-lead{text-align:left;font-size:1rem;margin-bottom:24px}
+ .aft-search-panel{padding:20px 16px 14px}
+ .aft-controls{grid-template-columns:1fr}
+ .aft-search-field{grid-column:auto}
+ .aft-results-grid{grid-template-columns:1fr}
+ .aft-results-heading{margin-top:27px}
+ .aft-info-grid{grid-template-columns:1fr}
+ .aft-stat-value{font-size:1.5rem}
+ .aft-notice{padding:17px}
+ .aft-quick{align-items:flex-start;flex-direction:column}
+}
