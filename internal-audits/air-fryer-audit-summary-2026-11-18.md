@@ -79,3 +79,27 @@ See the CSV file for **all 217 rows**, immutable review ID, current values, sour
 - [U.S. FoodSafety.gov safe minimum internal temperatures](https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures)
 
 **Audit methodology:** structural validation across every record plus targeted source spot checks and review-flag screening. Source URL presence does not establish independent verification. No food was test-cooked as part of this audit.
+
+---
+
+## Verification and production corrections — second pass (2026-11-18)
+
+**Status:** The original 217-entry audit inventory is preserved unchanged. **216 entries are currently displayed**: AF018 has been withheld from the user-facing finder until its preparation can be substantiated. New changes are applied through `tools/air-fryer-time-finder/reviewed-metadata.js`, leaving original transcription values in `data.js` and `expanded-data.js` available for review.
+
+**Verified directly against original published sources**
+- **AF176 and AF177, Cosori Iconic steak:** Source confirms 450°F and 6–12 minutes for 1-inch New York strip and boneless ribeye. The finder now identifies **Cosori Iconic**, **Air Fry mode**, and warns that many other appliances cannot use such a setting.
+- **AF186, Cosori Iconic halved eggplant:** Source confirms 435°F, 10–18 minutes. The same brand/model warning is displayed.
+- **AF217, Ninja Foodi FlexDrawer duck breast:** The Air Fry chart confirms 200°C, 30–32 minutes, for two breasts totaling about 400 g; source specifies **slash skin, cook breast-side down, flip halfway**. The finder now includes these instructions.
+- **AF141, CookTiming skin-on duck breast:** Source lists fresh duck breast at 380°F for 12–17 minutes. The finder marks this as a distinct method from Ninja's two-breast chart, not a contradiction to be averaged.
+- **AF018, original AKS pork loin:** Original guide shows an ambiguous 1-inch portion with 55 minutes at 400°F. A separate Air Fryer Kitchen chart uses substantially different instructions for a *2–2.5 lb boneless pork-loin roast* (360°F, 20–25 min/lb). Because the preparations are not demonstrably equivalent, **AF018 is withheld rather than fabricated or silently recalculated**.
+- **Ninja program distinction:** The Ninja manual separates Air Fry from Max Crisp and Roast. Matching entries now show those modes, including cherry tomatoes and pork steaks under Roast, selected frozen foods under Max Crisp, and duck under Air Fry.
+- **Safe internal temperatures:** Rechecked FoodSafety.gov categories for poultry 165°F, ground meats 160°F, whole beef/pork/lamb cuts 145°F plus 3-minute rest, fish 145°F, egg dishes 160°F, and leftovers 165°F. The finder now offers short category-appropriate guidance for many relevant entries, plus a reminder to verify doneness.
+
+**Known limitations / remaining verification queue**
+1. **117 external entries have not all been compared line-by-line with their source tables.** Completion of the targeted priority cases should not be mistaken for a finished full numerical audit.
+2. The **100 original AKS entries** still lack documented independent upstream source lineage; they originate in the existing published AKS guide.
+3. Some foods require per-item food safety and handling instructions that category logic cannot reliably infer (especially frozen prepared foods, eggs, ground poultry, and precooked meats).
+4. Some Ninja cooking-mode classifications still deserve row-level review against the manual. Manufacturer-specific conditions should remain visible, not be generalized.
+5. The finder does not accept an air-fryer model or upper-temperature limit; temperature warnings help, but do not substitute for model-specific compatibility checks.
+
+**Next verification milestone:** Review the **remaining external rows one-by-one**, comparing name, state, portion, time, temperature, and cooking mode, then confirm or withhold uncertain values. After that, move to canonical structured-data preparation and further expansion.
