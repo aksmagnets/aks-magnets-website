@@ -626,3 +626,44 @@ body{font-family:Arial,Helvetica,sans-serif}
 .aks-tool-note a{color:#047638;font-weight:800}
 @media(max-width:1100px){.aks-tools-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:730px){.aks-tools-grid{grid-template-columns:1fr}.aks-tool-visual{height:125px}}
+
+/* Tools: match the approved Guides architecture; artwork is intentionally temporary. */
+.aks-tools-home .aks-tools-svg-title{margin:0;line-height:1}
+.aks-tools-home .aks-tools-svg-title img{display:block;width:min(603px,70vw);height:auto;max-width:100%;margin:0 auto}
+.aks-tools-library .guide-library-heading-row .aks-tools-svg-title{margin:0;line-height:1}
+.aks-tools-library .guide-library-heading-row .aks-tools-svg-title img{display:block;width:min(472px,65vw);height:auto;max-width:100%;margin:auto}
+.aks-tools-home .aks-tools-grid,.aks-tools-library .aks-tools-grid{margin:0}
+.aks-tools-home .aks-tool-card,.aks-tools-library .aks-tool-card{display:flex;flex-direction:column;overflow:hidden}
+.aks-tools-home .aks-tool-card .aks-tool-visual,.aks-tools-library .aks-tool-card .aks-tool-visual{
+  display:flex;align-items:center;justify-content:center;aspect-ratio:16/10;height:auto;
+  background:linear-gradient(145deg,#ecf8ee,#dceee3);color:#678774;padding:16px
+}
+.aks-tool-visual span{font:700 .86rem/1.5 Arial,Helvetica,sans-serif;text-align:center;letter-spacing:.01em}
+.aks-tools-home .aks-tool-card>.guide-card-content,
+.aks-tools-library .aks-tool-card>.guide-card-content{display:flex;flex:1;flex-direction:column;align-items:flex-start}
+.aks-tools-home .aks-tool-card .aks-tool-title,
+.aks-tools-library .aks-tool-card .aks-tool-title{display:flex;align-items:center;width:100%;height:57px;min-height:57px;margin:0 0 8px!important}
+.aks-tools-home .aks-tool-card .aks-tool-title img,
+.aks-tools-library .aks-tool-card .aks-tool-title img{display:block;width:100%;max-width:100%;height:auto;max-height:48px;object-fit:contain;object-position:left center}
+.aks-tools-home .aks-tool-card .guide-card-description,
+.aks-tools-library .aks-tool-card .guide-card-description{min-height:0;height:auto}
+.aks-tools-home .aks-tool-card .aks-tool-button,
+.aks-tools-library .aks-tool-card .aks-tool-button{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  margin-top:auto;background:#07ae58;color:#fff;border:2px solid transparent;
+  border-radius:10px;padding:11px 18px;box-shadow:0 5px 0 #058a46;
+  font:900 1rem/1.5 Arial,Helvetica,sans-serif;opacity:.7;cursor:not-allowed;
+  transition:none;transform:none
+}
+.aks-tools-home .aks-tool-card .aks-tool-button span,
+.aks-tools-library .aks-tool-card .aks-tool-button span{color:#fff}
+.aks-tools-home .aks-tool-card .aks-tool-button .guide-button-icon,
+.aks-tools-library .aks-tool-card .aks-tool-button .guide-button-icon{width:22px;height:22px;flex-shrink:0;color:#fef200}
+@media(hover:hover){
+ .aks-tools-home .aks-tool-card .aks-tool-button:hover,
+ .aks-tools-library .aks-tool-card .aks-tool-button:hover{background:#07ae58;transform:none}
+}
+@media(max-width:720px){
+ .aks-tools-home .aks-tools-svg-title img{width:min(471px,74vw)}
+ .aks-tools-library .guide-library-heading-row .aks-tools-svg-title img{width:min(472px,72vw)}
+}
