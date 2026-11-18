@@ -64,6 +64,11 @@ assert(beefTrial.cards.every(card => card.textContent && card.children.some(c =>
 const seafoodTrial = search("", "Seafood");
 assert(seafoodTrial.cards.every(card => card.children.some(c => c.className === "aft-beef-heading")), "Seafood now shows illustrated cards");
 assert(search("asparagus").cards.some(card => card.children.some(c => c.className === "aft-beef-heading")), "Asparagus should have an illustration");
+for (const name of ["Baby back ribs", "Kale", "Frozen pot pie", "Churros", "Frozen mini quiche", "Frozen bagels"]) {
+  const matched = search(name).cards;
+  assert(matched.some(card => card.children.some(c => c.children.some(x => typeof x.className === "string" && x.className.startsWith("aft-last-photo")))), name + " should show a final-set illustration");
+}
+
 assert(search("taquitos").count >= 1);
 assert(search("broccoli").count >= 1);
 assert.equal(search("nothingmatchesaksmagnets").count, 0);
@@ -83,4 +88,4 @@ assert(findCards().length >= 50, "Show More should append next batch");
 nodes["aft-clear"].events.click();
 assert.equal(findCards().length, 0);
 assert(nodes["aft-safety"].hidden);
-console.log("PASS: 228 active foods; source guards, category illustration atlas, search aliases, categories, unit switch, Max Crisp, pagination and reset.");
+console.log("PASS: 228 active foods; source guards, complete 228-image catalog, search aliases, categories, unit switch, Max Crisp, pagination and reset.");
