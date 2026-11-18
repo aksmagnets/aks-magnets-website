@@ -869,3 +869,79 @@ body{font-family:Arial,Helvetica,sans-serif}
 
 /* Ninja Max Crisp is a fixed cooking preset, not an adjustable temperature. */
 .aft-result-card .aft-max-crisp{font-size:1.12rem;line-height:1.25}
+
+/* Air Fryer Time Finder — focused, accessible search-panel polish.
+   Scoped to this tool; no result cards or global form elements are changed. */
+.aft-page .aft-search-panel{
+  position:relative;
+  overflow:hidden;
+  padding:27px 29px 24px;
+  border:1px solid #cfe2d4;
+  border-radius:20px;
+  background:linear-gradient(140deg,#f6fcf7 0%,#edf8ef 100%);
+  box-shadow:0 9px 27px rgba(18,90,46,.085),0 2px 5px rgba(18,90,46,.035);
+}
+.aft-page .aft-search-panel::before{
+  content:"";position:absolute;inset:0 0 auto;height:4px;
+  background:linear-gradient(90deg,#07ae58 0%,#07ae58 74%,#fef200 74%,#fef200 100%);
+}
+.aft-page .aft-search-panel h2{
+  font-size:1.55rem;letter-spacing:-.015em;margin:0 0 19px;color:#173e26;
+}
+.aft-page .aft-controls{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  column-gap:15px;row-gap:16px;
+}
+.aft-page .aft-search-field{grid-column:1/-1}
+.aft-page .aft-field label{font-size:.88rem;letter-spacing:.01em;margin-bottom:8px;color:#315940}
+.aft-page .aft-search-input-wrap{position:relative;min-width:0}
+.aft-page .aft-search-icon{
+  position:absolute;top:50%;left:17px;width:22px;height:22px;
+  transform:translateY(-50%);pointer-events:none;color:#078c49;
+  transition:color .18s ease;
+}
+.aft-page .aft-field input,
+.aft-page .aft-field select{
+  min-width:0;height:49px;border:1px solid #c4d7c9;
+  border-radius:11px;background:#fff;
+  box-shadow:0 1px 3px rgba(20,67,35,.025);
+  transition:border-color .18s ease,box-shadow .18s ease;
+}
+.aft-page .aft-search-field input{
+  height:62px;
+  padding:0 18px 0 52px;
+  border:1.5px solid #95cba6;
+  border-radius:13px;
+  font-size:1.06rem;
+  box-shadow:0 3px 12px rgba(16,88,44,.055);
+}
+.aft-page .aft-search-field input::placeholder{color:#7a8980}
+.aft-page .aft-search-field:focus-within .aft-search-icon{color:#047638}
+.aft-page .aft-search-field:focus-within input{
+  border-color:#07ae58;
+  box-shadow:0 0 0 4px rgba(7,174,88,.12),0 5px 17px rgba(13,105,48,.1);
+  outline:none;
+}
+.aft-page .aft-field select:focus-visible{
+  border-color:#07ae58;
+  outline:3px solid rgba(7,174,88,.23);
+  outline-offset:2px;
+}
+.aft-page .aft-search-field input:focus-visible{
+  outline:2px solid #047638;
+  outline-offset:3px;
+}
+.aft-page .aft-filter-actions{margin-top:7px;min-height:20px}
+@media(max-width:650px){
+  .aft-page .aft-search-panel{padding:24px 17px 19px}
+  .aft-page .aft-controls{grid-template-columns:1fr;row-gap:13px}
+  .aft-page .aft-search-field{grid-column:1}
+  .aft-page .aft-search-field input{height:59px;font-size:1rem}
+  .aft-page .aft-search-panel h2{margin-bottom:17px}
+}
+@media(prefers-reduced-motion:reduce){
+  .aft-page .aft-search-icon,
+  .aft-page .aft-field input,
+  .aft-page .aft-field select{transition:none}
+}
