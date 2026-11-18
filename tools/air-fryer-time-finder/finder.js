@@ -35,7 +35,7 @@
     return el;
   };
   function searchText(food) {
-    let str = normalize([food.name, food.category, food.portion, food.keywords || ""].join(" "));
+    let str = normalize([food.name, food.category, food.portion, food.keywords || "", food.category === "Poultry" ? "chicken turkey duck" : ""].join(" "));
     for (const pair of Object.entries(synonyms)) {
       if (str.includes(pair[0])) str += " " + pair[1];
     }
@@ -44,7 +44,7 @@
   const indexed = data.map(food => ({...food, searchText:searchText(food)}));
   const fToC = f => Math.round((f - 32) * 5 / 9);
   function headingFor(food) {
-    if (food.category === "Chicken" && /^(Breast|Thighs|Wings|Tenders|Drumsticks|Legs)/.test(food.name)) {
+    if (food.category === "Poultry" && /^(Breast|Thighs|Wings|Tenders|Drumsticks|Legs)/.test(food.name)) {
       return "Chicken " + food.name.toLowerCase();
     }
     return food.name;
