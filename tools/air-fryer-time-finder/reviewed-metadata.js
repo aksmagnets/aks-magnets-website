@@ -20,6 +20,25 @@
     const originalId = i + 1;
     if (originalId <= 100) {
       food.auditId = "AF" + String(originalId).padStart(3, "0");
+      // Make otherwise identical chart headings distinguishable in search results.
+      const clearerNames = {
+        49: "Peppers (1-inch chunks)",
+        51: "Potatoes (1-inch chunks)",
+        52: "Baby potatoes (small)",
+        53: "Baked whole potatoes",
+        57: "Cherry tomatoes",
+        58: "Tomato halves",
+        71: "Frozen breaded shrimp",
+        72: "Frozen chicken burger",
+        77: "Frozen fish cakes",
+        78: "Frozen fish fillets",
+        83: "Frozen meatballs",
+        87: "Frozen pizza",
+        88: "Frozen pot pie",
+        89: "Frozen pot stickers",
+        91: "Frozen shrimp"
+      };
+      if (clearerNames[originalId]) food.name = clearerNames[originalId];
       if (universityExact.has(originalId)) food.crossReference = university;
       else if (chefExact.has(originalId)) food.crossReference = chef;
       // "Cross-reference" means a corresponding food/time/temp appears in the
