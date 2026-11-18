@@ -58,7 +58,82 @@
     }
     return food.name;
   }
-  // Beef-only photographic pilot; all other food cards keep their original layout.
+
+  // Visual catalog: one 4-column atlas, grouped by category (8 illustrations each).
+  // A photo is intentionally omitted when no food-accurate illustration exists.
+  function foodPhotoIndex(food) {
+    const n = food.name.toLowerCase();
+    const match = rules => {
+      for (const [re, idx] of rules) if (re.test(n)) return idx;
+      return null;
+    };
+    switch (food.category) {
+      case "Poultry": return match([
+        [/duck/,7], [/whole chicken|game hen/,2], [/wing/,1],
+        [/drumstick|legs?/,4], [/tender|strip/,5],
+        [/breaded|cutlet/,6], [/meatball/,80], [/burger/,3],
+        [/breast|thigh|turkey|buffalo/,0]
+      ]);
+      case "Seafood": return match([
+        [/salmon/,8], [/coconut shrimp|breaded shrimp/,9],
+        [/shrimp|prawn/,9], [/crab cake|fish cake/,11],
+        [/tuna|swordfish/,12], [/lobster/,13], [/calamari/,14],
+        [/scallop/,15], [/fish|cod|tilapia|halibut|mahi/,10]
+      ]);
+      case "Vegetables": return match([
+        [/asparagus/,72], [/cauliflower/,73], [/carrot/,74],
+        [/corn/,75], [/green bean|snap pea|edamame/,76],
+        [/eggplant|aubergine/,77], [/onion|garlic/,78],
+        [/tomato/,79], [/broccoli/,16], [/brussel/,17],
+        [/sweet potato/,20], [/baked potato|potato \\(large\\)/,19],
+        [/potato|fries/,18], [/zucchini|courgette|summer squash/,21],
+        [/pepper/,22], [/mushroom|portobello/,23],
+        [/plant.based.*burger/,3], [/tofu/,null]
+      ]);
+      case "Frozen Foods": return match([
+        [/salmon/,8], [/breaded shrimp|frozen shrimp/,9],
+        [/chicken burger/,3], [/chicken nugget|popcorn chicken|chicken dipper/,26],
+        [/chicken strips/,5], [/buffalo wings|\\bwings\\b/,1],
+        [/fish cake|fish goujon|fish stick|fish fillet/,10],
+        [/meatball/,80], [/french toast/,46], [/sausage patt/,44],
+        [/hash brown/,27], [/fries|home fries|potato wedge/,24],
+        [/onion ring/,25], [/mozzarella|mac and cheese bites/,31],
+        [/tater tot|potato pops/,30], [/pizza|bagel bites/,28],
+        [/egg roll|spring roll/,29], [/taquito/,29],
+        [/mini quiche/,null], [/pastr|strudel/,48],
+        [/potato skin/,18], [/burrito/,69], [/hot pocket/,49]
+      ]);
+      case "Pork & Lamb": return match([
+        [/bacon/,33], [/kielbasa/,39], [/pork belly/,38],
+        [/pork tenderloin|roast/,35], [/ham steak/,37],
+        [/lamb/,36], [/chop|pork steak/,32],
+        [/bratwurst|sausage|hot dog/,34]
+      ]);
+      case "Breakfast": return match([
+        [/soft.boiled/,47], [/hard.boiled/,40], [/fried egg/,41],
+        [/scrambled egg/,42], [/waffle/,43],
+        [/sausage/,44], [/turkey bacon|bacon/,45]
+      ]);
+      case "Breads & Baking": return match([
+        [/crescent/,48], [/grilled cheese|texas toast/,49],
+        [/quesadilla/,50], [/nacho|pita chip/,51],
+        [/biscuit/,52], [/brownie/,53], [/cheesecake/,54],
+        [/muffin/,55], [/cinnamon apple/,56],
+        [/cake/,58], [/quick bread/,null]
+      ]);
+      case "Sweets": return match([
+        [/apple/,56], [/cake|cupcake/,61],
+        [/cookie/,60], [/donut/,59]
+      ]);
+      case "Reheating": return match([
+        [/pizza/,64], [/fries/,65], [/wing/,66],
+        [/steak/,67], [/egg roll/,68]
+      ]);
+      default: return null;
+    }
+  }
+
+  // The approved Beef images remain unchanged.
   function beefPhotoIndex(food) {
     const name = food.name.toLowerCase();
     if (/burger|patty/.test(name)) return 0;
@@ -72,12 +147,18 @@
   }
   function makeCard(food) {
     const article = make("article", "aft-result-card");
-    if (food.category === "Beef") {
+    const atlasIndex = food.category === "Beef" ? null : foodPhotoIndex(food);
+    if (food.category === "Beef" || atlasIndex !== null) {
       const headingRow = make("div", "aft-beef-heading");
       const labels = make("div", "aft-beef-heading-text");
       labels.append(make("span", "aft-result-category", food.category));
       labels.append(make("h3", "aft-result-name", headingFor(food)));
-      const photo = make("span", "aft-beef-photo aft-beef-photo-" + beefPhotoIndex(food));
+      const isBeef = food.category === "Beef";
+      const photo = make("span", isBeef
+        ? "aft-beef-photo aft-beef-photo-" + beefPhotoIndex(food)
+        : atlasIndex === 80
+          ? "aft-beef-photo aft-beef-photo-4"
+          : "aft-food-photo aft-food-photo-" + atlasIndex);
       photo.setAttribute("aria-hidden", "true");
       headingRow.append(labels, photo);
       article.append(headingRow);
