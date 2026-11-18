@@ -139,7 +139,7 @@
       food.safeTemp = "160°F (71°C) internal for pork/beef sausage; 165°F (74°C) for poultry sausage";
     }
     if (food.category === "Frozen Foods") {
-      if (/chicken|poultry/i.test(food.name)) {
+      if (/chicken|poultry|buffalo wings|turkey|duck/i.test(food.name)) {
         food.safeTemp = "Chicken and poultry must reach 165°F (74°C) internally; do not assume frozen breaded poultry is precooked";
       } else if (/meatball|meatloaf|beef|pork|sausage/i.test(food.name)) {
         food.safeTemp = "Follow package instructions; verify safe doneness (160°F for ground beef/pork, 165°F for poultry)";
