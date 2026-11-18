@@ -860,3 +860,9 @@ body{font-family:Arial,Helvetica,sans-serif}
 .aft-page .aft-product h2{font-size:1.28rem;line-height:1.2;margin:20px 0 10px}
 .aft-page .aft-product .product-amazon-button{width:auto;justify-content:center;font-size:inherit}
 @media(max-width:1020px){.aft-page .aft-layout{grid-template-columns:1fr}.aft-page .aft-sidebar{max-width:400px}}
+
+/* Reviewed reference details: show only when relevant to a food. */
+.aft-result-safe{margin:12px 0 0;padding:10px 11px;border-radius:8px;border:1px solid #d7e9d9;background:#f3faf4;font-size:.82rem;line-height:1.5;color:#254e33}
+.aft-result-safe strong{color:#18452a}
+.aft-result-model{font-size:.79rem;line-height:1.5;color:#52715c;font-weight:750;margin:10px 0 0}
+.aft-result-note{font-size:.82rem;line-height:1.5;color:#57534a;margin:8px 0 0}
