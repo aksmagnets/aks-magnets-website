@@ -1,0 +1,5219 @@
+{
+  "schema": "aks.airfryer.times.v1",
+  "created": "2026-11-18",
+  "audit": "internal-audits/air-fryer-audit-summary-2026-11-18.md",
+  "sourceVerification": "internal-audits/air-fryer-source-verification-2026-11-18.csv",
+  "methodology": "Cooking times are reference chart estimates, not independent test results. Original AKS entries have no individually documented upstream citation. Do not treat state or cut as known when source does not specify.",
+  "total": 217,
+  "active": 216,
+  "records": [
+    {
+      "id": "AF001",
+      "visible": true,
+      "food": "Beef eye round roast",
+      "category": "Beef",
+      "preparation": "4 lbs",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 390,
+        "celsiusRounded": 199
+      },
+      "estimatedMinutes": {
+        "min": 45,
+        "max": 55
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "145°F (63°C) internal, then rest 3 minutes for whole cuts",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF002",
+      "visible": true,
+      "food": "Burger",
+      "category": "Beef",
+      "preparation": "4 oz",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 370,
+        "celsiusRounded": 188
+      },
+      "estimatedMinutes": {
+        "min": 16,
+        "max": 20
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "160°F (71°C) internal for ground meat",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF003",
+      "visible": true,
+      "food": "Filet mignon",
+      "category": "Beef",
+      "preparation": "8 oz",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 14,
+        "max": 18
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "145°F (63°C) internal, then rest 3 minutes for whole cuts",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF004",
+      "visible": true,
+      "food": "Flank steak",
+      "category": "Beef",
+      "preparation": "1.5 lbs",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 10,
+        "max": 14
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "145°F (63°C) internal, then rest 3 minutes for whole cuts",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF005",
+      "visible": true,
+      "food": "London broil",
+      "category": "Beef",
+      "preparation": "2.5 lbs / 2 in",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 20,
+        "max": 28
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "145°F (63°C) internal, then rest 3 minutes for whole cuts",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF006",
+      "visible": true,
+      "food": "Meatballs (small)",
+      "category": "Beef",
+      "preparation": "1 in / single layer",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 380,
+        "celsiusRounded": 193
+      },
+      "estimatedMinutes": {
+        "min": 7,
+        "max": 7
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "160°F (71°C) internal for ground meat",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF007",
+      "visible": true,
+      "food": "Meatballs (large)",
+      "category": "Beef",
+      "preparation": "3 in / single layer",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 380,
+        "celsiusRounded": 193
+      },
+      "estimatedMinutes": {
+        "min": 11,
+        "max": 11
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "160°F (71°C) internal for ground meat",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF008",
+      "visible": true,
+      "food": "Rib eye (bone-in)",
+      "category": "Beef",
+      "preparation": "8 oz / 1 in",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 10,
+        "max": 15
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "145°F (63°C) internal, then rest 3 minutes for whole cuts",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF009",
+      "visible": true,
+      "food": "Sirloin steak",
+      "category": "Beef",
+      "preparation": "12 oz / 1 in",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 10,
+        "max": 15
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "145°F (63°C) internal, then rest 3 minutes for whole cuts",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF010",
+      "visible": true,
+      "food": "Baby back ribs",
+      "category": "Pork & Lamb",
+      "preparation": "4–5 sections",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 25,
+        "max": 30
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "145°F (63°C) internal, then rest 3 minutes for whole cuts",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF011",
+      "visible": true,
+      "food": "Bacon (regular)",
+      "category": "Pork & Lamb",
+      "preparation": "Single layer",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 5,
+        "max": 7
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "Check package directions and whether the product is precooked",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF012",
+      "visible": true,
+      "food": "Bacon (thick cut)",
+      "category": "Pork & Lamb",
+      "preparation": "Single layer",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 6,
+        "max": 10
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "Check package directions and whether the product is precooked",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF013",
+      "visible": true,
+      "food": "Ham steaks",
+      "category": "Pork & Lamb",
+      "preparation": "Single layer",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 380,
+        "celsiusRounded": 193
+      },
+      "estimatedMinutes": {
+        "min": 10,
+        "max": 12
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "Check package directions and whether the product is precooked",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF014",
+      "visible": true,
+      "food": "Hot dogs",
+      "category": "Pork & Lamb",
+      "preparation": "Single layer",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 390,
+        "celsiusRounded": 199
+      },
+      "estimatedMinutes": {
+        "min": 4,
+        "max": 5
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "Check package directions and whether the product is precooked",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF015",
+      "visible": true,
+      "food": "Lamb loin chops",
+      "category": "Pork & Lamb",
+      "preparation": "1 in",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 6,
+        "max": 12
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "145°F (63°C) internal, then rest 3 minutes for whole cuts",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF016",
+      "visible": true,
+      "food": "Pork chops (bone-in)",
+      "category": "Pork & Lamb",
+      "preparation": "1 in",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 12,
+        "max": 15
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "145°F (63°C) internal, then rest 3 minutes for whole cuts",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF017",
+      "visible": true,
+      "food": "Pork chops (boneless)",
+      "category": "Pork & Lamb",
+      "preparation": "1 in",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 375,
+        "celsiusRounded": 191
+      },
+      "estimatedMinutes": {
+        "min": 9,
+        "max": 12
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "145°F (63°C) internal, then rest 3 minutes for whole cuts",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF018",
+      "visible": false,
+      "food": "Pork loin",
+      "category": "Pork & Lamb",
+      "preparation": "1 in",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 55,
+        "max": 55
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": "Pork loin cut described as 1-inch with 55 minutes; unsupported prep/time combination"
+    },
+    {
+      "id": "AF019",
+      "visible": true,
+      "food": "Pork sausage",
+      "category": "Pork & Lamb",
+      "preparation": "Single layer",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 380,
+        "celsiusRounded": 193
+      },
+      "estimatedMinutes": {
+        "min": 15,
+        "max": 15
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "160°F (71°C) internal for ground meat",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF020",
+      "visible": true,
+      "food": "Pork tenderloin",
+      "category": "Pork & Lamb",
+      "preparation": "1.5 lbs",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 380,
+        "celsiusRounded": 193
+      },
+      "estimatedMinutes": {
+        "min": 15,
+        "max": 20
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "145°F (63°C) internal, then rest 3 minutes for whole cuts",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF021",
+      "visible": true,
+      "food": "Rack of lamb",
+      "category": "Pork & Lamb",
+      "preparation": "1.5–2 lbs",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 22,
+        "max": 22
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "145°F (63°C) internal, then rest 3 minutes for whole cuts",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF022",
+      "visible": true,
+      "food": "Breast (bone-in)",
+      "category": "Poultry",
+      "preparation": "1.25 lbs",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 370,
+        "celsiusRounded": 188
+      },
+      "estimatedMinutes": {
+        "min": 25,
+        "max": 25
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "165°F (74°C) internal",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF023",
+      "visible": true,
+      "food": "Breast (boneless)",
+      "category": "Poultry",
+      "preparation": "4 oz",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 380,
+        "celsiusRounded": 193
+      },
+      "estimatedMinutes": {
+        "min": 12,
+        "max": 12
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "165°F (74°C) internal",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF024",
+      "visible": true,
+      "food": "Drumsticks",
+      "category": "Poultry",
+      "preparation": "2.5 lbs",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 370,
+        "celsiusRounded": 188
+      },
+      "estimatedMinutes": {
+        "min": 20,
+        "max": 20
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "165°F (74°C) internal",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF025",
+      "visible": true,
+      "food": "Game hen",
+      "category": "Poultry",
+      "preparation": "Halved / 2 lbs",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 390,
+        "celsiusRounded": 199
+      },
+      "estimatedMinutes": {
+        "min": 20,
+        "max": 20
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "165°F (74°C) internal",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF026",
+      "visible": true,
+      "food": "Legs (bone-in)",
+      "category": "Poultry",
+      "preparation": "1.75 lbs",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 380,
+        "celsiusRounded": 193
+      },
+      "estimatedMinutes": {
+        "min": 30,
+        "max": 30
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "165°F (74°C) internal",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF027",
+      "visible": true,
+      "food": "Tenders",
+      "category": "Poultry",
+      "preparation": "Single layer",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 360,
+        "celsiusRounded": 182
+      },
+      "estimatedMinutes": {
+        "min": 8,
+        "max": 10
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "165°F (74°C) internal",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF028",
+      "visible": true,
+      "food": "Thighs (bone-in)",
+      "category": "Poultry",
+      "preparation": "2 lbs",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 380,
+        "celsiusRounded": 193
+      },
+      "estimatedMinutes": {
+        "min": 22,
+        "max": 22
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "165°F (74°C) internal",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF029",
+      "visible": true,
+      "food": "Thighs (boneless)",
+      "category": "Poultry",
+      "preparation": "1.5 lbs",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 380,
+        "celsiusRounded": 193
+      },
+      "estimatedMinutes": {
+        "min": 18,
+        "max": 20
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "165°F (74°C) internal",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF030",
+      "visible": true,
+      "food": "Turkey breast",
+      "category": "Poultry",
+      "preparation": "3 lbs",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 360,
+        "celsiusRounded": 182
+      },
+      "estimatedMinutes": {
+        "min": 40,
+        "max": 50
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "165°F (74°C) internal",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF031",
+      "visible": true,
+      "food": "Whole chicken",
+      "category": "Poultry",
+      "preparation": "6.5 lbs",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 360,
+        "celsiusRounded": 182
+      },
+      "estimatedMinutes": {
+        "min": 75,
+        "max": 75
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "165°F (74°C) internal",
+      "preparationNote": "Large bird: check that your air fryer can safely accommodate 6.5 lb with room for airflow.",
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF032",
+      "visible": true,
+      "food": "Wings",
+      "category": "Poultry",
+      "preparation": "2 lbs",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 12,
+        "max": 12
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "165°F (74°C) internal",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF033",
+      "visible": true,
+      "food": "Asparagus",
+      "category": "Vegetables",
+      "preparation": "3 layers max.",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 5,
+        "max": 5
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF034",
+      "visible": true,
+      "food": "Beets",
+      "category": "Vegetables",
+      "preparation": "Whole",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 40,
+        "max": 40
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF035",
+      "visible": true,
+      "food": "Broccoli",
+      "category": "Vegetables",
+      "preparation": "Florets",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 6,
+        "max": 6
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF036",
+      "visible": true,
+      "food": "Brussels sprouts",
+      "category": "Vegetables",
+      "preparation": "Halved",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 380,
+        "celsiusRounded": 193
+      },
+      "estimatedMinutes": {
+        "min": 15,
+        "max": 15
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF037",
+      "visible": true,
+      "food": "Cabbage wedges",
+      "category": "Vegetables",
+      "preparation": "1 in thick / single layer",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 375,
+        "celsiusRounded": 191
+      },
+      "estimatedMinutes": {
+        "min": 8,
+        "max": 10
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF038",
+      "visible": true,
+      "food": "Carrots",
+      "category": "Vegetables",
+      "preparation": "1/2 in",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 380,
+        "celsiusRounded": 193
+      },
+      "estimatedMinutes": {
+        "min": 15,
+        "max": 15
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF039",
+      "visible": true,
+      "food": "Cauliflower",
+      "category": "Vegetables",
+      "preparation": "Florets",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 12,
+        "max": 12
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF040",
+      "visible": true,
+      "food": "Corn on the cob",
+      "category": "Vegetables",
+      "preparation": "To max. fill line",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 390,
+        "celsiusRounded": 199
+      },
+      "estimatedMinutes": {
+        "min": 6,
+        "max": 6
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF041",
+      "visible": true,
+      "food": "Eggplant",
+      "category": "Vegetables",
+      "preparation": "1.5 in cubes",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 15,
+        "max": 15
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF042",
+      "visible": true,
+      "food": "Green beans",
+      "category": "Vegetables",
+      "preparation": "3 layers max.",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 5,
+        "max": 5
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF043",
+      "visible": true,
+      "food": "Kale",
+      "category": "Vegetables",
+      "preparation": "To max. fill line",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 250,
+        "celsiusRounded": 121
+      },
+      "estimatedMinutes": {
+        "min": 12,
+        "max": 12
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF044",
+      "visible": true,
+      "food": "Mushrooms",
+      "category": "Vegetables",
+      "preparation": "1/4 in slices",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 5,
+        "max": 5
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF045",
+      "visible": true,
+      "food": "Okra",
+      "category": "Vegetables",
+      "preparation": "8 oz / halved lengthwise",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 14,
+        "max": 15
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF046",
+      "visible": true,
+      "food": "Onions (pearl)",
+      "category": "Vegetables",
+      "preparation": "Single layer",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 380,
+        "celsiusRounded": 193
+      },
+      "estimatedMinutes": {
+        "min": 10,
+        "max": 10
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF047",
+      "visible": true,
+      "food": "Radishes",
+      "category": "Vegetables",
+      "preparation": "16 oz / halved",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 13,
+        "max": 13
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF048",
+      "visible": true,
+      "food": "Parsnips",
+      "category": "Vegetables",
+      "preparation": "1/2 in chunks",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 380,
+        "celsiusRounded": 193
+      },
+      "estimatedMinutes": {
+        "min": 15,
+        "max": 15
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF049",
+      "visible": true,
+      "food": "Peppers",
+      "category": "Vegetables",
+      "preparation": "1 in chunks",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 15,
+        "max": 15
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF050",
+      "visible": true,
+      "food": "Potato wedges",
+      "category": "Vegetables",
+      "preparation": "3 layers max.",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 360,
+        "celsiusRounded": 182
+      },
+      "estimatedMinutes": {
+        "min": 18,
+        "max": 22
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF051",
+      "visible": true,
+      "food": "Potatoes",
+      "category": "Vegetables",
+      "preparation": "1 in chunks",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 15,
+        "max": 15
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF052",
+      "visible": true,
+      "food": "Potatoes",
+      "category": "Vegetables",
+      "preparation": "Small – baby",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 15,
+        "max": 15
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF053",
+      "visible": true,
+      "food": "Potatoes",
+      "category": "Vegetables",
+      "preparation": "Whole",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 40,
+        "max": 40
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF054",
+      "visible": true,
+      "food": "Sugar snap peas",
+      "category": "Vegetables",
+      "preparation": "1 lb / trimmed",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 390,
+        "celsiusRounded": 199
+      },
+      "estimatedMinutes": {
+        "min": 16,
+        "max": 16
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF055",
+      "visible": true,
+      "food": "Squash",
+      "category": "Vegetables",
+      "preparation": "1/2 in chunks",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 12,
+        "max": 12
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF056",
+      "visible": true,
+      "food": "Sweet potato",
+      "category": "Vegetables",
+      "preparation": "Whole",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 380,
+        "celsiusRounded": 193
+      },
+      "estimatedMinutes": {
+        "min": 30,
+        "max": 35
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF057",
+      "visible": true,
+      "food": "Tomatoes (cherry)",
+      "category": "Vegetables",
+      "preparation": "Single layer",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 4,
+        "max": 4
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF058",
+      "visible": true,
+      "food": "Tomatoes (sliced)",
+      "category": "Vegetables",
+      "preparation": "Halved",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 350,
+        "celsiusRounded": 177
+      },
+      "estimatedMinutes": {
+        "min": 10,
+        "max": 10
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF059",
+      "visible": true,
+      "food": "Zucchini",
+      "category": "Vegetables",
+      "preparation": "1/2 in sticks",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 12,
+        "max": 12
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF060",
+      "visible": true,
+      "food": "Breaded white fish",
+      "category": "Seafood",
+      "preparation": "Single layer",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 360,
+        "celsiusRounded": 182
+      },
+      "estimatedMinutes": {
+        "min": 15,
+        "max": 15
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "145°F (63°C) internal for fish, or opaque and flakes easily",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF061",
+      "visible": true,
+      "food": "Calamari",
+      "category": "Seafood",
+      "preparation": "0.5 lbs",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 4,
+        "max": 4
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "Cook shellfish until opaque and fully cooked",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF062",
+      "visible": true,
+      "food": "Fish cake",
+      "category": "Seafood",
+      "preparation": "Single layer",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 360,
+        "celsiusRounded": 182
+      },
+      "estimatedMinutes": {
+        "min": 15,
+        "max": 15
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "145°F (63°C) internal for fish, or opaque and flakes easily",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF063",
+      "visible": true,
+      "food": "Fish fillet",
+      "category": "Seafood",
+      "preparation": "0.5 lbs / 1 in",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 10,
+        "max": 10
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "145°F (63°C) internal for fish, or opaque and flakes easily",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF064",
+      "visible": true,
+      "food": "Lobster tails",
+      "category": "Seafood",
+      "preparation": "4 oz",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 380,
+        "celsiusRounded": 193
+      },
+      "estimatedMinutes": {
+        "min": 5,
+        "max": 7
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "Cook shellfish until opaque and fully cooked",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF065",
+      "visible": true,
+      "food": "Salmon fillet",
+      "category": "Seafood",
+      "preparation": "6 oz",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 380,
+        "celsiusRounded": 193
+      },
+      "estimatedMinutes": {
+        "min": 12,
+        "max": 12
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "145°F (63°C) internal for fish, or opaque and flakes easily",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF066",
+      "visible": true,
+      "food": "Scallops",
+      "category": "Seafood",
+      "preparation": "Single layer",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 5,
+        "max": 7
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "Cook shellfish until opaque and fully cooked",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF067",
+      "visible": true,
+      "food": "Shrimp",
+      "category": "Seafood",
+      "preparation": "Large",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 5,
+        "max": 5
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "Cook shellfish until opaque and fully cooked",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF068",
+      "visible": true,
+      "food": "Swordfish steak",
+      "category": "Seafood",
+      "preparation": "1.5 in",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 10,
+        "max": 10
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "145°F (63°C) internal for fish, or opaque and flakes easily",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF069",
+      "visible": true,
+      "food": "Tilapia",
+      "category": "Seafood",
+      "preparation": "Single layer",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 8,
+        "max": 12
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "145°F (63°C) internal for fish, or opaque and flakes easily",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF070",
+      "visible": true,
+      "food": "Tuna steak",
+      "category": "Seafood",
+      "preparation": "1.5 in",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 7,
+        "max": 10
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "145°F (63°C) internal for fish, or opaque and flakes easily",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF071",
+      "visible": true,
+      "food": "Breaded shrimp",
+      "category": "Frozen Foods",
+      "preparation": "3 layers max.",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 9,
+        "max": 9
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Follow the package directions and verify any required internal temperature.",
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF072",
+      "visible": true,
+      "food": "Chicken burger",
+      "category": "Frozen Foods",
+      "preparation": "Single layer",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 360,
+        "celsiusRounded": 182
+      },
+      "estimatedMinutes": {
+        "min": 11,
+        "max": 11
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Follow the package directions and verify any required internal temperature.",
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF073",
+      "visible": true,
+      "food": "Chicken nuggets",
+      "category": "Frozen Foods",
+      "preparation": "3 layers max.",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 10,
+        "max": 10
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Follow the package directions and verify any required internal temperature.",
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF074",
+      "visible": true,
+      "food": "Chicken strips",
+      "category": "Frozen Foods",
+      "preparation": "3 layers max.",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 12,
+        "max": 12
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Follow the package directions and verify any required internal temperature.",
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF075",
+      "visible": true,
+      "food": "Corn dogs",
+      "category": "Frozen Foods",
+      "preparation": "Single layer",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 7,
+        "max": 7
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Follow the package directions and verify any required internal temperature.",
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF076",
+      "visible": true,
+      "food": "Curly fries",
+      "category": "Frozen Foods",
+      "preparation": "1–2 lbs",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 11,
+        "max": 14
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Follow the package directions and verify any required internal temperature.",
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF077",
+      "visible": true,
+      "food": "Fish cakes",
+      "category": "Frozen Foods",
+      "preparation": "1–4 patties",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 360,
+        "celsiusRounded": 182
+      },
+      "estimatedMinutes": {
+        "min": 11,
+        "max": 11
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Follow the package directions and verify any required internal temperature.",
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF078",
+      "visible": true,
+      "food": "Fish fillets",
+      "category": "Frozen Foods",
+      "preparation": "1/2 in / 10 oz",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 14,
+        "max": 14
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Follow the package directions and verify any required internal temperature.",
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF079",
+      "visible": true,
+      "food": "Fish sticks",
+      "category": "Frozen Foods",
+      "preparation": "10 oz",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 10,
+        "max": 10
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Follow the package directions and verify any required internal temperature.",
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF080",
+      "visible": true,
+      "food": "French fries (thick)",
+      "category": "Frozen Foods",
+      "preparation": "1–2 lbs",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 380,
+        "celsiusRounded": 193
+      },
+      "estimatedMinutes": {
+        "min": 15,
+        "max": 20
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Follow the package directions and verify any required internal temperature.",
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF081",
+      "visible": true,
+      "food": "French fries (thin)",
+      "category": "Frozen Foods",
+      "preparation": "1–2 lbs",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 390,
+        "celsiusRounded": 199
+      },
+      "estimatedMinutes": {
+        "min": 10,
+        "max": 14
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Follow the package directions and verify any required internal temperature.",
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF082",
+      "visible": true,
+      "food": "Hash browns (patty)",
+      "category": "Frozen Foods",
+      "preparation": "Single layer",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 360,
+        "celsiusRounded": 182
+      },
+      "estimatedMinutes": {
+        "min": 15,
+        "max": 18
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Follow the package directions and verify any required internal temperature.",
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF083",
+      "visible": true,
+      "food": "Meatballs",
+      "category": "Frozen Foods",
+      "preparation": "3 layers max.",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 380,
+        "celsiusRounded": 193
+      },
+      "estimatedMinutes": {
+        "min": 6,
+        "max": 8
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Follow the package directions and verify any required internal temperature.",
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF084",
+      "visible": true,
+      "food": "Meatloaf",
+      "category": "Frozen Foods",
+      "preparation": "Single layer",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 350,
+        "celsiusRounded": 177
+      },
+      "estimatedMinutes": {
+        "min": 35,
+        "max": 40
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Follow the package directions and verify any required internal temperature.",
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF085",
+      "visible": true,
+      "food": "Mozzarella sticks",
+      "category": "Frozen Foods",
+      "preparation": "3 layers max.",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 8,
+        "max": 8
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Follow the package directions and verify any required internal temperature.",
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF086",
+      "visible": true,
+      "food": "Onion rings",
+      "category": "Frozen Foods",
+      "preparation": "8 oz",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 8,
+        "max": 8
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Follow the package directions and verify any required internal temperature.",
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF087",
+      "visible": true,
+      "food": "Pizza",
+      "category": "Frozen Foods",
+      "preparation": "Single layer",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 390,
+        "celsiusRounded": 199
+      },
+      "estimatedMinutes": {
+        "min": 5,
+        "max": 10
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Follow the package directions and verify any required internal temperature.",
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF088",
+      "visible": true,
+      "food": "Pot pie",
+      "category": "Frozen Foods",
+      "preparation": "1–2 pies",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 360,
+        "celsiusRounded": 182
+      },
+      "estimatedMinutes": {
+        "min": 25,
+        "max": 25
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Follow the package directions and verify any required internal temperature.",
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF089",
+      "visible": true,
+      "food": "Pot stickers",
+      "category": "Frozen Foods",
+      "preparation": "10 oz",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 8,
+        "max": 8
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Follow the package directions and verify any required internal temperature.",
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF090",
+      "visible": true,
+      "food": "Sausage rolls",
+      "category": "Frozen Foods",
+      "preparation": "Single layer",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 15,
+        "max": 15
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Follow the package directions and verify any required internal temperature.",
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF091",
+      "visible": true,
+      "food": "Shrimp",
+      "category": "Frozen Foods",
+      "preparation": "3 layers max.",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 390,
+        "celsiusRounded": 199
+      },
+      "estimatedMinutes": {
+        "min": 8,
+        "max": 8
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Follow the package directions and verify any required internal temperature.",
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF092",
+      "visible": true,
+      "food": "Spring rolls",
+      "category": "Frozen Foods",
+      "preparation": "Single layer",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 15,
+        "max": 20
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Follow the package directions and verify any required internal temperature.",
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF093",
+      "visible": true,
+      "food": "Tater tots",
+      "category": "Frozen Foods",
+      "preparation": "Single layer",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 13,
+        "max": 15
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Follow the package directions and verify any required internal temperature.",
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF094",
+      "visible": true,
+      "food": "Apple chips",
+      "category": "Sweets",
+      "preparation": "Thin slices",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 360,
+        "celsiusRounded": 182
+      },
+      "estimatedMinutes": {
+        "min": 14,
+        "max": 14
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF095",
+      "visible": true,
+      "food": "Churros",
+      "category": "Sweets",
+      "preparation": "Single layer",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 360,
+        "celsiusRounded": 182
+      },
+      "estimatedMinutes": {
+        "min": 13,
+        "max": 13
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF096",
+      "visible": true,
+      "food": "Cinnamon rolls",
+      "category": "Sweets",
+      "preparation": "Single layer",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 360,
+        "celsiusRounded": 182
+      },
+      "estimatedMinutes": {
+        "min": 9,
+        "max": 9
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF097",
+      "visible": true,
+      "food": "Cookies",
+      "category": "Sweets",
+      "preparation": "Single layer",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 350,
+        "celsiusRounded": 177
+      },
+      "estimatedMinutes": {
+        "min": 5,
+        "max": 5
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF098",
+      "visible": true,
+      "food": "Cupcakes",
+      "category": "Sweets",
+      "preparation": "Single layer",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 330,
+        "celsiusRounded": 166
+      },
+      "estimatedMinutes": {
+        "min": 11,
+        "max": 11
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF099",
+      "visible": true,
+      "food": "Donuts",
+      "category": "Sweets",
+      "preparation": "Single layer",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 360,
+        "celsiusRounded": 182
+      },
+      "estimatedMinutes": {
+        "min": 4,
+        "max": 5
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF100",
+      "visible": true,
+      "food": "Roasted bananas",
+      "category": "Sweets",
+      "preparation": "1/8 in slices",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 375,
+        "celsiusRounded": 191
+      },
+      "estimatedMinutes": {
+        "min": 7,
+        "max": 8
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://aksmagnets.com/guides/air-fryer-cooking-times/",
+      "verification": "original-aks-chart-upstream-untraced",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF101",
+      "visible": true,
+      "food": "Frozen burger patties (3/4-inch)",
+      "category": "Beef",
+      "preparation": "Frozen, 3/4-inch patty",
+      "startingState": "frozen",
+      "temperature": {
+        "fahrenheit": 380,
+        "celsiusRounded": 193
+      },
+      "estimatedMinutes": {
+        "min": 12,
+        "max": 16
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "160°F (71°C) internal for ground meat",
+      "preparationNote": null,
+      "sourceContext": "Preheated 5–6 qt basket; single layer.",
+      "source": "https://airfryerkitchen.com/air-fryer-cooking-times-chart/",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF102",
+      "visible": true,
+      "food": "Beef steak bites",
+      "category": "Beef",
+      "preparation": "1-inch beef cubes",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 6,
+        "max": 9
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "145°F (63°C) internal, then rest 3 minutes for whole cuts",
+      "preparationNote": null,
+      "sourceContext": "Preheated 5–6 qt basket; single layer.",
+      "source": "https://airfryerkitchen.com/air-fryer-cooking-times-chart/",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF103",
+      "visible": true,
+      "food": "Cube steak",
+      "category": "Beef",
+      "preparation": "Single steak",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 8,
+        "max": 10
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "145°F (63°C) internal, then rest 3 minutes for whole cuts",
+      "preparationNote": null,
+      "sourceContext": "Preheated 5–6 qt basket; single layer.",
+      "source": "https://airfryerkitchen.com/air-fryer-cooking-times-chart/",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF104",
+      "visible": true,
+      "food": "Tri-tip roast",
+      "category": "Beef",
+      "preparation": "1.5–2 lb",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 20,
+        "max": 30
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "145°F (63°C) internal, then rest 3 minutes for whole cuts",
+      "preparationNote": null,
+      "sourceContext": "Preheated 5–6 qt basket; single layer.",
+      "source": "https://airfryerkitchen.com/air-fryer-cooking-times-chart/",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF105",
+      "visible": true,
+      "food": "Frozen steak",
+      "category": "Beef",
+      "preparation": "Frozen, 1-inch steak",
+      "startingState": "frozen",
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 18,
+        "max": 22
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "145°F (63°C) internal, then rest 3 minutes for whole cuts",
+      "preparationNote": null,
+      "sourceContext": "Preheated 5–6 qt basket; single layer.",
+      "source": "https://airfryerkitchen.com/air-fryer-cooking-times-chart/",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF106",
+      "visible": true,
+      "food": "Smoked kielbasa",
+      "category": "Pork & Lamb",
+      "preparation": "Precooked sausage, sliced",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 6,
+        "max": 10
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "Check package directions and whether the product is precooked",
+      "preparationNote": null,
+      "sourceContext": "Preheated 5–6 qt basket; single layer.",
+      "source": "https://airfryerkitchen.com/air-fryer-cooking-times-chart/",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF107",
+      "visible": true,
+      "food": "Bratwurst (raw)",
+      "category": "Pork & Lamb",
+      "preparation": "Raw sausage links",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 360,
+        "celsiusRounded": 182
+      },
+      "estimatedMinutes": {
+        "min": 14,
+        "max": 18
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "160°F (71°C) internal for ground meat",
+      "preparationNote": null,
+      "sourceContext": "Preheated 5–6 qt basket; single layer.",
+      "source": "https://airfryerkitchen.com/air-fryer-cooking-times-chart/",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF108",
+      "visible": true,
+      "food": "Breakfast sausage patties",
+      "category": "Breakfast",
+      "preparation": "Fresh patties",
+      "startingState": "fresh",
+      "temperature": {
+        "fahrenheit": 380,
+        "celsiusRounded": 193
+      },
+      "estimatedMinutes": {
+        "min": 8,
+        "max": 10
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "160°F (71°C) internal for pork/beef sausage; 165°F (74°C) for poultry sausage",
+      "preparationNote": null,
+      "sourceContext": "Preheated 5–6 qt basket; single layer.",
+      "source": "https://airfryerkitchen.com/air-fryer-cooking-times-chart/",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF109",
+      "visible": true,
+      "food": "Turkey breast (bone-in)",
+      "category": "Poultry",
+      "preparation": "3–4 lb turkey breast",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 350,
+        "celsiusRounded": 177
+      },
+      "estimatedMinutes": {
+        "min": 50,
+        "max": 65
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "165°F (74°C) internal",
+      "preparationNote": null,
+      "sourceContext": "Preheated 5–6 qt basket; single layer.",
+      "source": "https://airfryerkitchen.com/air-fryer-cooking-times-chart/",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF110",
+      "visible": true,
+      "food": "Turkey breast cutlets",
+      "category": "Poultry",
+      "preparation": "1/4-inch turkey cutlets",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 380,
+        "celsiusRounded": 193
+      },
+      "estimatedMinutes": {
+        "min": 6,
+        "max": 8
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "165°F (74°C) internal",
+      "preparationNote": null,
+      "sourceContext": "Preheated 5–6 qt basket; single layer.",
+      "source": "https://airfryerkitchen.com/air-fryer-cooking-times-chart/",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF111",
+      "visible": true,
+      "food": "Turkey tenderloin",
+      "category": "Poultry",
+      "preparation": "Turkey tenderloin",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 375,
+        "celsiusRounded": 191
+      },
+      "estimatedMinutes": {
+        "min": 20,
+        "max": 25
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "165°F (74°C) internal",
+      "preparationNote": null,
+      "sourceContext": "Preheated 5–6 qt basket; single layer.",
+      "source": "https://airfryerkitchen.com/air-fryer-cooking-times-chart/",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF112",
+      "visible": true,
+      "food": "Turkey meatballs",
+      "category": "Poultry",
+      "preparation": "Turkey meatballs, single layer",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 380,
+        "celsiusRounded": 193
+      },
+      "estimatedMinutes": {
+        "min": 10,
+        "max": 12
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "165°F (74°C) internal",
+      "preparationNote": null,
+      "sourceContext": "Preheated 5–6 qt basket; single layer.",
+      "source": "https://airfryerkitchen.com/air-fryer-cooking-times-chart/",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF113",
+      "visible": true,
+      "food": "Turkey bacon",
+      "category": "Breakfast",
+      "preparation": "Refrigerated strips",
+      "startingState": "refrigerated",
+      "temperature": {
+        "fahrenheit": 360,
+        "celsiusRounded": 182
+      },
+      "estimatedMinutes": {
+        "min": 8,
+        "max": 10
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": "Preheated 5–6 qt basket; single layer.",
+      "source": "https://airfryerkitchen.com/air-fryer-cooking-times-chart/",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF114",
+      "visible": true,
+      "food": "Frozen salmon fillet",
+      "category": "Seafood",
+      "preparation": "Frozen salmon portion",
+      "startingState": "frozen",
+      "temperature": {
+        "fahrenheit": 390,
+        "celsiusRounded": 199
+      },
+      "estimatedMinutes": {
+        "min": 12,
+        "max": 15
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "145°F (63°C) internal for fish, or opaque and flakes easily",
+      "preparationNote": null,
+      "sourceContext": "Preheated 5–6 qt basket; single layer.",
+      "source": "https://airfryerkitchen.com/air-fryer-cooking-times-chart/",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF115",
+      "visible": true,
+      "food": "Tuna steak",
+      "category": "Seafood",
+      "preparation": "1-inch ahi/yellowfin steak",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 4,
+        "max": 6
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "145°F (63°C) internal for fish, or opaque and flakes easily",
+      "preparationNote": null,
+      "sourceContext": "Preheated 5–6 qt basket; single layer.",
+      "source": "https://airfryerkitchen.com/air-fryer-cooking-times-chart/",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF116",
+      "visible": true,
+      "food": "Mahi mahi fillet",
+      "category": "Seafood",
+      "preparation": "Single fillet",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 10,
+        "max": 12
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "145°F (63°C) internal for fish, or opaque and flakes easily",
+      "preparationNote": null,
+      "sourceContext": "Preheated 5–6 qt basket; single layer.",
+      "source": "https://airfryerkitchen.com/air-fryer-cooking-times-chart/",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF117",
+      "visible": true,
+      "food": "Crab cakes",
+      "category": "Seafood",
+      "preparation": "Prepared patties",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 375,
+        "celsiusRounded": 191
+      },
+      "estimatedMinutes": {
+        "min": 10,
+        "max": 12
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "Cook shellfish until opaque and fully cooked",
+      "preparationNote": null,
+      "sourceContext": "Preheated 5–6 qt basket; single layer.",
+      "source": "https://airfryerkitchen.com/air-fryer-cooking-times-chart/",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF118",
+      "visible": true,
+      "food": "Red potatoes (quartered)",
+      "category": "Vegetables",
+      "preparation": "Red potatoes, quartered",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 18,
+        "max": 22
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": "Preheated 5–6 qt basket; single layer.",
+      "source": "https://airfryerkitchen.com/air-fryer-cooking-times-chart/",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF119",
+      "visible": true,
+      "food": "Roasted baby potatoes",
+      "category": "Vegetables",
+      "preparation": "Halved baby potatoes",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 15,
+        "max": 20
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": "Preheated 5–6 qt basket; single layer.",
+      "source": "https://airfryerkitchen.com/air-fryer-cooking-times-chart/",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF120",
+      "visible": true,
+      "food": "Sweet potato cubes",
+      "category": "Vegetables",
+      "preparation": "Fresh, 1-inch cubes",
+      "startingState": "fresh",
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 15,
+        "max": 18
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": "Preheated 5–6 qt basket; single layer.",
+      "source": "https://airfryerkitchen.com/air-fryer-cooking-times-chart/",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF121",
+      "visible": true,
+      "food": "Roasted chickpeas",
+      "category": "Vegetables",
+      "preparation": "Canned, drained and dried",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 390,
+        "celsiusRounded": 199
+      },
+      "estimatedMinutes": {
+        "min": 12,
+        "max": 15
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": "Preheated 5–6 qt basket; single layer.",
+      "source": "https://airfryerkitchen.com/air-fryer-cooking-times-chart/",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF122",
+      "visible": true,
+      "food": "Frozen hash brown patties",
+      "category": "Frozen Foods",
+      "preparation": "Frozen patties",
+      "startingState": "frozen",
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 10,
+        "max": 12
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Follow the package directions and verify any required internal temperature.",
+      "sourceContext": "Preheated 5–6 qt basket; single layer.",
+      "source": "https://airfryerkitchen.com/air-fryer-cooking-times-chart/",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF123",
+      "visible": true,
+      "food": "Soft-boiled eggs (in shell)",
+      "category": "Breakfast",
+      "preparation": "Eggs in shells; chill afterward",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 270,
+        "celsiusRounded": 132
+      },
+      "estimatedMinutes": {
+        "min": 9,
+        "max": 11
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Soft yolks do not meet the general U.S. recommendation to cook eggs until whites and yolks are firm. Higher-risk diners should avoid undercooked eggs.",
+      "sourceContext": "Preheated 5–6 qt basket; single layer.",
+      "source": "https://airfryerkitchen.com/air-fryer-cooking-times-chart/",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF124",
+      "visible": true,
+      "food": "Hard-boiled eggs (in shell)",
+      "category": "Breakfast",
+      "preparation": "Eggs in shells; chill afterward",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 270,
+        "celsiusRounded": 132
+      },
+      "estimatedMinutes": {
+        "min": 15,
+        "max": 17
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": "Preheated 5–6 qt basket; single layer.",
+      "source": "https://airfryerkitchen.com/air-fryer-cooking-times-chart/",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF125",
+      "visible": true,
+      "food": "Fried eggs (air fryer)",
+      "category": "Breakfast",
+      "preparation": "In greased oven-safe dish",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 370,
+        "celsiusRounded": 188
+      },
+      "estimatedMinutes": {
+        "min": 5,
+        "max": 7
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "Cook egg dishes to 160°F (71°C); whole eggs until firm",
+      "preparationNote": null,
+      "sourceContext": "Preheated 5–6 qt basket; single layer.",
+      "source": "https://airfryerkitchen.com/air-fryer-cooking-times-chart/",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF126",
+      "visible": true,
+      "food": "Scrambled eggs",
+      "category": "Breakfast",
+      "preparation": "In greased oven-safe dish; stir",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 300,
+        "celsiusRounded": 149
+      },
+      "estimatedMinutes": {
+        "min": 8,
+        "max": 10
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "Cook egg dishes to 160°F (71°C); whole eggs until firm",
+      "preparationNote": null,
+      "sourceContext": "Preheated 5–6 qt basket; single layer.",
+      "source": "https://airfryerkitchen.com/air-fryer-cooking-times-chart/",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF127",
+      "visible": true,
+      "food": "Frozen French toast sticks",
+      "category": "Frozen Foods",
+      "preparation": "Frozen toast sticks",
+      "startingState": "frozen",
+      "temperature": {
+        "fahrenheit": 360,
+        "celsiusRounded": 182
+      },
+      "estimatedMinutes": {
+        "min": 8,
+        "max": 10
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Follow the package directions and verify any required internal temperature.",
+      "sourceContext": "Preheated 5–6 qt basket; single layer.",
+      "source": "https://airfryerkitchen.com/air-fryer-cooking-times-chart/",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF128",
+      "visible": true,
+      "food": "Frozen breakfast sausage patties",
+      "category": "Frozen Foods",
+      "preparation": "Precooked frozen patties",
+      "startingState": "frozen",
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 6,
+        "max": 8
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Follow the package directions and verify any required internal temperature.",
+      "sourceContext": "Preheated 5–6 qt basket; single layer.",
+      "source": "https://airfryerkitchen.com/air-fryer-cooking-times-chart/",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF129",
+      "visible": true,
+      "food": "Frozen Texas toast",
+      "category": "Breads & Baking",
+      "preparation": "Frozen Texas toast slices",
+      "startingState": "frozen",
+      "temperature": {
+        "fahrenheit": 360,
+        "celsiusRounded": 182
+      },
+      "estimatedMinutes": {
+        "min": 5,
+        "max": 7
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": "Preheated 5–6 qt basket; single layer.",
+      "source": "https://airfryerkitchen.com/air-fryer-cooking-times-chart/",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF130",
+      "visible": true,
+      "food": "Crescent rolls",
+      "category": "Breads & Baking",
+      "preparation": "Refrigerated dough",
+      "startingState": "refrigerated",
+      "temperature": {
+        "fahrenheit": 320,
+        "celsiusRounded": 160
+      },
+      "estimatedMinutes": {
+        "min": 7,
+        "max": 9
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": "Preheated 5–6 qt basket; single layer.",
+      "source": "https://airfryerkitchen.com/air-fryer-cooking-times-chart/",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF131",
+      "visible": true,
+      "food": "Brownies (small pan)",
+      "category": "Breads & Baking",
+      "preparation": "6-inch baking pan",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 325,
+        "celsiusRounded": 163
+      },
+      "estimatedMinutes": {
+        "min": 20,
+        "max": 28
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": "Preheated 5–6 qt basket; single layer.",
+      "source": "https://airfryerkitchen.com/air-fryer-cooking-times-chart/",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF132",
+      "visible": true,
+      "food": "Cake (small pan)",
+      "category": "Breads & Baking",
+      "preparation": "6-inch cake pan",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 320,
+        "celsiusRounded": 160
+      },
+      "estimatedMinutes": {
+        "min": 20,
+        "max": 25
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": "Preheated 5–6 qt basket; single layer.",
+      "source": "https://airfryerkitchen.com/air-fryer-cooking-times-chart/",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF133",
+      "visible": true,
+      "food": "Frozen French bread pizza",
+      "category": "Frozen Foods",
+      "preparation": "Frozen French bread pizza",
+      "startingState": "frozen",
+      "temperature": {
+        "fahrenheit": 370,
+        "celsiusRounded": 188
+      },
+      "estimatedMinutes": {
+        "min": 10,
+        "max": 12
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Follow the package directions and verify any required internal temperature.",
+      "sourceContext": "Preheated 5–6 qt basket; single layer.",
+      "source": "https://airfryerkitchen.com/air-fryer-cooking-times-chart/",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF134",
+      "visible": true,
+      "food": "Reheat pizza slice",
+      "category": "Reheating",
+      "preparation": "One refrigerated pizza slice",
+      "startingState": "refrigerated",
+      "temperature": {
+        "fahrenheit": 350,
+        "celsiusRounded": 177
+      },
+      "estimatedMinutes": {
+        "min": 3,
+        "max": 4
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "Reheat leftovers to 165°F (74°C) internal",
+      "preparationNote": null,
+      "sourceContext": "Preheated 5–6 qt basket; single layer.",
+      "source": "https://airfryerkitchen.com/air-fryer-cooking-times-chart/",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF135",
+      "visible": true,
+      "food": "Frozen jalapeño poppers",
+      "category": "Frozen Foods",
+      "preparation": "Frozen breaded poppers",
+      "startingState": "frozen",
+      "temperature": {
+        "fahrenheit": 380,
+        "celsiusRounded": 193
+      },
+      "estimatedMinutes": {
+        "min": 6,
+        "max": 9
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Follow the package directions and verify any required internal temperature.",
+      "sourceContext": "Preheated 5–6 qt basket; single layer.",
+      "source": "https://airfryerkitchen.com/air-fryer-cooking-times-chart/",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF136",
+      "visible": true,
+      "food": "Frozen bagel bites",
+      "category": "Frozen Foods",
+      "preparation": "Frozen mini bagel pizzas",
+      "startingState": "frozen",
+      "temperature": {
+        "fahrenheit": 380,
+        "celsiusRounded": 193
+      },
+      "estimatedMinutes": {
+        "min": 5,
+        "max": 7
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Follow the package directions and verify any required internal temperature.",
+      "sourceContext": "Preheated 5–6 qt basket; single layer.",
+      "source": "https://airfryerkitchen.com/air-fryer-cooking-times-chart/",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF137",
+      "visible": true,
+      "food": "Turkey burger (fresh)",
+      "category": "Poultry",
+      "preparation": "Fresh turkey burger patty",
+      "startingState": "fresh",
+      "temperature": {
+        "fahrenheit": 375,
+        "celsiusRounded": 191
+      },
+      "estimatedMinutes": {
+        "min": 14,
+        "max": 18
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "165°F (74°C) internal",
+      "preparationNote": null,
+      "sourceContext": "Baseline lookup; check preparation and doneness.",
+      "source": "https://cooktiming.com/air-fryer-timer",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF138",
+      "visible": true,
+      "food": "Beef sausage links",
+      "category": "Beef",
+      "preparation": "Raw beef sausage links",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 370,
+        "celsiusRounded": 188
+      },
+      "estimatedMinutes": {
+        "min": 10,
+        "max": 15
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "160°F (71°C) internal for ground meat",
+      "preparationNote": null,
+      "sourceContext": "Baseline lookup; check preparation and doneness.",
+      "source": "https://cooktiming.com/air-fryer-timer",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF139",
+      "visible": true,
+      "food": "Frozen samosas",
+      "category": "Frozen Foods",
+      "preparation": "Frozen prepared samosas",
+      "startingState": "frozen",
+      "temperature": {
+        "fahrenheit": 375,
+        "celsiusRounded": 191
+      },
+      "estimatedMinutes": {
+        "min": 10,
+        "max": 15
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Follow the package directions and verify any required internal temperature.",
+      "sourceContext": "Baseline lookup; check preparation and doneness.",
+      "source": "https://cooktiming.com/air-fryer-timer",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF140",
+      "visible": true,
+      "food": "Frozen spring rolls",
+      "category": "Frozen Foods",
+      "preparation": "Frozen spring rolls",
+      "startingState": "frozen",
+      "temperature": {
+        "fahrenheit": 390,
+        "celsiusRounded": 199
+      },
+      "estimatedMinutes": {
+        "min": 8,
+        "max": 12
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Follow the package directions and verify any required internal temperature.",
+      "sourceContext": "Baseline lookup; check preparation and doneness.",
+      "source": "https://cooktiming.com/air-fryer-timer",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF141",
+      "visible": true,
+      "food": "Duck breast (skin-on)",
+      "category": "Poultry",
+      "preparation": "Fresh, skin-on breast",
+      "startingState": "fresh",
+      "temperature": {
+        "fahrenheit": 380,
+        "celsiusRounded": 193
+      },
+      "estimatedMinutes": {
+        "min": 12,
+        "max": 17
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "165°F (74°C) internal",
+      "preparationNote": "CookTiming reference for a fresh skin-on breast; not directly interchangeable with the Ninja 2-breast method.",
+      "sourceContext": "Baseline lookup; check preparation and doneness.",
+      "source": "https://cooktiming.com/air-fryer-timer",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF142",
+      "visible": true,
+      "food": "Steak fajita strips",
+      "category": "Beef",
+      "preparation": "Fresh, thin strips",
+      "startingState": "fresh",
+      "temperature": {
+        "fahrenheit": 390,
+        "celsiusRounded": 199
+      },
+      "estimatedMinutes": {
+        "min": 8,
+        "max": 12
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "145°F (63°C) internal, then rest 3 minutes for whole cuts",
+      "preparationNote": null,
+      "sourceContext": "Baseline lookup; check preparation and doneness.",
+      "source": "https://cooktiming.com/air-fryer-timer",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF143",
+      "visible": true,
+      "food": "Beef roast (sirloin or round)",
+      "category": "Beef",
+      "preparation": "Roast, size dependent",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 360,
+        "celsiusRounded": 182
+      },
+      "estimatedMinutes": {
+        "min": 32,
+        "max": 45
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "145°F (63°C) internal, then rest 3 minutes for whole cuts",
+      "preparationNote": null,
+      "sourceContext": "Baseline lookup; check preparation and doneness.",
+      "source": "https://cooktiming.com/air-fryer-timer",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF144",
+      "visible": true,
+      "food": "Pork belly bites",
+      "category": "Pork & Lamb",
+      "preparation": "Bite-size strips/cubes",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 15,
+        "max": 22
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "145°F (63°C) internal, then rest 3 minutes for whole cuts",
+      "preparationNote": null,
+      "sourceContext": "Baseline lookup; check preparation and doneness.",
+      "source": "https://cooktiming.com/air-fryer-timer",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF145",
+      "visible": true,
+      "food": "Homemade fresh fries",
+      "category": "Vegetables",
+      "preparation": "Hand-cut, fresh potatoes",
+      "startingState": "fresh",
+      "temperature": {
+        "fahrenheit": 380,
+        "celsiusRounded": 193
+      },
+      "estimatedMinutes": {
+        "min": 16,
+        "max": 24
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": "Baseline lookup; check preparation and doneness.",
+      "source": "https://cooktiming.com/air-fryer-timer",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF146",
+      "visible": true,
+      "food": "Loaded potato skins",
+      "category": "Vegetables",
+      "preparation": "Potato skins already cooked",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 7,
+        "max": 11
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": "Baseline lookup; check preparation and doneness.",
+      "source": "https://cooktiming.com/air-fryer-timer",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF147",
+      "visible": true,
+      "food": "Homemade potato chips",
+      "category": "Vegetables",
+      "preparation": "Thin potato slices",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 360,
+        "celsiusRounded": 182
+      },
+      "estimatedMinutes": {
+        "min": 12,
+        "max": 18
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": "Baseline lookup; check preparation and doneness.",
+      "source": "https://cooktiming.com/air-fryer-timer",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF148",
+      "visible": true,
+      "food": "Crispy tofu cubes",
+      "category": "Vegetables",
+      "preparation": "Fresh, cut cubes/slabs",
+      "startingState": "fresh",
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 11,
+        "max": 16
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": "Baseline lookup; check preparation and doneness.",
+      "source": "https://cooktiming.com/air-fryer-timer",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF149",
+      "visible": true,
+      "food": "Spaghetti squash (halved)",
+      "category": "Vegetables",
+      "preparation": "Fresh, halved",
+      "startingState": "fresh",
+      "temperature": {
+        "fahrenheit": 360,
+        "celsiusRounded": 182
+      },
+      "estimatedMinutes": {
+        "min": 22,
+        "max": 30
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": "Baseline lookup; check preparation and doneness.",
+      "source": "https://cooktiming.com/air-fryer-timer",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF150",
+      "visible": true,
+      "food": "Roasted garlic bulb",
+      "category": "Vegetables",
+      "preparation": "Whole garlic bulb",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 380,
+        "celsiusRounded": 193
+      },
+      "estimatedMinutes": {
+        "min": 18,
+        "max": 25
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": "Baseline lookup; check preparation and doneness.",
+      "source": "https://cooktiming.com/air-fryer-timer",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF151",
+      "visible": true,
+      "food": "Crispy edamame pods",
+      "category": "Vegetables",
+      "preparation": "Frozen edamame pods",
+      "startingState": "frozen",
+      "temperature": {
+        "fahrenheit": 390,
+        "celsiusRounded": 199
+      },
+      "estimatedMinutes": {
+        "min": 7,
+        "max": 11
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": "Baseline lookup; check preparation and doneness.",
+      "source": "https://cooktiming.com/air-fryer-timer",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF152",
+      "visible": true,
+      "food": "Falafel balls",
+      "category": "Vegetables",
+      "preparation": "Fresh or frozen falafel",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 375,
+        "celsiusRounded": 191
+      },
+      "estimatedMinutes": {
+        "min": 11,
+        "max": 15
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": "Baseline lookup; check preparation and doneness.",
+      "source": "https://cooktiming.com/air-fryer-timer",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF153",
+      "visible": true,
+      "food": "Frozen burrito",
+      "category": "Frozen Foods",
+      "preparation": "Frozen wrapped burrito",
+      "startingState": "frozen",
+      "temperature": {
+        "fahrenheit": 360,
+        "celsiusRounded": 182
+      },
+      "estimatedMinutes": {
+        "min": 14,
+        "max": 18
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Follow the package directions and verify any required internal temperature.",
+      "sourceContext": "Baseline lookup; check preparation and doneness.",
+      "source": "https://cooktiming.com/air-fryer-timer",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF154",
+      "visible": true,
+      "food": "Frozen pierogies",
+      "category": "Frozen Foods",
+      "preparation": "Frozen prepared pierogies",
+      "startingState": "frozen",
+      "temperature": {
+        "fahrenheit": 380,
+        "celsiusRounded": 193
+      },
+      "estimatedMinutes": {
+        "min": 10,
+        "max": 14
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Follow the package directions and verify any required internal temperature.",
+      "sourceContext": "Baseline lookup; check preparation and doneness.",
+      "source": "https://cooktiming.com/air-fryer-timer",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF155",
+      "visible": true,
+      "food": "Frozen waffles",
+      "category": "Breakfast",
+      "preparation": "Frozen waffles",
+      "startingState": "frozen",
+      "temperature": {
+        "fahrenheit": 370,
+        "celsiusRounded": 188
+      },
+      "estimatedMinutes": {
+        "min": 3,
+        "max": 5
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": "Baseline lookup; check preparation and doneness.",
+      "source": "https://cooktiming.com/air-fryer-timer",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF156",
+      "visible": true,
+      "food": "Grilled cheese sandwich",
+      "category": "Breads & Baking",
+      "preparation": "Fresh assembled sandwich",
+      "startingState": "fresh",
+      "temperature": {
+        "fahrenheit": 370,
+        "celsiusRounded": 188
+      },
+      "estimatedMinutes": {
+        "min": 6,
+        "max": 10
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": "Baseline lookup; check preparation and doneness.",
+      "source": "https://cooktiming.com/air-fryer-timer",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF157",
+      "visible": true,
+      "food": "Cheese quesadilla",
+      "category": "Breads & Baking",
+      "preparation": "Fresh assembled quesadilla",
+      "startingState": "fresh",
+      "temperature": {
+        "fahrenheit": 375,
+        "celsiusRounded": 191
+      },
+      "estimatedMinutes": {
+        "min": 6,
+        "max": 9
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": "Baseline lookup; check preparation and doneness.",
+      "source": "https://cooktiming.com/air-fryer-timer",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF158",
+      "visible": true,
+      "food": "Loaded nachos",
+      "category": "Breads & Baking",
+      "preparation": "Prepared nachos with toppings",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 350,
+        "celsiusRounded": 177
+      },
+      "estimatedMinutes": {
+        "min": 4,
+        "max": 6
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": "Baseline lookup; check preparation and doneness.",
+      "source": "https://cooktiming.com/air-fryer-timer",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF159",
+      "visible": true,
+      "food": "Pita chips (homemade)",
+      "category": "Breads & Baking",
+      "preparation": "Fresh pita pieces",
+      "startingState": "fresh",
+      "temperature": {
+        "fahrenheit": 350,
+        "celsiusRounded": 177
+      },
+      "estimatedMinutes": {
+        "min": 5,
+        "max": 8
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": "Baseline lookup; check preparation and doneness.",
+      "source": "https://cooktiming.com/air-fryer-timer",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF160",
+      "visible": true,
+      "food": "Stuffed mushrooms",
+      "category": "Vegetables",
+      "preparation": "Stuffed mushroom caps",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 370,
+        "celsiusRounded": 188
+      },
+      "estimatedMinutes": {
+        "min": 8,
+        "max": 12
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": "Baseline lookup; check preparation and doneness.",
+      "source": "https://cooktiming.com/air-fryer-timer",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF161",
+      "visible": true,
+      "food": "Bagel (toasted)",
+      "category": "Breads & Baking",
+      "preparation": "Sliced bagel",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 375,
+        "celsiusRounded": 191
+      },
+      "estimatedMinutes": {
+        "min": 3,
+        "max": 5
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": "Baseline lookup; check preparation and doneness.",
+      "source": "https://cooktiming.com/air-fryer-timer",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF162",
+      "visible": true,
+      "food": "Baked cinnamon apples",
+      "category": "Breads & Baking",
+      "preparation": "Fresh sliced apples",
+      "startingState": "fresh",
+      "temperature": {
+        "fahrenheit": 350,
+        "celsiusRounded": 177
+      },
+      "estimatedMinutes": {
+        "min": 12,
+        "max": 18
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": "Baseline lookup; check preparation and doneness.",
+      "source": "https://cooktiming.com/air-fryer-timer",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF163",
+      "visible": true,
+      "food": "Reheat chicken wings",
+      "category": "Reheating",
+      "preparation": "Cooked, refrigerated wings",
+      "startingState": "refrigerated",
+      "temperature": {
+        "fahrenheit": 375,
+        "celsiusRounded": 191
+      },
+      "estimatedMinutes": {
+        "min": 5,
+        "max": 8
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "Reheat leftovers to 165°F (74°C) internal",
+      "preparationNote": null,
+      "sourceContext": "Baseline lookup; check preparation and doneness.",
+      "source": "https://cooktiming.com/air-fryer-timer",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF164",
+      "visible": true,
+      "food": "Reheat steak",
+      "category": "Reheating",
+      "preparation": "Cooked, refrigerated steak",
+      "startingState": "refrigerated",
+      "temperature": {
+        "fahrenheit": 350,
+        "celsiusRounded": 177
+      },
+      "estimatedMinutes": {
+        "min": 3,
+        "max": 5
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "Reheat leftovers to 165°F (74°C) internal",
+      "preparationNote": null,
+      "sourceContext": "Baseline lookup; check preparation and doneness.",
+      "source": "https://cooktiming.com/air-fryer-timer",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF165",
+      "visible": true,
+      "food": "Reheat french fries",
+      "category": "Reheating",
+      "preparation": "Cooked, refrigerated fries",
+      "startingState": "refrigerated",
+      "temperature": {
+        "fahrenheit": 375,
+        "celsiusRounded": 191
+      },
+      "estimatedMinutes": {
+        "min": 3,
+        "max": 5
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "Reheat leftovers to 165°F (74°C) internal",
+      "preparationNote": null,
+      "sourceContext": "Baseline lookup; check preparation and doneness.",
+      "source": "https://cooktiming.com/air-fryer-timer",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF166",
+      "visible": true,
+      "food": "Reheat egg rolls",
+      "category": "Reheating",
+      "preparation": "Cooked, refrigerated rolls",
+      "startingState": "refrigerated",
+      "temperature": {
+        "fahrenheit": 370,
+        "celsiusRounded": 188
+      },
+      "estimatedMinutes": {
+        "min": 4,
+        "max": 8
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "Reheat leftovers to 165°F (74°C) internal",
+      "preparationNote": null,
+      "sourceContext": "Baseline lookup; check preparation and doneness.",
+      "source": "https://cooktiming.com/air-fryer-timer",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF167",
+      "visible": true,
+      "food": "Chicken cutlets (breaded)",
+      "category": "Poultry",
+      "preparation": "Fresh breaded cutlets",
+      "startingState": "fresh",
+      "temperature": {
+        "fahrenheit": 390,
+        "celsiusRounded": 199
+      },
+      "estimatedMinutes": {
+        "min": 9,
+        "max": 13
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "165°F (74°C) internal",
+      "preparationNote": null,
+      "sourceContext": "Baseline lookup; check preparation and doneness.",
+      "source": "https://cooktiming.com/air-fryer-timer",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF168",
+      "visible": true,
+      "food": "Coconut shrimp",
+      "category": "Seafood",
+      "preparation": "Fresh or frozen, breaded",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 380,
+        "celsiusRounded": 193
+      },
+      "estimatedMinutes": {
+        "min": 8,
+        "max": 12
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "Cook shellfish until opaque and fully cooked",
+      "preparationNote": null,
+      "sourceContext": "Baseline lookup; check preparation and doneness.",
+      "source": "https://cooktiming.com/air-fryer-timer",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF169",
+      "visible": true,
+      "food": "Mahi mahi / halibut",
+      "category": "Seafood",
+      "preparation": "Fresh or frozen fish fillet",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 390,
+        "celsiusRounded": 199
+      },
+      "estimatedMinutes": {
+        "min": 8,
+        "max": 12
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": "145°F (63°C) internal for fish, or opaque and flakes easily",
+      "preparationNote": null,
+      "sourceContext": "Baseline lookup; check preparation and doneness.",
+      "source": "https://cooktiming.com/air-fryer-timer",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF170",
+      "visible": true,
+      "food": "Acorn squash (CookTiming)",
+      "category": "Vegetables",
+      "preparation": "Fresh squash; cut/size not specified by source",
+      "startingState": "fresh",
+      "temperature": {
+        "fahrenheit": 375,
+        "celsiusRounded": 191
+      },
+      "estimatedMinutes": {
+        "min": 14,
+        "max": 19
+      },
+      "appliance": null,
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": "Baseline lookup; check preparation and doneness.",
+      "source": "https://cooktiming.com/air-fryer-timer",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF171",
+      "visible": true,
+      "food": "Chicken breast (thin-cut)",
+      "category": "Poultry",
+      "preparation": "Thin-cut, about 5 oz",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 390,
+        "celsiusRounded": 199
+      },
+      "estimatedMinutes": {
+        "min": 10,
+        "max": 18
+      },
+      "appliance": "Cosori Iconic",
+      "cookingMode": null,
+      "safeInternalTempGuidance": "165°F (74°C) internal",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF172",
+      "visible": true,
+      "food": "Chicken breast (boneless large)",
+      "category": "Poultry",
+      "preparation": "Boneless, 8–10 oz",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 390,
+        "celsiusRounded": 199
+      },
+      "estimatedMinutes": {
+        "min": 15,
+        "max": 22
+      },
+      "appliance": "Cosori Iconic",
+      "cookingMode": null,
+      "safeInternalTempGuidance": "165°F (74°C) internal",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF173",
+      "visible": true,
+      "food": "Chicken breast (bone-in 10 oz)",
+      "category": "Poultry",
+      "preparation": "Bone-in, about 10 oz",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 395,
+        "celsiusRounded": 202
+      },
+      "estimatedMinutes": {
+        "min": 24,
+        "max": 34
+      },
+      "appliance": "Cosori Iconic",
+      "cookingMode": null,
+      "safeInternalTempGuidance": "165°F (74°C) internal",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF174",
+      "visible": true,
+      "food": "Chicken thigh (boneless, Cosori)",
+      "category": "Poultry",
+      "preparation": "Boneless thigh; source does not specify a portion weight",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 390,
+        "celsiusRounded": 199
+      },
+      "estimatedMinutes": {
+        "min": 8,
+        "max": 14
+      },
+      "appliance": "Cosori Iconic",
+      "cookingMode": null,
+      "safeInternalTempGuidance": "165°F (74°C) internal",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF175",
+      "visible": true,
+      "food": "Whole chicken (4.5 lb)",
+      "category": "Poultry",
+      "preparation": "Whole 4.5 lb bird",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 355,
+        "celsiusRounded": 179
+      },
+      "estimatedMinutes": {
+        "min": 55,
+        "max": 60
+      },
+      "appliance": "Cosori Iconic",
+      "cookingMode": null,
+      "safeInternalTempGuidance": "165°F (74°C) internal",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF176",
+      "visible": true,
+      "food": "New York strip (1-inch)",
+      "category": "Beef",
+      "preparation": "1-inch steak; Cosori Iconic",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 450,
+        "celsiusRounded": 232
+      },
+      "estimatedMinutes": {
+        "min": 6,
+        "max": 12
+      },
+      "appliance": "Cosori Iconic",
+      "cookingMode": null,
+      "safeInternalTempGuidance": "145°F (63°C) internal, then rest 3 minutes for whole cuts",
+      "preparationNote": "Cosori Iconic setting. Check that your air fryer supports this temperature; do not exceed its maximum.",
+      "sourceContext": null,
+      "source": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF177",
+      "visible": true,
+      "food": "Ribeye boneless (1-inch)",
+      "category": "Beef",
+      "preparation": "1-inch steak; Cosori Iconic",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 450,
+        "celsiusRounded": 232
+      },
+      "estimatedMinutes": {
+        "min": 6,
+        "max": 12
+      },
+      "appliance": "Cosori Iconic",
+      "cookingMode": null,
+      "safeInternalTempGuidance": "145°F (63°C) internal, then rest 3 minutes for whole cuts",
+      "preparationNote": "Cosori Iconic setting. Check that your air fryer supports this temperature; do not exceed its maximum.",
+      "sourceContext": null,
+      "source": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF178",
+      "visible": true,
+      "food": "Salmon fillet (thin)",
+      "category": "Seafood",
+      "preparation": "1/2–3/4-inch fillet",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 380,
+        "celsiusRounded": 193
+      },
+      "estimatedMinutes": {
+        "min": 6,
+        "max": 8
+      },
+      "appliance": "Cosori Iconic",
+      "cookingMode": null,
+      "safeInternalTempGuidance": "145°F (63°C) internal for fish, or opaque and flakes easily",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF179",
+      "visible": true,
+      "food": "White fish fillet (thick)",
+      "category": "Seafood",
+      "preparation": "1–2-inch thick fillet",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 380,
+        "celsiusRounded": 193
+      },
+      "estimatedMinutes": {
+        "min": 8,
+        "max": 12
+      },
+      "appliance": "Cosori Iconic",
+      "cookingMode": null,
+      "safeInternalTempGuidance": "145°F (63°C) internal for fish, or opaque and flakes easily",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF180",
+      "visible": true,
+      "food": "Lobster tail (Cosori)",
+      "category": "Seafood",
+      "preparation": "Lobster tail; source does not specify size",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 380,
+        "celsiusRounded": 193
+      },
+      "estimatedMinutes": {
+        "min": 8,
+        "max": 10
+      },
+      "appliance": "Cosori Iconic",
+      "cookingMode": null,
+      "safeInternalTempGuidance": "Cook shellfish until opaque and fully cooked",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF181",
+      "visible": true,
+      "food": "Mushrooms (whole)",
+      "category": "Vegetables",
+      "preparation": "Whole button mushrooms",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 380,
+        "celsiusRounded": 193
+      },
+      "estimatedMinutes": {
+        "min": 8,
+        "max": 14
+      },
+      "appliance": "Cosori Iconic",
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF182",
+      "visible": true,
+      "food": "Bell peppers (diced)",
+      "category": "Vegetables",
+      "preparation": "1-inch pieces",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 385,
+        "celsiusRounded": 196
+      },
+      "estimatedMinutes": {
+        "min": 6,
+        "max": 12
+      },
+      "appliance": "Cosori Iconic",
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF183",
+      "visible": true,
+      "food": "Potatoes (1-inch cubes)",
+      "category": "Vegetables",
+      "preparation": "1-inch diced potatoes",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 390,
+        "celsiusRounded": 199
+      },
+      "estimatedMinutes": {
+        "min": 8,
+        "max": 16
+      },
+      "appliance": "Cosori Iconic",
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF184",
+      "visible": true,
+      "food": "Baked potato (large)",
+      "category": "Vegetables",
+      "preparation": "Whole potato 9–10 oz",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 385,
+        "celsiusRounded": 196
+      },
+      "estimatedMinutes": {
+        "min": 50,
+        "max": 60
+      },
+      "appliance": "Cosori Iconic",
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF185",
+      "visible": true,
+      "food": "Baked sweet potato (large)",
+      "category": "Vegetables",
+      "preparation": "Whole sweet potato 9–10 oz",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 385,
+        "celsiusRounded": 196
+      },
+      "estimatedMinutes": {
+        "min": 45,
+        "max": 60
+      },
+      "appliance": "Cosori Iconic",
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF186",
+      "visible": true,
+      "food": "Eggplant (halved)",
+      "category": "Vegetables",
+      "preparation": "Halved eggplant",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 435,
+        "celsiusRounded": 224
+      },
+      "estimatedMinutes": {
+        "min": 10,
+        "max": 18
+      },
+      "appliance": "Cosori Iconic",
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Cosori Iconic setting. Check that your air fryer supports this temperature; do not exceed its maximum.",
+      "sourceContext": null,
+      "source": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF187",
+      "visible": true,
+      "food": "Zucchini (1-inch slices)",
+      "category": "Vegetables",
+      "preparation": "Fresh zucchini rounds",
+      "startingState": "fresh",
+      "temperature": {
+        "fahrenheit": 385,
+        "celsiusRounded": 196
+      },
+      "estimatedMinutes": {
+        "min": 8,
+        "max": 14
+      },
+      "appliance": "Cosori Iconic",
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF188",
+      "visible": true,
+      "food": "Frozen sweet potato fries (Cosori)",
+      "category": "Frozen Foods",
+      "preparation": "Frozen prepared fries",
+      "startingState": "frozen",
+      "temperature": {
+        "fahrenheit": 395,
+        "celsiusRounded": 202
+      },
+      "estimatedMinutes": {
+        "min": 14,
+        "max": 18
+      },
+      "appliance": "Cosori Iconic",
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Follow the package directions and verify any required internal temperature.",
+      "sourceContext": null,
+      "source": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF189",
+      "visible": true,
+      "food": "Frozen thick-cut fries (Cosori)",
+      "category": "Frozen Foods",
+      "preparation": "Frozen thick cut",
+      "startingState": "frozen",
+      "temperature": {
+        "fahrenheit": 395,
+        "celsiusRounded": 202
+      },
+      "estimatedMinutes": {
+        "min": 16,
+        "max": 22
+      },
+      "appliance": "Cosori Iconic",
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Follow the package directions and verify any required internal temperature.",
+      "sourceContext": null,
+      "source": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF190",
+      "visible": true,
+      "food": "Frozen fish fillets (Cosori)",
+      "category": "Frozen Foods",
+      "preparation": "Frozen fish fillets; breading not specified",
+      "startingState": "frozen",
+      "temperature": {
+        "fahrenheit": 400,
+        "celsiusRounded": 204
+      },
+      "estimatedMinutes": {
+        "min": 8,
+        "max": 16
+      },
+      "appliance": "Cosori Iconic",
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Follow the package directions and verify any required internal temperature.",
+      "sourceContext": null,
+      "source": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF191",
+      "visible": true,
+      "food": "Muffins (batter)",
+      "category": "Breads & Baking",
+      "preparation": "1/4 cup batter per muffin",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 300,
+        "celsiusRounded": 149
+      },
+      "estimatedMinutes": {
+        "min": 10,
+        "max": 15
+      },
+      "appliance": "Cosori Iconic",
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF192",
+      "visible": true,
+      "food": "Cheesecake (6-inch)",
+      "category": "Breads & Baking",
+      "preparation": "6-inch springform pan",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 280,
+        "celsiusRounded": 138
+      },
+      "estimatedMinutes": {
+        "min": 20,
+        "max": 30
+      },
+      "appliance": "Cosori Iconic",
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF193",
+      "visible": true,
+      "food": "Quick bread (mini loaf)",
+      "category": "Breads & Baking",
+      "preparation": "Small 3-by-5-inch loaf pan",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 300,
+        "celsiusRounded": 149
+      },
+      "estimatedMinutes": {
+        "min": 25,
+        "max": 35
+      },
+      "appliance": "Cosori Iconic",
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF194",
+      "visible": true,
+      "food": "Biscuits (3-inch)",
+      "category": "Breads & Baking",
+      "preparation": "Fresh 3-inch rounds",
+      "startingState": "fresh",
+      "temperature": {
+        "fahrenheit": 330,
+        "celsiusRounded": 166
+      },
+      "estimatedMinutes": {
+        "min": 11,
+        "max": 15
+      },
+      "appliance": "Cosori Iconic",
+      "cookingMode": null,
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://cosori.com/blogs/blog/air-fryer-cooking-times",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF195",
+      "visible": true,
+      "food": "Celeriac cubes",
+      "category": "Vegetables",
+      "preparation": "1.5 cm cubes, approx. 600 g; Ninja FlexDrawer",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 392,
+        "celsiusRounded": 200
+      },
+      "estimatedMinutes": {
+        "min": 14,
+        "max": 16
+      },
+      "appliance": "Ninja Foodi FlexDrawer",
+      "cookingMode": "Air Fry",
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://manuals.plus/m/02c0cdfee95e84667808070f706ac607208180f1d5f48151c1d9ebebafb54afc",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF196",
+      "visible": true,
+      "food": "Portobello mushrooms (whole)",
+      "category": "Vegetables",
+      "preparation": "Whole caps, approx. 250 g",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 356,
+        "celsiusRounded": 180
+      },
+      "estimatedMinutes": {
+        "min": 9,
+        "max": 10
+      },
+      "appliance": "Ninja Foodi FlexDrawer",
+      "cookingMode": "Air Fry",
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://manuals.plus/m/02c0cdfee95e84667808070f706ac607208180f1d5f48151c1d9ebebafb54afc",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF197",
+      "visible": true,
+      "food": "Parsnips (cut)",
+      "category": "Vegetables",
+      "preparation": "1.5 cm lengths, approx. 500 g",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 392,
+        "celsiusRounded": 200
+      },
+      "estimatedMinutes": {
+        "min": 12,
+        "max": 14
+      },
+      "appliance": "Ninja Foodi FlexDrawer",
+      "cookingMode": "Air Fry",
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://manuals.plus/m/02c0cdfee95e84667808070f706ac607208180f1d5f48151c1d9ebebafb54afc",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF198",
+      "visible": true,
+      "food": "Turnip (cubes)",
+      "category": "Vegetables",
+      "preparation": "1.5 cm cubes, approx. 500 g",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 392,
+        "celsiusRounded": 200
+      },
+      "estimatedMinutes": {
+        "min": 15,
+        "max": 17
+      },
+      "appliance": "Ninja Foodi FlexDrawer",
+      "cookingMode": "Air Fry",
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://manuals.plus/m/02c0cdfee95e84667808070f706ac607208180f1d5f48151c1d9ebebafb54afc",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF199",
+      "visible": true,
+      "food": "Beetroot (whole)",
+      "category": "Vegetables",
+      "preparation": "4 large or 6 small beets",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 392,
+        "celsiusRounded": 200
+      },
+      "estimatedMinutes": {
+        "min": 40,
+        "max": 60
+      },
+      "appliance": "Ninja Foodi FlexDrawer",
+      "cookingMode": "Air Fry",
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://manuals.plus/m/02c0cdfee95e84667808070f706ac607208180f1d5f48151c1d9ebebafb54afc",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF200",
+      "visible": true,
+      "food": "Bell peppers (whole)",
+      "category": "Vegetables",
+      "preparation": "Four whole bell peppers",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 392,
+        "celsiusRounded": 200
+      },
+      "estimatedMinutes": {
+        "min": 15,
+        "max": 16
+      },
+      "appliance": "Ninja Foodi FlexDrawer",
+      "cookingMode": "Air Fry",
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://manuals.plus/m/02c0cdfee95e84667808070f706ac607208180f1d5f48151c1d9ebebafb54afc",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF201",
+      "visible": true,
+      "food": "Frozen waffle fries",
+      "category": "Frozen Foods",
+      "preparation": "Approx. 550 g, Ninja FlexDrawer",
+      "startingState": "frozen",
+      "temperature": {
+        "fahrenheit": 356,
+        "celsiusRounded": 180
+      },
+      "estimatedMinutes": {
+        "min": 14,
+        "max": 16
+      },
+      "appliance": "Ninja Foodi FlexDrawer",
+      "cookingMode": "Max Crisp",
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Ninja FlexDrawer Max Crisp program; follow the manufacturer's setting for this mode. Follow the package directions and verify any required internal temperature.",
+      "sourceContext": null,
+      "source": "https://manuals.plus/m/02c0cdfee95e84667808070f706ac607208180f1d5f48151c1d9ebebafb54afc",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF202",
+      "visible": true,
+      "food": "Frozen popcorn chicken",
+      "category": "Frozen Foods",
+      "preparation": "Approx. 500 g",
+      "startingState": "frozen",
+      "temperature": {
+        "fahrenheit": 392,
+        "celsiusRounded": 200
+      },
+      "estimatedMinutes": {
+        "min": 12,
+        "max": 12
+      },
+      "appliance": "Ninja Foodi FlexDrawer",
+      "cookingMode": "Max Crisp",
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Ninja FlexDrawer Max Crisp program; follow the manufacturer's setting for this mode. Follow the package directions and verify any required internal temperature.",
+      "sourceContext": null,
+      "source": "https://manuals.plus/m/02c0cdfee95e84667808070f706ac607208180f1d5f48151c1d9ebebafb54afc",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF203",
+      "visible": true,
+      "food": "Frozen potato pops",
+      "category": "Frozen Foods",
+      "preparation": "Approx. 500 g",
+      "startingState": "frozen",
+      "temperature": {
+        "fahrenheit": 392,
+        "celsiusRounded": 200
+      },
+      "estimatedMinutes": {
+        "min": 12,
+        "max": 12
+      },
+      "appliance": "Ninja Foodi FlexDrawer",
+      "cookingMode": "Max Crisp",
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Ninja FlexDrawer Max Crisp program; follow the manufacturer's setting for this mode. Follow the package directions and verify any required internal temperature.",
+      "sourceContext": null,
+      "source": "https://manuals.plus/m/02c0cdfee95e84667808070f706ac607208180f1d5f48151c1d9ebebafb54afc",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF204",
+      "visible": true,
+      "food": "Frozen battered onion rings",
+      "category": "Frozen Foods",
+      "preparation": "Approx. 300 g",
+      "startingState": "frozen",
+      "temperature": {
+        "fahrenheit": 392,
+        "celsiusRounded": 200
+      },
+      "estimatedMinutes": {
+        "min": 10,
+        "max": 10
+      },
+      "appliance": "Ninja Foodi FlexDrawer",
+      "cookingMode": "Max Crisp",
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Ninja FlexDrawer Max Crisp program; follow the manufacturer's setting for this mode. Follow the package directions and verify any required internal temperature.",
+      "sourceContext": null,
+      "source": "https://manuals.plus/m/02c0cdfee95e84667808070f706ac607208180f1d5f48151c1d9ebebafb54afc",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF205",
+      "visible": true,
+      "food": "Frozen crinkle-cut fries",
+      "category": "Frozen Foods",
+      "preparation": "Approx. 500 g",
+      "startingState": "frozen",
+      "temperature": {
+        "fahrenheit": 410,
+        "celsiusRounded": 210
+      },
+      "estimatedMinutes": {
+        "min": 18,
+        "max": 20
+      },
+      "appliance": "Ninja Foodi FlexDrawer",
+      "cookingMode": "Max Crisp",
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Ninja FlexDrawer Max Crisp program; follow the manufacturer's setting for this mode. Follow the package directions and verify any required internal temperature.",
+      "sourceContext": null,
+      "source": "https://manuals.plus/m/02c0cdfee95e84667808070f706ac607208180f1d5f48151c1d9ebebafb54afc",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF206",
+      "visible": true,
+      "food": "Frozen potato wedges",
+      "category": "Frozen Foods",
+      "preparation": "Approx. 650 g",
+      "startingState": "frozen",
+      "temperature": {
+        "fahrenheit": 374,
+        "celsiusRounded": 190
+      },
+      "estimatedMinutes": {
+        "min": 20,
+        "max": 20
+      },
+      "appliance": "Ninja Foodi FlexDrawer",
+      "cookingMode": "Max Crisp",
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Ninja FlexDrawer Max Crisp program; follow the manufacturer's setting for this mode. Follow the package directions and verify any required internal temperature.",
+      "sourceContext": null,
+      "source": "https://manuals.plus/m/02c0cdfee95e84667808070f706ac607208180f1d5f48151c1d9ebebafb54afc",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF207",
+      "visible": true,
+      "food": "Cajun diced potatoes",
+      "category": "Vegetables",
+      "preparation": "Diced 800 g potatoes",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 392,
+        "celsiusRounded": 200
+      },
+      "estimatedMinutes": {
+        "min": 30,
+        "max": 30
+      },
+      "appliance": "Ninja Foodi FlexDrawer",
+      "cookingMode": "Air Fry",
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://manuals.plus/m/02c0cdfee95e84667808070f706ac607208180f1d5f48151c1d9ebebafb54afc",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF208",
+      "visible": true,
+      "food": "Balsamic roasted cherry tomatoes",
+      "category": "Vegetables",
+      "preparation": "500 g cherry tomatoes; balsamic vinegar and oil",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 392,
+        "celsiusRounded": 200
+      },
+      "estimatedMinutes": {
+        "min": 10,
+        "max": 15
+      },
+      "appliance": "Ninja Foodi FlexDrawer",
+      "cookingMode": "Roast",
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Ninja FlexDrawer Roast program; time/temperature from the manufacturer's recipe chart.",
+      "sourceContext": null,
+      "source": "https://manuals.plus/m/02c0cdfee95e84667808070f706ac607208180f1d5f48151c1d9ebebafb54afc",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF209",
+      "visible": true,
+      "food": "Plant-based BBQ burgers (Ninja)",
+      "category": "Vegetables",
+      "preparation": "4 patties, 125 g each; BBQ sauce",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 374,
+        "celsiusRounded": 190
+      },
+      "estimatedMinutes": {
+        "min": 12,
+        "max": 12
+      },
+      "appliance": "Ninja Foodi FlexDrawer",
+      "cookingMode": "Air Fry",
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://manuals.plus/m/02c0cdfee95e84667808070f706ac607208180f1d5f48151c1d9ebebafb54afc",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF210",
+      "visible": true,
+      "food": "Buffalo chicken thighs",
+      "category": "Poultry",
+      "preparation": "Six boneless chicken thighs",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 392,
+        "celsiusRounded": 200
+      },
+      "estimatedMinutes": {
+        "min": 20,
+        "max": 22
+      },
+      "appliance": "Ninja Foodi FlexDrawer",
+      "cookingMode": "Air Fry",
+      "safeInternalTempGuidance": "165°F (74°C) internal",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://manuals.plus/m/02c0cdfee95e84667808070f706ac607208180f1d5f48151c1d9ebebafb54afc",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF211",
+      "visible": true,
+      "food": "Miso-glazed salmon",
+      "category": "Seafood",
+      "preparation": "Four 120 g fillets",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 392,
+        "celsiusRounded": 200
+      },
+      "estimatedMinutes": {
+        "min": 12,
+        "max": 14
+      },
+      "appliance": "Ninja Foodi FlexDrawer",
+      "cookingMode": "Air Fry",
+      "safeInternalTempGuidance": "145°F (63°C) internal for fish, or opaque and flakes easily",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://manuals.plus/m/02c0cdfee95e84667808070f706ac607208180f1d5f48151c1d9ebebafb54afc",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF212",
+      "visible": true,
+      "food": "Honey-hazelnut Brussels sprouts",
+      "category": "Vegetables",
+      "preparation": "500 g Brussels sprouts, halved; honey and hazelnuts",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 392,
+        "celsiusRounded": 200
+      },
+      "estimatedMinutes": {
+        "min": 13,
+        "max": 15
+      },
+      "appliance": "Ninja Foodi FlexDrawer",
+      "cookingMode": "Air Fry",
+      "safeInternalTempGuidance": null,
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://manuals.plus/m/02c0cdfee95e84667808070f706ac607208180f1d5f48151c1d9ebebafb54afc",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF213",
+      "visible": true,
+      "food": "Honey-sage pork steaks (boneless)",
+      "category": "Pork & Lamb",
+      "preparation": "2–3 steaks, 120 g each; honey, oil and sage",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 392,
+        "celsiusRounded": 200
+      },
+      "estimatedMinutes": {
+        "min": 15,
+        "max": 17
+      },
+      "appliance": "Ninja Foodi FlexDrawer",
+      "cookingMode": "Roast",
+      "safeInternalTempGuidance": "145°F (63°C) internal, then rest 3 minutes for whole cuts",
+      "preparationNote": "Ninja FlexDrawer Roast program; time/temperature from the manufacturer's recipe chart.",
+      "sourceContext": null,
+      "source": "https://manuals.plus/m/02c0cdfee95e84667808070f706ac607208180f1d5f48151c1d9ebebafb54afc",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF214",
+      "visible": true,
+      "food": "Fresh cod fillets",
+      "category": "Seafood",
+      "preparation": "Four 120 g fillets",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 392,
+        "celsiusRounded": 200
+      },
+      "estimatedMinutes": {
+        "min": 8,
+        "max": 10
+      },
+      "appliance": "Ninja Foodi FlexDrawer",
+      "cookingMode": "Air Fry",
+      "safeInternalTempGuidance": "145°F (63°C) internal for fish, or opaque and flakes easily",
+      "preparationNote": null,
+      "sourceContext": null,
+      "source": "https://manuals.plus/m/02c0cdfee95e84667808070f706ac607208180f1d5f48151c1d9ebebafb54afc",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF215",
+      "visible": true,
+      "food": "Frozen chicken dippers",
+      "category": "Frozen Foods",
+      "preparation": "Approx. 400 g",
+      "startingState": "frozen",
+      "temperature": {
+        "fahrenheit": 374,
+        "celsiusRounded": 190
+      },
+      "estimatedMinutes": {
+        "min": 10,
+        "max": 10
+      },
+      "appliance": "Ninja Foodi FlexDrawer",
+      "cookingMode": "Max Crisp",
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Ninja FlexDrawer Max Crisp program; follow the manufacturer's setting for this mode. Follow the package directions and verify any required internal temperature.",
+      "sourceContext": null,
+      "source": "https://manuals.plus/m/02c0cdfee95e84667808070f706ac607208180f1d5f48151c1d9ebebafb54afc",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF216",
+      "visible": true,
+      "food": "Frozen fish goujons",
+      "category": "Frozen Foods",
+      "preparation": "Approx. 275 g",
+      "startingState": "frozen",
+      "temperature": {
+        "fahrenheit": 392,
+        "celsiusRounded": 200
+      },
+      "estimatedMinutes": {
+        "min": 10,
+        "max": 10
+      },
+      "appliance": "Ninja Foodi FlexDrawer",
+      "cookingMode": "Max Crisp",
+      "safeInternalTempGuidance": null,
+      "preparationNote": "Ninja FlexDrawer Max Crisp program; follow the manufacturer's setting for this mode. Follow the package directions and verify any required internal temperature.",
+      "sourceContext": null,
+      "source": "https://manuals.plus/m/02c0cdfee95e84667808070f706ac607208180f1d5f48151c1d9ebebafb54afc",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    },
+    {
+      "id": "AF217",
+      "visible": true,
+      "food": "Duck breast (Ninja, skin-on)",
+      "category": "Poultry",
+      "preparation": "2 breasts, 400 g total",
+      "startingState": null,
+      "temperature": {
+        "fahrenheit": 392,
+        "celsiusRounded": 200
+      },
+      "estimatedMinutes": {
+        "min": 30,
+        "max": 32
+      },
+      "appliance": "Ninja Foodi FlexDrawer",
+      "cookingMode": "Air Fry",
+      "safeInternalTempGuidance": "165°F (74°C) internal",
+      "preparationNote": "Slash skin; cook skin-side down first and turn halfway. Ninja FlexDrawer Air Fry instructions for 2 breasts (400 g total).",
+      "sourceContext": null,
+      "source": "https://manuals.plus/m/02c0cdfee95e84667808070f706ac607208180f1d5f48151c1d9ebebafb54afc",
+      "verification": "matched-published-chart",
+      "reasonWithheld": null
+    }
+  ]
+}
