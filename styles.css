@@ -829,3 +829,26 @@ body{font-family:Arial,Helvetica,sans-serif}
 .aft-preview-box .aft-preview-stats{color:#077b3e;font:800 .81rem/1.3 Arial,Helvetica,sans-serif;text-align:left}
 .aft-guide-link{padding:12px 17px;background:#ecf8ed;border-left:4px solid #07ae58;border-radius:9px;color:#32563c;line-height:1.55;margin:20px 0 0}
 .aft-guide-link a{color:#047638;font-weight:850;text-underline-offset:3px}
+
+/* Search-first finder: no featured strip, no preliminary results, no instruction panels. */
+.aft-page [hidden]{display:none!important}
+.aft-page .aft-layout{grid-template-columns:minmax(0,1fr) 235px;gap:26px}
+.aft-page .aft-search-panel{margin-top:12px}
+.aft-page .aft-start-state{margin:25px 0;padding:28px 18px;border:1px dashed #c9dccd;border-radius:14px;background:#fafcf9;text-align:center;color:#66796a}
+.aft-page .aft-start-state p{margin:0}
+.aft-page .aft-results-heading{margin-top:31px}
+.aft-page .aft-search-panel .aft-filter-actions:has([hidden]){display:none}
+.aft-page .aft-product{padding:19px 16px;box-shadow:0 6px 20px rgba(12,50,24,.07)}
+.aft-page .aft-product img{width:auto;height:auto;max-width:170px;max-height:230px;display:block;margin:0 auto 15px;object-fit:contain}
+.aft-page .aft-product h2{font-size:1.07rem;line-height:1.28;margin:0 0 14px}
+.aft-page .aft-product .product-amazon-button{width:100%;justify-content:center;font-size:.9rem}
+.aft-page .aft-sidebar{top:98px}
+.aft-page .aft-notice{margin-top:25px}
+@media(max-width:1020px){
+ .aft-page .aft-layout{grid-template-columns:minmax(0,1fr)}
+ .aft-page .aft-sidebar{max-width:275px}
+}
+@media(max-width:650px){
+ .aft-page .aft-start-state{padding:22px 16px}
+ .aft-page .aft-search-panel{margin-top:0}
+}
