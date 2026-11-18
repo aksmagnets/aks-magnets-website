@@ -734,3 +734,13 @@ body{font-family:Arial,Helvetica,sans-serif}
 .aks-tools-library .guide-library-heading-row .aks-tool-detail-title img{
   display:block;width:auto;height:auto;max-width:min(100%,80vw);max-height:none;margin:0 auto
 }
+
+/* Explicit sizing for individual tool-page SVG headings.
+   Avoid intrinsic auto-sizing collapse inside the grid's auto column. */
+.aks-tools-library .guide-library-heading-row .aks-tool-detail-title{
+  display:block;min-width:0;max-width:100%;justify-self:center
+}
+.aks-tools-library .guide-library-heading-row .aks-tool-detail-title img{
+  display:block;width:var(--tool-heading-width,462px);max-width:min(100%,86vw);
+  height:auto;margin:0 auto;object-fit:contain
+}
