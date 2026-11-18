@@ -718,3 +718,19 @@ body{font-family:Arial,Helvetica,sans-serif}
  .aks-tools-home .aks-tool-card a.aks-tool-button,
  .aks-tools-library .aks-tool-card a.aks-tool-button{transition:none}
 }
+
+/* Tool title links share the exact Guides card text-link styling. */
+.aks-tools-home .aks-tool-card .guide-card-text-title a,
+.aks-tools-library .aks-tool-card .guide-card-text-title a{
+  display:block;color:#202b23;text-decoration:none
+}
+.aks-tools-home .aks-tool-card .guide-card-text-title a:hover,
+.aks-tools-library .aks-tool-card .guide-card-text-title a:hover{color:#058e49}
+.aks-tools-home .aks-tool-card .guide-card-text-title a:focus-visible,
+.aks-tools-library .aks-tool-card .guide-card-text-title a:focus-visible{outline:3px solid #07ae58;outline-offset:3px}
+
+/* Tool detail SVGs: preserve the original shared letter scale.
+   The different title lengths change width, not text height. */
+.aks-tools-library .guide-library-heading-row .aks-tool-detail-title img{
+  display:block;width:auto;height:auto;max-width:min(100%,80vw);max-height:none;margin:0 auto
+}
