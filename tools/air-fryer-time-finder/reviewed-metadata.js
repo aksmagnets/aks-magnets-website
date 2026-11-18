@@ -6,10 +6,25 @@
   const foods = window.AKS_AIR_FRYER_DATA;
   if (!Array.isArray(foods)) return;
   const original = foods.slice();
+  const university = "https://accessibility.extension.msstate.edu/publications/nutrition-and-wellness-all-about-air-fryers";
+  const chef = "https://bluejeanchef.com/cooking-school/air-fryer-cooking-charts/";
+  // These specific chart rows match an identifiable published reference.
+  // A cross-reference is not proof of independent food testing.
+  const universityExact = new Set([1,2,8,11,12,22,23,24,27,28,31,32,35,36,38,39,40,42,43,44,49,51,55,57,59,65,66,67,70,71,73,78,79,85,89]);
+  const chefExact = new Set([2,8,11,12,19,22,23,24,25,26,27,28,29,31,32,34,35,36,38,39,40,41,42,43,44,48,49,53,55,56,57,58,59,61,63,65,66,67,68,70,71,73,77,78,79,85,89]);
+
   const cosori = "https://cosori.com/blogs/blog/air-fryer-cooking-times";
   const ninja = "https://manuals.plus/m/02c0cdfee95e84667808070f706ac607208180f1d5f48151c1d9ebebafb54afc";
-  for (const food of original) {
+  for (const [i, food] of original.entries()) {
     const name = food.name.toLowerCase();
+    const originalId = i + 1;
+    if (originalId <= 100) {
+      food.auditId = "AF" + String(originalId).padStart(3, "0");
+      if (universityExact.has(originalId)) food.crossReference = university;
+      else if (chefExact.has(originalId)) food.crossReference = chef;
+      // "Cross-reference" means a corresponding food/time/temp appears in the
+      // external chart; portions and exact preparations still require matching.
+    }
     if (food.category === "Chicken") food.category = "Poultry";
     if (food.source === cosori) {
       food.appliance = "Cosori Iconic";
@@ -71,6 +86,25 @@
         food.note = "Slash skin; cook skin-side down first and turn halfway. Ninja FlexDrawer Air Fry instructions for 2 breasts (400 g total).";
       }
     }
+    if (originalId === 84) {
+      food.auditFlag = "Withheld: frozen meatloaf has no portion weight, meat type or product instructions.";
+    }
+    if (originalId === 88) {
+      food.note = "Frozen pot pies vary greatly by size and brand. Cook only if the packaging permits air frying; verify the center reaches 165°F (74°C).";
+      food.safeTemp = "165°F (74°C) in the center for meat-containing pot pies";
+    }
+    if (originalId === 31) {
+      food.note = "A 6.5 lb chicken requires a sufficiently large air fryer and proper air circulation; check 165°F (74°C) internally.";
+    }
+    if (originalId === 1) {
+      food.note = "For a 4 lb roast, time varies with shape and desired doneness. Check the center with a thermometer; do not rely on time alone.";
+    }
+    if (originalId === 54) {
+      food.note = "The original chart lists a 1 lb batch of sugar snap peas. Check early; smaller batches may finish sooner.";
+    }
+    if (originalId === 43) {
+      food.note = "Low-temperature kale chips: keep leaves away from the heating element and use a suitable rack if recommended by your model.";
+    }
     if (/^duck breast \(skin-on\)$/i.test(food.name)) {
       food.note = "CookTiming reference for a fresh skin-on breast; not directly interchangeable with the Ninja 2-breast method.";
     }
@@ -105,9 +139,24 @@
       food.safeTemp = "160°F (71°C) internal for pork/beef sausage; 165°F (74°C) for poultry sausage";
     }
     if (food.category === "Frozen Foods") {
-      food.note = [food.note, "Follow the package directions and verify any required internal temperature."].filter(Boolean).join(" ");
+      if (/chicken|poultry/i.test(food.name)) {
+        food.safeTemp = "Chicken and poultry must reach 165°F (74°C) internally; do not assume frozen breaded poultry is precooked";
+      } else if (/meatball|meatloaf|beef|pork|sausage/i.test(food.name)) {
+        food.safeTemp = "Follow package instructions; verify safe doneness (160°F for ground beef/pork, 165°F for poultry)";
+      } else if (/fish|shrimp|seafood/i.test(food.name)) {
+        food.safeTemp = "Check the package and verify the required seafood cooking temperature";
+      } else if (/pot pie/i.test(food.name)) {
+        food.safeTemp = "Meat-containing pot pie centers must reach 165°F (74°C)";
+      }
+      food.note = [food.note, "Follow package directions; cooking times vary by brand and whether food is raw or fully cooked."].filter(Boolean).join(" ");
     }
   }
-  const withheld = foods.findIndex(food => food.name === "Pork loin" && food.portion === "1 in" && food.minutes === "55");
-  if (withheld !== -1) foods.splice(withheld, 1);
+  // Keep ambiguous records in the audit ledger but exclude them from public results.
+  for (let i = foods.length - 1; i >= 0; i--) {
+    const food = foods[i];
+    if ((food.name === "Pork loin" && food.portion === "1 in" && food.minutes === "55") ||
+        (food.name === "Meatloaf" && food.category === "Frozen Foods" && food.portion === "Single layer")) {
+      foods.splice(i, 1);
+    }
+  }
 })();
