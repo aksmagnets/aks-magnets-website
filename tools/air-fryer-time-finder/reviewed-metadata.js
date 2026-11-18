@@ -149,8 +149,8 @@
       } else {
         food.safeTemp = "145°F (63°C) internal for fish, or opaque and flakes easily";
       }
-    } else if (food.category === "Reheating") {
-      food.safeTemp = "Reheat leftovers to 165°F (74°C) internal";
+    } else if (food.category === "Reheating" && !/fries|bread|toast/i.test(food.name)) {
+      food.safeTemp = "Reheat meat-containing or otherwise perishable leftovers to 165°F (74°C) internal";
     } else if (/scrambled eggs|fried eggs/i.test(food.name)) {
       food.safeTemp = "Cook egg dishes to 160°F (71°C); whole eggs until firm";
     }
