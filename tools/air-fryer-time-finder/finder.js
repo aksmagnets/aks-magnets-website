@@ -58,10 +58,33 @@
     }
     return food.name;
   }
+  // Beef-only photographic pilot; all other food cards keep their original layout.
+  function beefPhotoIndex(food) {
+    const name = food.name.toLowerCase();
+    if (/burger|patty/.test(name)) return 0;
+    if (/roast|eye round|tri-tip/.test(name)) return 1;
+    if (/rib.?eye/.test(name)) return 3;
+    if (/meatball/.test(name)) return 4;
+    if (/sausage/.test(name)) return 5;
+    if (/fajita/.test(name)) return 6;
+    if (/steak bites/.test(name)) return 7;
+    return 2; // New York strip photo represents other whole steaks.
+  }
   function makeCard(food) {
     const article = make("article", "aft-result-card");
-    article.append(make("span", "aft-result-category", food.category));
-    article.append(make("h3", "aft-result-name", headingFor(food)));
+    if (food.category === "Beef") {
+      const headingRow = make("div", "aft-beef-heading");
+      const labels = make("div", "aft-beef-heading-text");
+      labels.append(make("span", "aft-result-category", food.category));
+      labels.append(make("h3", "aft-result-name", headingFor(food)));
+      const photo = make("span", "aft-beef-photo aft-beef-photo-" + beefPhotoIndex(food));
+      photo.setAttribute("aria-hidden", "true");
+      headingRow.append(labels, photo);
+      article.append(headingRow);
+    } else {
+      article.append(make("span", "aft-result-category", food.category));
+      article.append(make("h3", "aft-result-name", headingFor(food)));
+    }
     const stats = make("div", "aft-result-stats");
     const temp = make("div", "aft-stat");
     if (food.cookingMode === "Max Crisp") {
