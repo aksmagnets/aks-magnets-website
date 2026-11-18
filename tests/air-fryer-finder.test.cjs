@@ -44,7 +44,7 @@ function search(q, category = "") {
   return {
     count: Number(nodes["aft-count"].textContent.split(" ")[0]),
     cards: findCards(),
-    titles: findCards().map(x => x.children.find(c => c.tag === "h3")?.textContent).filter(Boolean)
+    titles: findCards().map(x => { const nodes = x.children.flatMap(c => [c, ...(c.children || []).flatMap(d => [d, ...(d.children || [])])]); return nodes.find(c => c.tag === "h3")?.textContent; }).filter(Boolean)
   };
 }
 assert.equal(findCards().length, 0, "Nothing should show before entering a query");
@@ -62,7 +62,8 @@ const beefTrial = search("", "Beef");
 assert(beefTrial.count >= 15, "Beef category should show its original results");
 assert(beefTrial.cards.every(card => card.textContent && card.children.some(c => c.className === "aft-beef-heading")), "Beef cards should contain the image-ready heading");
 const seafoodTrial = search("", "Seafood");
-assert(seafoodTrial.cards.every(card => !card.children.some(c => c.className === "aft-beef-heading")), "Other categories must keep their old card layout");
+assert(seafoodTrial.cards.every(card => card.children.some(c => c.className === "aft-beef-heading")), "Seafood now shows illustrated cards");
+assert(search("asparagus").cards.some(card => card.children.some(c => c.className === "aft-beef-heading")), "Asparagus should have an illustration");
 assert(search("taquitos").count >= 1);
 assert(search("broccoli").count >= 1);
 assert.equal(search("nothingmatchesaksmagnets").count, 0);
@@ -82,4 +83,4 @@ assert(findCards().length >= 50, "Show More should append next batch");
 nodes["aft-clear"].events.click();
 assert.equal(findCards().length, 0);
 assert(nodes["aft-safety"].hidden);
-console.log("PASS: 228 active foods; source guards, Beef-only images, search aliases, categories, unit switch, Max Crisp, pagination and reset.");
+console.log("PASS: 228 active foods; source guards, category illustration atlas, search aliases, categories, unit switch, Max Crisp, pagination and reset.");
