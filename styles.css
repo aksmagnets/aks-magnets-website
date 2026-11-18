@@ -948,7 +948,7 @@ body{font-family:Arial,Helvetica,sans-serif}
   .aft-page .aft-field select{transition:none}
 }
 
-/* Beef result-card image pilot: all eight food photos packed into one ~9 KB
+/* Beef result-card image pilot: all eight detailed food illustrations packed into one ~168 KB
    transparent WebP sprite. No imagery in the other food categories. */
 .aft-page .aft-beef-heading{
   display:flex;align-items:center;justify-content:space-between;gap:10px;min-width:0;
@@ -957,7 +957,7 @@ body{font-family:Arial,Helvetica,sans-serif}
 .aft-page .aft-beef-heading .aft-result-name{margin:11px 0 17px}
 .aft-page .aft-beef-photo{
   display:block;flex:none;width:72px;height:72px;
-  background-image:url("tools/air-fryer-time-finder/assets/beef-preview-sprite.webp?v=1");
+  background-image:url("tools/air-fryer-time-finder/assets/beef-preview-sprite.webp?v=2");
   background-repeat:no-repeat;background-size:400% 200%;
   background-position:0 0;
 }
