@@ -63,6 +63,17 @@
     const portion = make("p", "aft-result-portion");
     portion.append(make("strong", "", "Preparation: "), document.createTextNode(food.portion));
     article.append(stats, portion);
+    if (food.safeTemp) {
+      const safe = make("p", "aft-result-safe");
+      safe.append(make("strong", "", "Safe doneness: "), document.createTextNode(food.safeTemp));
+      article.append(safe);
+    }
+    if (food.appliance || food.cookingMode) {
+      const model = make("p", "aft-result-model");
+      model.textContent = [food.appliance, food.cookingMode ? food.cookingMode + " mode" : ""].filter(Boolean).join(" · ");
+      article.append(model);
+    }
+    if (food.note) article.append(make("p", "aft-result-note", food.note));
     return article;
   }
   let visibleLimit = 32;
@@ -72,7 +83,7 @@
   const moreWrapper = make("div", "aft-more");
   moreWrapper.append(loadMore);
   results.insertAdjacentElement("afterend", moreWrapper);
-  const searchCache = new WeakMap();
+  
   function matches(food, query) {
     const words = normalize(query).split(" ").filter(Boolean);
     return words.every(word => food.searchText.includes(word));
