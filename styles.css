@@ -1056,3 +1056,38 @@ body{font-family:Arial,Helvetica,sans-serif}
 .aft-page .aft-food-photo-77{background-position:33.3333% 100.0000%}
 .aft-page .aft-food-photo-78{background-position:66.6667% 100.0000%}
 .aft-page .aft-food-photo-79{background-position:100.0000% 100.0000%}
+
+/* Final 31 precise food thumbnails, transparent 4x8 atlas at 2x display resolution. */
+.aft-page .aft-last-photo{display:block;flex:none;width:72px;height:72px;background-image:url("tools/air-fryer-time-finder/assets/remaining-food-illustrations.webp?v=1");background-repeat:no-repeat;background-size:400% 800%}
+@media(max-width:650px){.aft-page .aft-last-photo{width:64px;height:64px}}
+.aft-page .aft-last-photo-0{background-position:0.0000% 0.0000%}
+.aft-page .aft-last-photo-1{background-position:33.3333% 0.0000%}
+.aft-page .aft-last-photo-2{background-position:66.6667% 0.0000%}
+.aft-page .aft-last-photo-3{background-position:100.0000% 0.0000%}
+.aft-page .aft-last-photo-4{background-position:0.0000% 14.2857%}
+.aft-page .aft-last-photo-5{background-position:33.3333% 14.2857%}
+.aft-page .aft-last-photo-6{background-position:66.6667% 14.2857%}
+.aft-page .aft-last-photo-7{background-position:100.0000% 14.2857%}
+.aft-page .aft-last-photo-8{background-position:0.0000% 28.5714%}
+.aft-page .aft-last-photo-9{background-position:33.3333% 28.5714%}
+.aft-page .aft-last-photo-10{background-position:66.6667% 28.5714%}
+.aft-page .aft-last-photo-11{background-position:100.0000% 28.5714%}
+.aft-page .aft-last-photo-12{background-position:0.0000% 42.8571%}
+.aft-page .aft-last-photo-13{background-position:33.3333% 42.8571%}
+.aft-page .aft-last-photo-14{background-position:66.6667% 42.8571%}
+.aft-page .aft-last-photo-15{background-position:100.0000% 42.8571%}
+.aft-page .aft-last-photo-16{background-position:0.0000% 57.1429%}
+.aft-page .aft-last-photo-17{background-position:33.3333% 57.1429%}
+.aft-page .aft-last-photo-18{background-position:66.6667% 57.1429%}
+.aft-page .aft-last-photo-19{background-position:100.0000% 57.1429%}
+.aft-page .aft-last-photo-20{background-position:0.0000% 71.4286%}
+.aft-page .aft-last-photo-21{background-position:33.3333% 71.4286%}
+.aft-page .aft-last-photo-22{background-position:66.6667% 71.4286%}
+.aft-page .aft-last-photo-23{background-position:100.0000% 71.4286%}
+.aft-page .aft-last-photo-24{background-position:0.0000% 85.7143%}
+.aft-page .aft-last-photo-25{background-position:33.3333% 85.7143%}
+.aft-page .aft-last-photo-26{background-position:66.6667% 85.7143%}
+.aft-page .aft-last-photo-27{background-position:100.0000% 85.7143%}
+.aft-page .aft-last-photo-28{background-position:0.0000% 100.0000%}
+.aft-page .aft-last-photo-29{background-position:33.3333% 100.0000%}
+.aft-page .aft-last-photo-30{background-position:66.6667% 100.0000%}
