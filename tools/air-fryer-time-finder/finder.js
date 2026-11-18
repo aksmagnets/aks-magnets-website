@@ -1,115 +1,124 @@
-/* AKS Air Fryer Time Finder — client-side only, using published chart values. */
+/* AKS Air Fryer Time Finder — searchable source-backed reference library. */
 (() => {
   "use strict";
-  const data = window.AKS_AIR_FRYER_DATA || [];
-  const search = document.getElementById("aft-search");
-  const category = document.getElementById("aft-category");
-  const units = document.getElementById("aft-units");
-  const clear = document.getElementById("aft-clear");
-  const showAll = document.getElementById("aft-show-all");
-  const results = document.getElementById("aft-results");
-  const count = document.getElementById("aft-count");
-  const quick = document.getElementById("aft-quick-picks");
-  if (!search || !category || !units || !clear || !showAll || !results || !count || !quick) return;
-  const featured = [
-    ["Chicken", "Breast (boneless)"], ["Frozen Foods", "Chicken nuggets"],
-    ["Seafood", "Salmon fillet"], ["Vegetables", "Broccoli"],
-    ["Beef", "Burger"], ["Frozen Foods", "Curly fries"],
-    ["Vegetables", "Sweet potato"], ["Chicken", "Wings"]
-  ];
-  const normalize = value => String(value || "").toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, " ").trim();
-  let expanded = false;
-  [...new Set(data.map(item => item.category))].forEach(name => {
-    const option = document.createElement("option");
-    option.value = name;
-    option.textContent = name;
-    category.appendChild(option);
-  });
-  const fToC = f => Math.round((f - 32) * 5 / 9);
-  const make = (tag, className, textValue) => {
-    const element = document.createElement(tag);
-    if (className) element.className = className;
-    if (textValue !== undefined) element.textContent = textValue;
-    return element;
+  const data = Array.isArray(window.AKS_AIR_FRYER_DATA) ? window.AKS_AIR_FRYER_DATA : [];
+  const $ = id => document.getElementById(id);
+  const search = $("aft-search"), category = $("aft-category"), units = $("aft-units");
+  const clear = $("aft-clear"), results = $("aft-results"), count = $("aft-count");
+  const heading = $("aft-results-heading"), emptyState = $("aft-empty-state");
+  const safety = $("aft-safety");
+  if (![search, category, units, clear, results, count, heading, emptyState, safety].every(Boolean)) return;
+  const normalize = input => String(input || "").toLowerCase().normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, " ").trim();
+  const synonyms = {
+    "bell pepper": "capsicum", "capsicum": "bell pepper",
+    "aubergine": "eggplant", "eggplant": "aubergine",
+    "courgette": "zucchini", "zucchini": "courgette",
+    "garbanzo": "chickpea", "chickpea": "garbanzo",
+    "chips": "fries", "fries": "chips",
+    "prawn": "shrimp", "shrimp": "prawn",
+    "scallion": "green onion", "green onion": "scallion",
+    "tater tots": "potato tots", "potato tots": "tater tots",
+    "fillet": "filet", "filet": "fillet",
+    "ribeye": "rib eye", "rib eye": "ribeye",
+    "brussel sprout": "brussels sprouts"
   };
-  const labelFor = item => item.category === "Chicken" && /^(Breast|Thighs|Wings|Tenders|Drumsticks|Legs)/.test(item.name)
-    ? "Chicken " + item.name.toLowerCase() : item.name;
-  function matches(item, query) {
-    const words = normalize(query).split(" ").filter(Boolean);
-    if (!words.length) return true;
-    const haystack = normalize([item.name, item.category, labelFor(item), item.portion].join(" "));
-    return words.every(word => haystack.includes(word));
+  const categories = [...new Set(data.map(food => food.category))].sort((a,b) => a.localeCompare(b));
+  categories.forEach(name => {
+    const option = document.createElement("option");
+    option.value = name; option.textContent = name; category.appendChild(option);
+  });
+  const make = (tag, className, content) => {
+    const el = document.createElement(tag);
+    if (className) el.className = className;
+    if (content !== undefined) el.textContent = content;
+    return el;
+  };
+  function searchText(food) {
+    let str = normalize([food.name, food.category, food.portion, food.keywords || ""].join(" "));
+    for (const pair of Object.entries(synonyms)) {
+      if (str.includes(pair[0])) str += " " + pair[1];
+    }
+    return str;
   }
-  const isFeatured = item => featured.some(pair => item.category === pair[0] && item.name === pair[1]);
-  function card(item) {
+  const indexed = data.map(food => ({...food, searchText:searchText(food)}));
+  const fToC = f => Math.round((f - 32) * 5 / 9);
+  function headingFor(food) {
+    if (food.category === "Chicken" && /^(Breast|Thighs|Wings|Tenders|Drumsticks|Legs)/.test(food.name)) {
+      return "Chicken " + food.name.toLowerCase();
+    }
+    return food.name;
+  }
+  function makeCard(food) {
     const article = make("article", "aft-result-card");
-    article.appendChild(make("span", "aft-result-category", item.category));
-    article.appendChild(make("h3", "aft-result-name", labelFor(item)));
+    article.append(make("span", "aft-result-category", food.category));
+    article.append(make("h3", "aft-result-name", headingFor(food)));
     const stats = make("div", "aft-result-stats");
     const temp = make("div", "aft-stat");
-    temp.appendChild(make("span", "aft-stat-label", "Temperature"));
-    temp.appendChild(make("strong", "aft-stat-value", units.value === "C" ? fToC(item.fahrenheit) + "°C" : item.fahrenheit + "°F"));
+    temp.append(make("span", "aft-stat-label", "Temperature"), make("strong", "aft-stat-value",
+      units.value === "C" ? fToC(food.fahrenheit) + "°C" : food.fahrenheit + "°F"));
     const time = make("div", "aft-stat");
-    time.appendChild(make("span", "aft-stat-label", "Estimated cook time"));
-    time.appendChild(make("strong", "aft-stat-value", item.minutes + " min"));
+    time.append(make("span", "aft-stat-label", "Estimated cook time"), make("strong", "aft-stat-value", food.minutes + " min"));
     stats.append(temp, time);
-    article.appendChild(stats);
     const portion = make("p", "aft-result-portion");
-    portion.append(make("strong", "", "Size / preparation: "), document.createTextNode(item.portion));
-    article.appendChild(portion);
-    article.appendChild(make("p", "aft-result-footnote", "Check doneness with a food thermometer when applicable."));
+    portion.append(make("strong", "", "Preparation: "), document.createTextNode(food.portion));
+    article.append(stats, portion);
     return article;
+  }
+  let visibleLimit = 32;
+  const loadMore = make("button", "aft-show-all", "Show more matches");
+  loadMore.type = "button";
+  loadMore.addEventListener("click", () => { visibleLimit += 32; render(); });
+  const moreWrapper = make("div", "aft-more");
+  moreWrapper.append(loadMore);
+  results.insertAdjacentElement("afterend", moreWrapper);
+  const searchCache = new WeakMap();
+  function matches(food, query) {
+    const words = normalize(query).split(" ").filter(Boolean);
+    return words.every(word => food.searchText.includes(word));
   }
   function render() {
     const query = search.value.trim();
     const selectedCategory = category.value;
-    const filtering = Boolean(query || selectedCategory);
-    const subset = data.filter(item => (!selectedCategory || item.category === selectedCategory) && matches(item, query));
-    const visible = filtering || expanded ? subset : subset.filter(isFeatured);
+    const active = Boolean(query || selectedCategory);
     results.replaceChildren();
-    visible.forEach(item => results.appendChild(card(item)));
-    if (!visible.length) {
+    heading.hidden = !active;
+    emptyState.hidden = active;
+    safety.hidden = !active;
+    clear.hidden = !active;
+    moreWrapper.hidden = true;
+    if (!active) return;
+    const filtered = indexed.filter(food => (!selectedCategory || food.category === selectedCategory) && matches(food, query));
+    const q = normalize(query);
+    if (q) filtered.sort((a,b) => {
+      const score = food => {
+        const n = normalize(headingFor(food));
+        return n === q ? 0 : n.startsWith(q) ? 1 : n.includes(q) ? 2 : 3;
+      };
+      return score(a) - score(b) || a.name.localeCompare(b.name);
+    });
+    else filtered.sort((a,b) => a.name.localeCompare(b.name));
+    const fragment = document.createDocumentFragment();
+    filtered.slice(0, visibleLimit).forEach(food => fragment.append(makeCard(food)));
+    if (!filtered.length) {
       const empty = make("div", "aft-empty");
       empty.append(make("h3", "", "No matching foods found"));
-      empty.append(make("p", "", "Try a shorter food name, another category, or clear your filters."));
-      results.appendChild(empty);
+      empty.append(make("p", "", "Try a shorter search or select another category."));
+      fragment.append(empty);
     }
-    count.textContent = filtering ? subset.length + (subset.length === 1 ? " food found" : " foods found")
-      : expanded ? "Browsing all " + subset.length + " foods" : "Showing " + visible.length + " featured foods from our " + data.length + "-food chart";
-    showAll.hidden = filtering;
-    showAll.textContent = expanded ? "Show featured foods" : "Browse all " + data.length + " foods";
-    clear.hidden = !filtering;
-    quick.querySelectorAll("button").forEach(button => {
-      button.setAttribute("aria-pressed", String(normalize(search.value) === normalize(button.dataset.term)));
-    });
+    results.append(fragment);
+    count.textContent = filtered.length + (filtered.length === 1 ? " match" : " matches");
+    if (filtered.length > visibleLimit) {
+      moreWrapper.hidden = false;
+      loadMore.textContent = "Show more matches (" + (filtered.length - visibleLimit) + " remaining)";
+    }
   }
-  const picks = [
-    ["Chicken breast", "breast boneless"], ["Frozen nuggets", "nuggets"],
-    ["Salmon", "salmon"], ["Broccoli", "broccoli"], ["French fries", "fries"]
-  ];
-  picks.forEach(pair => {
-    const btn = make("button", "aft-chip", pair[0]);
-    btn.type = "button";
-    btn.dataset.term = pair[1];
-    btn.setAttribute("aria-pressed", "false");
-    btn.addEventListener("click", () => {
-      search.value = pair[1];
-      category.value = "";
-      render();
-      search.focus();
-    });
-    quick.appendChild(btn);
-  });
-  search.addEventListener("input", render);
-  category.addEventListener("change", render);
+  function filterChanged() { visibleLimit = 32; render(); }
+  search.addEventListener("input", filterChanged);
+  category.addEventListener("change", filterChanged);
   units.addEventListener("change", render);
   clear.addEventListener("click", () => {
-    search.value = "";
-    category.value = "";
-    expanded = false;
-    render();
-    search.focus();
+    search.value = ""; category.value = ""; visibleLimit = 32; render(); search.focus();
   });
-  showAll.addEventListener("click", () => { expanded = !expanded; render(); });
   render();
 })();
