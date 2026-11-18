@@ -872,18 +872,23 @@ body{font-family:Arial,Helvetica,sans-serif}
 
 /* Air Fryer Time Finder — focused, accessible search-panel polish.
    Scoped to this tool; no result cards or global form elements are changed. */
+/* AKS tool convention: the 3px green frame identifies the interactive workspace.
+   Apply .aks-tool-interactive-frame to the primary control panel of future tools. */
+.aks-tool-interactive-frame,
 .aft-page .aft-search-panel{
   position:relative;
   overflow:hidden;
   padding:27px 29px 24px;
-  border:1px solid #cfe2d4;
+  border:3px solid #07ae58;
   border-radius:20px;
   background:linear-gradient(140deg,#f6fcf7 0%,#edf8ef 100%);
-  box-shadow:0 9px 27px rgba(18,90,46,.085),0 2px 5px rgba(18,90,46,.035);
+  box-shadow:0 9px 27px rgba(7,130,65,.12),0 0 0 4px rgba(7,174,88,.045);
 }
+/* Yellow stays a tiny accent *inside* the frame; all four borders remain green. */
+.aks-tool-interactive-frame::before,
 .aft-page .aft-search-panel::before{
-  content:"";position:absolute;inset:0 0 auto;height:4px;
-  background:linear-gradient(90deg,#07ae58 0%,#07ae58 74%,#fef200 74%,#fef200 100%);
+  content:"";position:absolute;top:13px;right:17px;width:30px;height:4px;
+  border-radius:5px;background:#fef200;pointer-events:none;
 }
 .aft-page .aft-search-panel h2{
   font-size:1.55rem;letter-spacing:-.015em;margin:0 0 19px;color:#173e26;
