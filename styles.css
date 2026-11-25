@@ -1148,3 +1148,9 @@ body{font-family:Arial,Helvetica,sans-serif}
 /* Pork & Lamb audit: accurate hot dogs, isolated from the approved sausage art. */
 .aft-page .aft-hotdog-photo{display:block;flex:none;width:72px;height:72px;background-image:url("tools/air-fryer-time-finder/assets/hot-dogs-correction.webp?v=1");background-repeat:no-repeat;background-size:100% 100%;background-position:center}
 @media(max-width:650px){.aft-page .aft-hotdog-photo{width:64px;height:64px}}
+
+/* Reviewed Sweets: fully contained churros and iced cinnamon rolls. */
+.aft-page .aft-sweets-photo{display:block;flex:none;width:72px;height:72px;background-image:url("tools/air-fryer-time-finder/assets/sweets-corrections.webp?v=1");background-repeat:no-repeat;background-size:200% 100%}
+.aft-page .aft-sweets-photo-0{background-position:0 0}
+.aft-page .aft-sweets-photo-1{background-position:100% 0}
+@media(max-width:650px){.aft-page .aft-sweets-photo{width:64px;height:64px}}

@@ -110,6 +110,13 @@ for (const [name,index] of [["Frozen samosas",0],["Frozen jalapeño poppers",1],
 const porkCards = search("Hot dogs", "Pork & Lamb").cards;
 assert(porkCards.some(card => card.children.some(row => (row.children || []).some(child => child.className === "aft-hotdog-photo"))), "Hot dogs must show hot dog image rather than sausages");
 assert(search("Pork sausage", "Pork & Lamb").cards.every(card => !card.children.some(row => (row.children || []).some(child => child.className === "aft-hotdog-photo"))), "Approved pork sausage illustration remains unchanged");
+for (const [name,index] of [["Churros",0],["Cinnamon rolls",1]]) {
+  const cards = search(name,"Sweets").cards;
+  assert(cards.some(card => card.children.some(row => (row.children || []).some(child =>
+    child.className === "aft-sweets-photo aft-sweets-photo-" + index))), name + " should use its audited Sweets image");
+}
+assert(search("Cookies","Sweets").cards.every(card => !card.children.some(row => (row.children || []).some(child =>
+  typeof child.className === "string" && child.className.startsWith("aft-sweets-photo")))), "Approved Cookie image must remain unchanged");
 assert(search("taquitos").count >= 1);
 assert(search("broccoli").count >= 1);
 assert.equal(search("nothingmatchesaksmagnets").count, 0);
