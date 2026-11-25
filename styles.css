@@ -1124,3 +1124,16 @@ body{font-family:Arial,Helvetica,sans-serif}
 
 /* Clean isolated baked sweet potato illustration; removes stray atlas artifact. */
 .aft-page .aft-vegetable-photo-1{background-image:url("tools/air-fryer-time-finder/assets/baked-sweet-potato-clean.webp?v=1");background-size:100% 100%;background-position:center}
+
+/* Reviewed Frozen Foods: 9 accurate, fully contained, transparent food thumbnails. */
+.aft-page .aft-frozen-photo{display:block;flex:none;width:72px;height:72px;background-image:url("tools/air-fryer-time-finder/assets/frozen-food-corrections.webp?v=1");background-repeat:no-repeat;background-size:300% 300%}
+@media(max-width:650px){.aft-page .aft-frozen-photo{width:64px;height:64px}}
+.aft-page .aft-frozen-photo-0{background-position:0.0000% 0.0000%}
+.aft-page .aft-frozen-photo-1{background-position:50.0000% 0.0000%}
+.aft-page .aft-frozen-photo-2{background-position:100.0000% 0.0000%}
+.aft-page .aft-frozen-photo-3{background-position:0.0000% 50.0000%}
+.aft-page .aft-frozen-photo-4{background-position:50.0000% 50.0000%}
+.aft-page .aft-frozen-photo-5{background-position:100.0000% 50.0000%}
+.aft-page .aft-frozen-photo-6{background-position:0.0000% 100.0000%}
+.aft-page .aft-frozen-photo-7{background-position:50.0000% 100.0000%}
+.aft-page .aft-frozen-photo-8{background-position:100.0000% 100.0000%}

@@ -151,6 +151,11 @@
   function vegetableCorrectionIndex(food) {
     return food.category === "Vegetables" ? (vegetableCorrectionPhotos.get(food.name) ?? null) : null;
   }
+  // Frozen Foods audit: replace only the nine mismatched or clipped food illustrations.
+  const frozenCorrectionPhotos = new Map([["Corn dogs",0],["Curly fries",1],["Fish sticks",2],["Frozen chicken burger",3],["Frozen fish cakes",4],["Frozen pizza",5],["Frozen pizza snack rolls",6],["Frozen potato wedges",7],["Frozen waffle fries",8]]);
+  function frozenCorrectionIndex(food) {
+    return food.category === "Frozen Foods" ? (frozenCorrectionPhotos.get(food.name) ?? null) : null;
+  }
   // The approved Beef images remain unchanged.
   function beefPhotoIndex(food) {
     const name = food.name.toLowerCase();
@@ -168,6 +173,7 @@
     const atlasIndex = food.category === "Beef" ? null : foodPhotoIndex(food);
     const poultryIndex = poultryCorrectionIndex(food);
     const vegetableIndex = vegetableCorrectionIndex(food);
+    const frozenIndex = frozenCorrectionIndex(food);
     const finalIndex = atlasIndex === null && food.category !== "Beef" ? finalFoodPhotos.get(food.name) : undefined;
     if (food.category === "Beef" || atlasIndex !== null || finalIndex !== undefined) {
       const headingRow = make("div", "aft-beef-heading");
@@ -181,6 +187,8 @@
           ? "aft-poultry-photo aft-poultry-photo-" + poultryIndex
           : vegetableIndex !== null
             ? "aft-vegetable-photo aft-vegetable-photo-" + vegetableIndex
+          : frozenIndex !== null
+            ? "aft-frozen-photo aft-frozen-photo-" + frozenIndex
           : atlasIndex === 80
             ? "aft-beef-photo aft-beef-photo-4"
             : atlasIndex !== null

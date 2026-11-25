@@ -76,6 +76,17 @@ for (const [name,index] of [["Acorn squash (CookTiming)",0],["Baked sweet potato
   assert(filtered.cards.some(c => vegImageIndex(c) === index), name + " needs its exact Vegetable illustration");
 }
 assert(search("Sweet potato cubes", "Vegetables").cards.every(c => vegImageIndex(c) === null), "Existing sweet potato cube illustration stays intact");
+const frozenCardImageIndex = card => {
+  const row = card.children.find(c => c.className === "aft-beef-heading");
+  const sprite = row?.children?.find(c => /^aft-frozen-photo /.test(c.className || ""));
+  return sprite ? Number(sprite.className.match(/aft-frozen-photo-(\d+)/)?.[1]) : null;
+};
+for (const [name, index] of [["Corn dogs",0],["Curly fries",1],["Fish sticks",2],["Frozen chicken burger",3],["Frozen fish cakes",4],["Frozen pizza",5],["Frozen pizza snack rolls",6],["Frozen potato wedges",7],["Frozen waffle fries",8]]) {
+  const cards = search(name, "Frozen Foods").cards;
+  assert(cards.some(card => frozenCardImageIndex(card) === index), name + " must use its reviewed Frozen Foods thumbnail");
+}
+assert(search("Chicken nuggets", "Frozen Foods").cards.every(card => frozenCardImageIndex(card) === null), "Approved chicken nuggets image must remain unchanged");
+
 
 
 function hasPoultryCorrection(card) {
