@@ -156,6 +156,11 @@
   function frozenCorrectionIndex(food) {
     return food.category === "Frozen Foods" ? (frozenCorrectionPhotos.get(food.name) ?? null) : null;
   }
+  // Follow-up: cleaned Frozen jalapeño poppers and samosas, unclipped sausage rolls.
+  const frozenFollowupPhotos = new Map([["Frozen samosas",0],["Frozen jalapeño poppers",1],["Sausage rolls",2]]);
+  function frozenFollowupIndex(food) {
+    return food.category === "Frozen Foods" ? (frozenFollowupPhotos.get(food.name) ?? null) : null;
+  }
   // The approved Beef images remain unchanged.
   function beefPhotoIndex(food) {
     const name = food.name.toLowerCase();
@@ -174,6 +179,7 @@
     const poultryIndex = poultryCorrectionIndex(food);
     const vegetableIndex = vegetableCorrectionIndex(food);
     const frozenIndex = frozenCorrectionIndex(food);
+    const frozenFollowup = frozenFollowupIndex(food);
     const finalIndex = atlasIndex === null && food.category !== "Beef" ? finalFoodPhotos.get(food.name) : undefined;
     if (food.category === "Beef" || atlasIndex !== null || finalIndex !== undefined) {
       const headingRow = make("div", "aft-beef-heading");
@@ -189,6 +195,8 @@
             ? "aft-vegetable-photo aft-vegetable-photo-" + vegetableIndex
           : frozenIndex !== null
             ? "aft-frozen-photo aft-frozen-photo-" + frozenIndex
+          : frozenFollowup !== null
+            ? "aft-frozen-followup aft-frozen-followup-" + frozenFollowup
           : atlasIndex === 80
             ? "aft-beef-photo aft-beef-photo-4"
             : atlasIndex !== null

@@ -103,6 +103,10 @@ for (const name of ["Baby back ribs", "Kale", "Frozen pot pie", "Churros", "Froz
   assert(matched.some(card => card.children.some(c => c.children.some(x => typeof x.className === "string" && x.className.startsWith("aft-last-photo")))), name + " should show a final-set illustration");
 }
 
+for (const [name,index] of [["Frozen samosas",0],["Frozen jalapeño poppers",1],["Sausage rolls",2]]) {
+  const results = search(name,"Frozen Foods").cards;
+  assert(results.some(card => card.children.some(row => (row.children || []).some(child => child.className === "aft-frozen-followup aft-frozen-followup-" + index))), name + " uses corrected follow-up art");
+}
 assert(search("taquitos").count >= 1);
 assert(search("broccoli").count >= 1);
 assert.equal(search("nothingmatchesaksmagnets").count, 0);

@@ -1137,3 +1137,10 @@ body{font-family:Arial,Helvetica,sans-serif}
 .aft-page .aft-frozen-photo-6{background-position:0.0000% 100.0000%}
 .aft-page .aft-frozen-photo-7{background-position:50.0000% 100.0000%}
 .aft-page .aft-frozen-photo-8{background-position:100.0000% 100.0000%}
+
+/* Frozen Foods image follow-up: isolated, unclipped samosas, jalapeño poppers and sausage rolls. */
+.aft-page .aft-frozen-followup{display:block;flex:none;width:72px;height:72px;background-image:url("tools/air-fryer-time-finder/assets/frozen-food-followup.webp?v=1");background-repeat:no-repeat;background-size:200% 200%}
+.aft-page .aft-frozen-followup-0{background-position:0 0}
+.aft-page .aft-frozen-followup-1{background-position:100% 0}
+.aft-page .aft-frozen-followup-2{background-position:0 100%}
+@media(max-width:650px){.aft-page .aft-frozen-followup{width:64px;height:64px}}
