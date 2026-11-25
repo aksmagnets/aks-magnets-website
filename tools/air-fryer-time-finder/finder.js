@@ -136,6 +136,16 @@
   // 31 food-specific, illustrated subjects completing the remaining text-only cards.
   // Exact food names prevent one illustration being applied to the wrong preparation.
   const finalFoodPhotos = new Map([["Baby back ribs",0],["Beets",1],["Cabbage wedges",2],["Kale",3],["Okra",4],["Radishes",5],["Parsnips",6],["Squash",7],["Corn dogs",8],["Frozen pot pie",9],["Frozen pot stickers",10],["Sausage rolls",11],["Churros",12],["Cinnamon rolls",13],["Roasted bananas",14],["Roasted chickpeas",15],["Frozen jalapeño poppers",16],["Frozen samosas",17],["Crispy tofu cubes",18],["Spaghetti squash (halved)",19],["Falafel balls",20],["Frozen pierogies",21],["Bagel (toasted)",22],["Quick bread (mini loaf)",23],["Celeriac cubes",24],["Parsnips (cut)",25],["Turnip (cubes)",26],["Beetroot (whole)",27],["Fennel (quartered)",28],["Frozen mini quiche",29],["Frozen bagels",30]]);
+  // Reviewed Poultry corrections: do not replace approved chicken breast or wing images.
+  function poultryCorrectionIndex(food) {
+    if (food.category !== "Poultry") return null;
+    const name = food.name.toLowerCase();
+    if (/buffalo chicken thighs/.test(name)) return 4;
+    if (/thigh/.test(name)) return /bone-in/.test(name) ? 0 : 1;
+    if (/turkey tenderloin/.test(name)) return 3;
+    if (/turkey breast/.test(name)) return /bone-in/.test(name) ? 5 : 2;
+    return null;
+  }
   // The approved Beef images remain unchanged.
   function beefPhotoIndex(food) {
     const name = food.name.toLowerCase();
@@ -151,6 +161,7 @@
   function makeCard(food) {
     const article = make("article", "aft-result-card");
     const atlasIndex = food.category === "Beef" ? null : foodPhotoIndex(food);
+    const poultryIndex = poultryCorrectionIndex(food);
     const finalIndex = atlasIndex === null && food.category !== "Beef" ? finalFoodPhotos.get(food.name) : undefined;
     if (food.category === "Beef" || atlasIndex !== null || finalIndex !== undefined) {
       const headingRow = make("div", "aft-beef-heading");
@@ -160,11 +171,13 @@
       const isBeef = food.category === "Beef";
       const photo = make("span", isBeef
         ? "aft-beef-photo aft-beef-photo-" + beefPhotoIndex(food)
-        : atlasIndex === 80
-          ? "aft-beef-photo aft-beef-photo-4"
-          : atlasIndex !== null
-            ? "aft-food-photo aft-food-photo-" + atlasIndex
-            : "aft-last-photo aft-last-photo-" + finalIndex);
+        : poultryIndex !== null
+          ? "aft-poultry-photo aft-poultry-photo-" + poultryIndex
+          : atlasIndex === 80
+            ? "aft-beef-photo aft-beef-photo-4"
+            : atlasIndex !== null
+              ? "aft-food-photo aft-food-photo-" + atlasIndex
+              : "aft-last-photo aft-last-photo-" + finalIndex);
       photo.setAttribute("aria-hidden", "true");
       headingRow.append(labels, photo);
       article.append(headingRow);

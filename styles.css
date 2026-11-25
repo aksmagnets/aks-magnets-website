@@ -1091,3 +1091,13 @@ body{font-family:Arial,Helvetica,sans-serif}
 .aft-page .aft-last-photo-28{background-position:0.0000% 100.0000%}
 .aft-page .aft-last-photo-29{background-position:33.3333% 100.0000%}
 .aft-page .aft-last-photo-30{background-position:66.6667% 100.0000%}
+
+/* Audited poultry cuts: six transparent high-detail thumbnails at 2x+ resolution. */
+.aft-page .aft-poultry-photo{display:block;flex:none;width:72px;height:72px;background-image:url("tools/air-fryer-time-finder/assets/poultry-corrections.webp?v=1");background-repeat:no-repeat;background-size:300% 200%}
+.aft-page .aft-poultry-photo-0{background-position:0 0}
+.aft-page .aft-poultry-photo-1{background-position:50% 0}
+.aft-page .aft-poultry-photo-2{background-position:100% 0}
+.aft-page .aft-poultry-photo-3{background-position:0 100%}
+.aft-page .aft-poultry-photo-4{background-position:50% 100%}
+.aft-page .aft-poultry-photo-5{background-position:100% 100%}
+@media(max-width:650px){.aft-page .aft-poultry-photo{width:64px;height:64px}}
