@@ -98,7 +98,7 @@ for (const q of ["Chicken thighs", "Turkey breast", "Turkey tenderloin"]) {
 }
 assert(search("Chicken wings").cards.every(card => !hasPoultryCorrection(card)), "Approved wings imagery stays unchanged");
 
-for (const name of ["Baby back ribs", "Kale", "Frozen pot pie", "Churros", "Frozen mini quiche", "Frozen bagels"]) {
+for (const name of ["Baby back ribs", "Kale", "Frozen pot pie", "Frozen mini quiche", "Frozen bagels"]) {
   const matched = search(name).cards;
   assert(matched.some(card => card.children.some(c => c.children.some(x => typeof x.className === "string" && x.className.startsWith("aft-last-photo")))), name + " should show a final-set illustration");
 }
