@@ -1173,3 +1173,16 @@ body{font-family:Arial,Helvetica,sans-serif}
 .aks-tool-card .aks-tool-image-link:focus-visible{outline:4px solid #fef200;outline-offset:-4px}
 .aks-tool-card .aks-tool-image-link:focus-visible .aks-tool-image-hover{background:rgba(7,174,88,.18)}
 @media(prefers-reduced-motion:reduce){.aks-tool-card .aks-tool-image-link .aks-tool-card-image,.aks-tool-card .aks-tool-image-hover{transition:none}}
+
+
+/* Shared guide and tool sidebar Amazon links. */
+.af-product .af-amazon-image{display:block;position:relative;overflow:hidden;isolation:isolate;box-shadow:0 7px 14px rgba(0,0,0,.18);line-height:0;text-decoration:none}
+.af-product .af-amazon-image img{display:block;width:100%;height:auto;margin:0;box-shadow:none;transition:transform .25s ease}
+.af-product .ab-magnet-variant .af-amazon-image{margin:0 0 17px}
+.af-product .af-amazon-overlay{position:absolute;inset:0;pointer-events:none;background:rgba(7,174,88,0);transition:background .25s ease}
+.af-product .af-amazon-title{color:inherit;text-decoration:none;transition:color .25s ease}
+@media(hover:hover){.af-product .af-amazon-image:hover img{transform:scale(1.055)}.af-product .af-amazon-image:hover .af-amazon-overlay{background:rgba(7,174,88,.18)}.af-product .af-amazon-title:hover{color:#058e49}}
+.af-product .af-amazon-image:focus-visible,.af-product .af-amazon-title:focus-visible{outline:3px solid #07ae58;outline-offset:3px}
+.af-product .af-amazon-image:focus-visible .af-amazon-overlay{background:rgba(7,174,88,.18)}
+.af-product .af-amazon-title:focus-visible{color:#058e49}
+@media(prefers-reduced-motion:reduce){.af-product .af-amazon-image img,.af-product .af-amazon-overlay,.af-product .af-amazon-title{transition:none}.af-product .af-amazon-image:hover img{transform:none}}
