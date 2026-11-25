@@ -180,6 +180,7 @@
     const vegetableIndex = vegetableCorrectionIndex(food);
     const frozenIndex = frozenCorrectionIndex(food);
     const frozenFollowup = frozenFollowupIndex(food);
+    const hotDogFix = food.category === "Pork & Lamb" && food.name === "Hot dogs";
     const finalIndex = atlasIndex === null && food.category !== "Beef" ? finalFoodPhotos.get(food.name) : undefined;
     if (food.category === "Beef" || atlasIndex !== null || finalIndex !== undefined) {
       const headingRow = make("div", "aft-beef-heading");
@@ -189,6 +190,8 @@
       const isBeef = food.category === "Beef";
       const photo = make("span", isBeef
         ? "aft-beef-photo aft-beef-photo-" + beefPhotoIndex(food)
+        : hotDogFix
+          ? "aft-hotdog-photo"
         : poultryIndex !== null
           ? "aft-poultry-photo aft-poultry-photo-" + poultryIndex
           : vegetableIndex !== null
