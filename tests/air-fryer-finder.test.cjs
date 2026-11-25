@@ -64,6 +64,16 @@ assert(beefTrial.cards.every(card => card.textContent && card.children.some(c =>
 const seafoodTrial = search("", "Seafood");
 assert(seafoodTrial.cards.every(card => card.children.some(c => c.className === "aft-beef-heading")), "Seafood now shows illustrated cards");
 assert(search("asparagus").cards.some(card => card.children.some(c => c.className === "aft-beef-heading")), "Asparagus should have an illustration");
+
+function hasPoultryCorrection(card) {
+  return card.children.some(row => (row.children || []).some(child =>
+    typeof child.className === "string" && child.className.includes("aft-poultry-photo")));
+}
+for (const q of ["Chicken thighs", "Turkey breast", "Turkey tenderloin"]) {
+  assert(search(q).cards.some(hasPoultryCorrection), q + " should use a reviewed Poultry illustration");
+}
+assert(search("Chicken wings").cards.every(card => !hasPoultryCorrection(card)), "Approved wings imagery stays unchanged");
+
 for (const name of ["Baby back ribs", "Kale", "Frozen pot pie", "Churros", "Frozen mini quiche", "Frozen bagels"]) {
   const matched = search(name).cards;
   assert(matched.some(card => card.children.some(c => c.children.some(x => typeof x.className === "string" && x.className.startsWith("aft-last-photo")))), name + " should show a final-set illustration");
