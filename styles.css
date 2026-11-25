@@ -1160,3 +1160,16 @@ body{font-family:Arial,Helvetica,sans-serif}
 .aks-tools-library .aks-tool-card .aft-card-preview{padding:0;background:#07ae58}
 .aks-tools-home .aks-tool-card .aft-card-preview .aks-tool-card-image,
 .aks-tools-library .aks-tool-card .aft-card-preview .aks-tool-card-image{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+
+
+/* Tool artwork links mirror the guide cards without altering their resting spacing. */
+.aks-tool-card .aks-tool-image-link{position:relative;overflow:hidden;text-decoration:none;cursor:pointer}
+.aks-tool-card .aks-tool-image-link .aks-tool-card-image{transition:scale .25s ease,filter .25s ease}
+.aks-tool-card .aks-tool-image-hover{position:absolute;inset:0;pointer-events:none;background:rgba(7,174,88,0);transition:background .25s ease}
+@media(hover:hover){
+  .aks-tool-card .aks-tool-image-link:hover .aks-tool-card-image{scale:1.055;filter:saturate(1.06)}
+  .aks-tool-card .aks-tool-image-link:hover .aks-tool-image-hover{background:rgba(7,174,88,.18)}
+}
+.aks-tool-card .aks-tool-image-link:focus-visible{outline:4px solid #fef200;outline-offset:-4px}
+.aks-tool-card .aks-tool-image-link:focus-visible .aks-tool-image-hover{background:rgba(7,174,88,.18)}
+@media(prefers-reduced-motion:reduce){.aks-tool-card .aks-tool-image-link .aks-tool-card-image,.aks-tool-card .aks-tool-image-hover{transition:none}}
