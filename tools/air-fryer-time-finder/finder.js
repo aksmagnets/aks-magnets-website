@@ -146,6 +146,11 @@
     if (/turkey breast/.test(name)) return /bone-in/.test(name) ? 5 : 2;
     return null;
   }
+  // Carefully audited Vegetables replacements; only explicitly reviewed foods change.
+  const vegetableCorrectionPhotos = new Map([["Acorn squash (CookTiming)",0],["Baked sweet potato (large)",1],["Baked whole potatoes",2],["Baked potato (large)",2],["Bell peppers (whole)",3],["Homemade fresh fries",4],["Homemade potato chips",5],["Loaded potato skins",6],["Mushrooms (whole)",7],["Peppers (1-inch chunks)",8],["Portobello mushrooms (whole)",9],["Potatoes (1-inch cubes)",10],["Potatoes (1-inch chunks)",10],["Roasted baby potatoes",11],["Stuffed mushrooms",12],["Sweet potato",13],["Tomato halves",14],["Zucchini",15]]);
+  function vegetableCorrectionIndex(food) {
+    return food.category === "Vegetables" ? (vegetableCorrectionPhotos.get(food.name) ?? null) : null;
+  }
   // The approved Beef images remain unchanged.
   function beefPhotoIndex(food) {
     const name = food.name.toLowerCase();
@@ -162,6 +167,7 @@
     const article = make("article", "aft-result-card");
     const atlasIndex = food.category === "Beef" ? null : foodPhotoIndex(food);
     const poultryIndex = poultryCorrectionIndex(food);
+    const vegetableIndex = vegetableCorrectionIndex(food);
     const finalIndex = atlasIndex === null && food.category !== "Beef" ? finalFoodPhotos.get(food.name) : undefined;
     if (food.category === "Beef" || atlasIndex !== null || finalIndex !== undefined) {
       const headingRow = make("div", "aft-beef-heading");
@@ -173,6 +179,8 @@
         ? "aft-beef-photo aft-beef-photo-" + beefPhotoIndex(food)
         : poultryIndex !== null
           ? "aft-poultry-photo aft-poultry-photo-" + poultryIndex
+          : vegetableIndex !== null
+            ? "aft-vegetable-photo aft-vegetable-photo-" + vegetableIndex
           : atlasIndex === 80
             ? "aft-beef-photo aft-beef-photo-4"
             : atlasIndex !== null

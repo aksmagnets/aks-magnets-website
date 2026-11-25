@@ -1101,3 +1101,23 @@ body{font-family:Arial,Helvetica,sans-serif}
 .aft-page .aft-poultry-photo-4{background-position:50% 100%}
 .aft-page .aft-poultry-photo-5{background-position:100% 100%}
 @media(max-width:650px){.aft-page .aft-poultry-photo{width:64px;height:64px}}
+
+/* Reviewed Vegetables: 16 food-accurate 256px thumbnails; only audited items use this atlas. */
+.aft-page .aft-vegetable-photo{display:block;flex:none;width:72px;height:72px;background-image:url("tools/air-fryer-time-finder/assets/vegetable-corrections.webp?v=1");background-repeat:no-repeat;background-size:400% 400%}
+@media(max-width:650px){.aft-page .aft-vegetable-photo{width:64px;height:64px}}
+.aft-page .aft-vegetable-photo-0{background-position:0.0000% 0.0000%}
+.aft-page .aft-vegetable-photo-1{background-position:33.3333% 0.0000%}
+.aft-page .aft-vegetable-photo-2{background-position:66.6667% 0.0000%}
+.aft-page .aft-vegetable-photo-3{background-position:100.0000% 0.0000%}
+.aft-page .aft-vegetable-photo-4{background-position:0.0000% 33.3333%}
+.aft-page .aft-vegetable-photo-5{background-position:33.3333% 33.3333%}
+.aft-page .aft-vegetable-photo-6{background-position:66.6667% 33.3333%}
+.aft-page .aft-vegetable-photo-7{background-position:100.0000% 33.3333%}
+.aft-page .aft-vegetable-photo-8{background-position:0.0000% 66.6667%}
+.aft-page .aft-vegetable-photo-9{background-position:33.3333% 66.6667%}
+.aft-page .aft-vegetable-photo-10{background-position:66.6667% 66.6667%}
+.aft-page .aft-vegetable-photo-11{background-position:100.0000% 66.6667%}
+.aft-page .aft-vegetable-photo-12{background-position:0.0000% 100.0000%}
+.aft-page .aft-vegetable-photo-13{background-position:33.3333% 100.0000%}
+.aft-page .aft-vegetable-photo-14{background-position:66.6667% 100.0000%}
+.aft-page .aft-vegetable-photo-15{background-position:100.0000% 100.0000%}

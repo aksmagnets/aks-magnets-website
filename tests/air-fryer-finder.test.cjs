@@ -65,6 +65,19 @@ const seafoodTrial = search("", "Seafood");
 assert(seafoodTrial.cards.every(card => card.children.some(c => c.className === "aft-beef-heading")), "Seafood now shows illustrated cards");
 assert(search("asparagus").cards.some(card => card.children.some(c => c.className === "aft-beef-heading")), "Asparagus should have an illustration");
 
+// Audited Vegetable images should use the new dedicated sprite; approved foods stay put.
+const vegImageIndex = card => {
+  const row = card.children.find(c => c.className === "aft-beef-heading");
+  const sprite = row?.children?.find(c => /^aft-vegetable-photo /.test(c.className || ""));
+  return sprite ? Number(sprite.className.match(/aft-vegetable-photo-(\d+)/)?.[1]) : null;
+};
+for (const [name,index] of [["Acorn squash (CookTiming)",0],["Baked sweet potato (large)",1],["Baked whole potatoes",2],["Baked potato (large)",2],["Bell peppers (whole)",3],["Homemade fresh fries",4],["Homemade potato chips",5],["Loaded potato skins",6],["Mushrooms (whole)",7],["Peppers (1-inch chunks)",8],["Portobello mushrooms (whole)",9],["Potatoes (1-inch cubes)",10],["Potatoes (1-inch chunks)",10],["Roasted baby potatoes",11],["Stuffed mushrooms",12],["Sweet potato",13],["Tomato halves",14],["Zucchini",15]]) {
+  const filtered = search(name, "Vegetables");
+  assert(filtered.cards.some(c => vegImageIndex(c) === index), name + " needs its exact Vegetable illustration");
+}
+assert(search("Sweet potato cubes", "Vegetables").cards.every(c => vegImageIndex(c) === null), "Existing sweet potato cube illustration stays intact");
+
+
 function hasPoultryCorrection(card) {
   return card.children.some(row => (row.children || []).some(child =>
     typeof child.className === "string" && child.className.includes("aft-poultry-photo")));
