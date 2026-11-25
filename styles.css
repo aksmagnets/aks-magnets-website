@@ -1154,3 +1154,9 @@ body{font-family:Arial,Helvetica,sans-serif}
 .aft-page .aft-sweets-photo-0{background-position:0 0}
 .aft-page .aft-sweets-photo-1{background-position:100% 0}
 @media(max-width:650px){.aft-page .aft-sweets-photo{width:64px;height:64px}}
+
+/* Shared AKS illustrated tool-card visual language; air fryer tool card pilot. */
+.aks-tools-home .aks-tool-card .aft-card-preview,
+.aks-tools-library .aks-tool-card .aft-card-preview{padding:0;background:#07ae58}
+.aks-tools-home .aks-tool-card .aft-card-preview .aks-tool-card-image,
+.aks-tools-library .aks-tool-card .aft-card-preview .aks-tool-card-image{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
