@@ -1121,3 +1121,6 @@ body{font-family:Arial,Helvetica,sans-serif}
 .aft-page .aft-vegetable-photo-13{background-position:33.3333% 100.0000%}
 .aft-page .aft-vegetable-photo-14{background-position:66.6667% 100.0000%}
 .aft-page .aft-vegetable-photo-15{background-position:100.0000% 100.0000%}
+
+/* Clean isolated baked sweet potato illustration; removes stray atlas artifact. */
+.aft-page .aft-vegetable-photo-1{background-image:url("tools/air-fryer-time-finder/assets/baked-sweet-potato-clean.webp?v=1");background-size:100% 100%;background-position:center}

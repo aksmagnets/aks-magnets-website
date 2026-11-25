@@ -147,7 +147,7 @@
     return null;
   }
   // Carefully audited Vegetables replacements; only explicitly reviewed foods change.
-  const vegetableCorrectionPhotos = new Map([["Acorn squash (CookTiming)",0],["Baked sweet potato (large)",1],["Baked whole potatoes",2],["Baked potato (large)",2],["Bell peppers (whole)",3],["Homemade fresh fries",4],["Homemade potato chips",5],["Loaded potato skins",6],["Mushrooms (whole)",7],["Peppers (1-inch chunks)",8],["Portobello mushrooms (whole)",9],["Potatoes (1-inch cubes)",10],["Potatoes (1-inch chunks)",10],["Roasted baby potatoes",11],["Stuffed mushrooms",12],["Sweet potato",13],["Tomato halves",14],["Zucchini",15]]);
+  const vegetableCorrectionPhotos = new Map([["Acorn squash (CookTiming)",0],["Baked sweet potato (large)",1],["Baked whole potatoes",2],["Baked potato (large)",2],["Bell peppers (whole)",3],["Homemade fresh fries",4],["Homemade potato chips",5],["Loaded potato skins",6],["Mushrooms (whole)",7],["Peppers (1-inch chunks)",8],["Portobello mushrooms (whole)",9],["Potatoes (1-inch cubes)",10],["Potatoes (1-inch chunks)",10],["Roasted baby potatoes",11],["Baby potatoes (small)",11],["Stuffed mushrooms",12],["Sweet potato",13],["Tomato halves",14],["Zucchini",15]]);
   function vegetableCorrectionIndex(food) {
     return food.category === "Vegetables" ? (vegetableCorrectionPhotos.get(food.name) ?? null) : null;
   }
